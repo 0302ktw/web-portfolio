@@ -34,6 +34,7 @@
    }
 
 
+   
 /* **********************************************************************
 * reset css [body 상단 메뉴고정]
 ********************************************************************** */
@@ -46,6 +47,16 @@ a {text-decoration:none; color:#333; transition-duration:0.5s; transition-proper
 .cb:after {content:""; display:block; clear:both;}
 .pt1 {padding-top:25px;}
 .tab-index:focus:not(:focus-visible) {outline:0 !important;}
+
+
+
+/* **********************************************************************
+* window.loading page
+********************************************************************** */
+.loading {position:fixed; z-index:999999; top:-70px; width:100%; height:calc(100% + 70px); background:#f2f5f4;}
+.loader-icon {position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); border:12px solid #ececec; border-top:12px solid #3498db; border-radius:50%; width:80px; height:80px; animation:spin 2s linear infinite;}
+@keyframes spin {0% { transform:translate(-50%,-50%) rotate(0deg); } 100% { transform:translate(-50%,-50%) rotate(360deg);}}
+
 
 
 /* **********************************************************************
@@ -64,7 +75,7 @@ body.open .sub-menu {right:0;}
 ************************************************************************ */
 header {position:fixed; z-index:100;  top:0; left:0; width:100%; height:70px; border-bottom: 0.5px solid #ccc; box-sizing:border-box; background:#f2f5f4; transition-duration:0.5s; transition-property:background-color;}
 header nav {position:relative; width:100%; height:100%; margin:0 auto;}
-header nav .logo {position:absolute; left:2vw; top:0; bottom:0; margin:auto 0; width:41px; height:44px;}
+header nav .logo {position:absolute; z-index:100; left:2vw; top:0; bottom:0; margin:auto 0; width:41px; height:44px;}
 header nav .logo a {display:inline-block; width:100%; height:100%; background:url('../images/logo.png') no-repeat center center; background-size:100%;}
 .nav__list {position:relative; width:1123px; max-width:100%; height:100%; margin:0 auto;}
 .nav__list > ul {position:absolute; top:0; bottom:0; left:0; margin:auto 0; height:20px;}
@@ -156,17 +167,17 @@ footer {overflow:hidden;}
 /* ************************************************************************
 * 로드, 스크롤시 서서히 나타남
 ************************************************************************ */
-.appear {transform:translateY(50px); opacity:0; transition:transform 0.7s ease-in-out, opacity 0.7s ease-in-out;}
-.view .appear{transform:translateY(0);opacity:1; transition:transform 0.7s ease-in-out, opacity 0.7s ease-in-out;}
-.view .appear1{transition-delay:.0s}
-.view .appear2{transition-delay:.1s}
-.view .appear3{transition-delay:.2s}
-.view .appear4{transition-delay:.3s}
-.view .appear5{transition-delay:.4s}
-.view .appear6{transition-delay:.5s}
-.view2 {transform:translateY(90px); opacity:0; transition:transform 1s /* cubic-bezier(.26,1.35,.53,1.42) */ ease, opacity 0.7s ease;}
-.view3 {opacity:0; transition:opacity 1s;}
-.viewed {transform:translateY(0); opacity:1;}
+.appear {-webkit-transform:translateY(50px);-ms-transform:translateY(50px);transform:translateY(50px); opacity:0; -webkit-transition:opacity 0.7s ease-in-out, -webkit-transform 0.7s ease-in-out; transition:opacity 0.7s ease-in-out, -webkit-transform 0.7s ease-in-out; -o-transition:transform 0.7s ease-in-out, opacity 0.7s ease-in-out; transition:transform 0.7s ease-in-out, opacity 0.7s ease-in-out; transition:transform 0.7s ease-in-out, opacity 0.7s ease-in-out, -webkit-transform 0.7s ease-in-out;}
+.view .appear{-webkit-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0);opacity:1; -webkit-transition:opacity 0.7s ease-in-out, -webkit-transform 0.7s ease-in-out; transition:opacity 0.7s ease-in-out, -webkit-transform 0.7s ease-in-out; -o-transition:transform 0.7s ease-in-out, opacity 0.7s ease-in-out; transition:transform 0.7s ease-in-out, opacity 0.7s ease-in-out; transition:transform 0.7s ease-in-out, opacity 0.7s ease-in-out, -webkit-transform 0.7s ease-in-out;}
+.view .appear1{-webkit-transition-delay:.0s;-o-transition-delay:.0s;transition-delay:.0s}
+.view .appear2{-webkit-transition-delay:.1s;-o-transition-delay:.1s;transition-delay:.1s}
+.view .appear3{-webkit-transition-delay:.2s;-o-transition-delay:.2s;transition-delay:.2s}
+.view .appear4{-webkit-transition-delay:.3s;-o-transition-delay:.3s;transition-delay:.3s}
+.view .appear5{-webkit-transition-delay:.4s;-o-transition-delay:.4s;transition-delay:.4s}
+.view .appear6{-webkit-transition-delay:.5s;-o-transition-delay:.5s;transition-delay:.5s}
+.view2 {-webkit-transform:translateY(90px);-ms-transform:translateY(90px);transform:translateY(90px); opacity:0; -webkit-transition:opacity 0.7s ease, -webkit-transform 1s  ease; transition:opacity 0.7s ease, -webkit-transform 1s  ease; -o-transition:transform 1s /* cubic-bezier(.26,1.35,.53,1.42) */ ease, opacity 0.7s ease; transition:transform 1s /* cubic-bezier(.26,1.35,.53,1.42) */ ease, opacity 0.7s ease; transition:transform 1s  ease, opacity 0.7s ease, -webkit-transform 1s  ease;}
+.view3 {opacity:0; -webkit-transition:opacity 1s; -o-transition:opacity 1s; transition:opacity 1s;}
+.viewed {-webkit-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0); opacity:1;}
 
 
 
@@ -206,6 +217,7 @@ body.dark .scroll-top-btn:hover .scroll-top-btn__icon {background:url('../images
 /* ************************************************************************
 * [dark-mode]
 ************************************************************************ */
+body.dark .loading {background:#222;}
 body.dark {background:#24272b; color:#b8c6d8;}
 body.dark a {color:#b8c6d8;}
 body.dark header {background:#24272b; border-bottom: 0.5px solid #333;}

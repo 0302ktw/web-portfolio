@@ -2,6 +2,7 @@
 @import url('./common.css');
 
 
+
 /* ************************************************************************
 * 메인 슬라이드 [works.html]
 ************************************************************************ */
@@ -14,7 +15,7 @@
 .main-slide__img--common img {display:block; width:100%;}
 .main-slide__tit {position:absolute; z-index:100; right:0; bottom:0; left:0; width:1123px; min-width:58%; height:300px; margin:0 auto;}
 .main-slide__tit--content {padding-left:164px; /* border:5px solid #fff; */}
-.main-slide__tit--type {display:inline-block; position:relative; top:35px; padding:4px 8px; font-weight:700; font-size:17px; text-align:center; background:#fff; border-radius:7px; color:#777; transition:top .8s, opacity .8s ease-out; opacity:0}
+.main-slide__tit--type {display:inline-block; position:relative; top:35px; padding:4px 8px; font-weight:700; font-size:17px; text-align:center; background:#fff; border-radius:7px; color:#444; transition:top .8s, opacity .8s ease-out; opacity:0}
 .swiper-slide-active .main-slide__tit--type {top:0; opacity:1;}
 .main-slide__tit--title {position:relative; top:35px; font-weight:800; font-size:40px; color:#fff; padding-top:15px; transition:top .8s, opacity .8s ease-out; opacity:0}
 .swiper-slide-active .main-slide__tit--title {top:0; opacity:1;}
@@ -49,7 +50,7 @@
 .main-slide-inner .swiper-container > .swiper-pagination-bullets,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {position:absolute; left:0; right:0; bottom:100px; margin:0 auto; padding-left:160px; width:1123px; height:auto; text-align:left; box-sizing:border-box;}
-.main-slide-inner .swiper-container .swiper-pagination-bullet {width:8px; height:8px; display:inline-block; background:#333; opacity:0.6;}
+.main-slide-inner .swiper-container .swiper-pagination-bullet {width:8px; height:8px; display:inline-block; background:rgba(255,255,255,0.5); opacity:0.6;}
 .main-slide-inner .swiper-container .swiper-pagination-bullet-active {background:#fff; opacity:1;}
 
 @media screen and (min-width:1921px){
@@ -83,6 +84,7 @@ main #slider .swiper-container .swiper-wrapper .swiper-slide .slide-tit .slide-t
 main #slider .swiper-container .swiper-wrapper .swiper-slide.swiper-slide-active .slide-tit .slide-tit-wrap p{top:-20px;transition:top .8s, opacity .8s ease-out;transition-delay:.2s;opacity:1}
 main #slider .swiper-container .swiper-wrapper .swiper-slide .slide-tit .slide-tit-wrap .date{position:relative;top:25px;display:block;margin-top:10px;font-size:14px;color:#fff;transform:translateY(100%);transition:top .8s ease-out, opacity .8s ease-out;transition-delay:.3s;opacity:0}
 main #slider .swiper-container .swiper-wrapper .swiper-slide.swiper-slide-active .slide-tit .slide-tit-wrap .date{top:-10px;transition:top .8s, opacity .8s ease-out;transition-delay:.3s;opacity:1}
+
 
 
 /* ************************************************************************
@@ -135,7 +137,9 @@ main #slider .swiper-container .swiper-wrapper .swiper-slide.swiper-slide-active
 }
 
 
+
 /*----------------------- works.html end ------------------------------- */
+
 
 
 /* ************************************************************************
@@ -145,6 +149,7 @@ main #slider .swiper-container .swiper-wrapper .swiper-slide.swiper-slide-active
 .key-visual:before {content:''; position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.3); overflow:hidden;}
 .key-visual-content {width:100%;}
 .key-visual-content img {display:inline-block; width:100%; vertical-align:bottom;}
+
 
 
 /* ************************************************************************
@@ -183,6 +188,7 @@ main #slider .swiper-container .swiper-wrapper .swiper-slide.swiper-slide-active
 .pf-git-table {text-align:left; width:100%; border-collapse:collapse;}
 .pf-git-table thead {background:#444;}
 .pf-git-table thead th {padding:20px 15px; color:#fff; font-weight:400; font-size:18px; letter-spacing:normal;}
+.pf-git-table thead th:nth-child(2) {text-align:center;}
 .pf-git-table tbody tr {border-bottom:1px solid rgba(0,0,0,0.2);}
 .pf-git-table tbody td {padding:20px 15px; font-size:18px; text-transform:uppercase; line-height:1.7;}
 .pf-git-table tbody td:first-child {position:relative;}
@@ -229,7 +235,7 @@ main #slider .swiper-container .swiper-wrapper .swiper-slide.swiper-slide-active
 .text-content2 {width:1173px; max-width:100%; margin:0 auto; padding:0 25px 85px; box-sizing:border-box; transition:all 0.5s;}
 .text-content2__wrap-box {width:100%; margin:0 auto;}
 .text-content2__wrap-box h2 {font-weight:800; font-size:60px; letter-spacing:normal;}
-.text-content2__wrap-box > .p-box {padding-top:55px;}
+.text-content2__wrap-box > .p-box {position:relative; padding-top:55px;}
 .text-content2__wrap-box .p-left {float:left; width:300px; height:100%;}
 .text-content2__wrap-box .p-right {float:left; height:100%;}
 .text-content2__wrap-box .p-left span {display:block; font-weight:300; font-size:25px; line-height:40px; letter-spacing:normal;}
@@ -244,6 +250,11 @@ main #slider .swiper-container .swiper-wrapper .swiper-slide.swiper-slide-active
 
 @media screen and (max-width:1601px){
     .text-content2 {width:500px;}
+}
+
+@media screen and (max-width:1000px){
+    .p-right {width:70px;}
+    .p-right img {width:100%;}
 }
 
 

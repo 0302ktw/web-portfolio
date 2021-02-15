@@ -11,15 +11,15 @@
 .movie-area__video {position:absolute; top:0; width:100%; height:auto; outline:none; border:none;}
 .intro {position:absolute; z-index:50; top:0; right:0; bottom:0; left:0; width:58%; text-align:center; margin:0 auto; padding-top:120px;}
 .intro__box1 .profile__img {vertical-align:bottom; transition:all 0.5s;}
-.intro__box1 p {font:800 20px 'NanumSquare',sans-serif; color:#fff; padding-top:30px; line-height:1;}
+.intro__box1 #typing {font:800 20px 'NanumSquare',sans-serif; color:#fff; padding-top:30px; line-height:1;}
 .intro__box2 > p:nth-of-type(1) {font:400 22px 'NanumSquare',sans-serif; color:#fff; padding-top:23px; line-height:1;}
 .intro__box2 > p:nth-of-type(2) {font:400 22px 'NanumSquare',sans-serif; color:#fff; padding-top:13px; line-height:1;}
 .intro__box2 h1 {position:relative; display:inline-block; font:800 45px 'NanumSquare',sans-serif; color:#fff; padding-top:33px; line-height:1;}
 .intro__box2 h1:before {content:''; position:absolute; top:20px; left:-80px; display:block; width:30px; height:119px; background:url('../images/{.png') no-repeat center center; transition:all 0.5s;}
 .intro__box2 h1:after {content:''; position:absolute; top:20px; right:-80px; display:block; width:30px; height:119px; background:url('../images/}.png') no-repeat center center; transition:all 0.5s;}
 .intro__job-content {display:inline-block; font:800 20px 'NanumSquare',sans-serif; padding-top:30px;}
-.intro__job-box {float:left; margin-left:13px; border:1px solid #aaa; border-radius:16px; padding:5px 8px;}
-.intro__job-box p {color:#fff;}
+.intro__job-box {float:left; margin-left:13px; border:2px solid rgba(255,255,255,0.4); border-radius:30px; background:rgba(50,50,50,0.1); padding:7px 15px;}
+.intro__job-box p {color:rgba(255,255,255,1);}
 .intro__job-box:nth-child(1) {margin-left:0;}
 
 @media screen and (max-width:970px) {
@@ -79,8 +79,6 @@
   .text-content1__text-box--L h2 > span {display:inline;}
 }
 
-
-
 .text-board {width:100%; display:flex; overflow:hidden;}
 .text-board__list {width:100%;}
 .text-board__list svg {width:100%; height:100%;}
@@ -92,6 +90,8 @@
 .text-card__title {font:800 25px 'NanumSquare',sans-serif; line-height:1; padding-bottom:24px; border-bottom:1px solid #333;}
 .text-card__sub-title {font:700 23px 'NanumSquare',sans-serif; line-height:1.5; padding-top:24px;}
 .text-card__sub-detail {font:400 19px 'NanumSquare',sans-serif; line-height:1.66; padding-top:12px;}
+
+
 
 /* tablet 리사이즈 */
 @media screen and (max-width:1160px) {
@@ -133,7 +133,6 @@
 .cg__content svg .ccl {fill:#f2f5f4; stroke:#b3b3b3; stroke-miterlimit:10;}
 .cg__content svg .cct {fill:#333;}
 
-
 /* pc ~ tablet 리사이즈 */
 @media all and (-ms-high-contrast:none), screen and (-ms-high-contrast:active){  
   .cg__content svg {height:900px !important;}
@@ -156,7 +155,6 @@
 .skill-content__list svg .sc{fill:none;stroke:#b7b7b7;stroke-miterlimit:10}
 .skill-content__list svg .st1 {fill:#000;}
                         
-
 @media screen and (max-width:1160px){
   .introduce3 {padding-bottom:150px;}
 }
@@ -194,6 +192,8 @@
   .bg-banner__text--span:nth-child(2) {padding-top:0;}
   .bg-banner__text .bgTit {font-size:30px;}
 }
+
+
 
 /* ************************************************************************
 * [introduce4]

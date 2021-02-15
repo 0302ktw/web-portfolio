@@ -28,13 +28,13 @@
 .text-content1__text-box--L h2 > span {font-size:30px; line-height:38px;}
 .text-content1__text-box--R p {font-size:18px; line-height:30px;}
 .text-content1__capability--L h2 > span {font-size:30px; line-height:38px;}
-
 .text-card__content {width:100%; min-height:auto; margin-right:0; padding:40px 28px 55px;}
 .text-card__content:nth-child(2) {margin-right:0; margin-top:2.5%;}
 .text-card__content:nth-child(3) {margin-top:2.5%;}
 .text-card__title {font-size:20px;}
 .text-card__sub-title {font-size:19px;}
 .text-card__sub-detail {font-size:17px;}
+
 
 
 /* ************************************************************************
