@@ -37,9 +37,9 @@
   .movie-area__video {width:760px;}
   .intro {padding-top:55px; width:88%;}
   .intro__box1 {text-align:center;}
-  .intro__box1 div {width:230px; height:50px; margin:0 auto;}
-  .intro__box1 .profile__img {float:left; height:50px;}
-  .intro__box1 p {font-size:18px; padding-top:18px; padding-left:25px; float:left;}
+  .intro__box1 div {width:80%; height:50px; margin:0 auto;}
+  .intro__box1 .profile__img {display:none;}
+  .intro__box1 #typing {font-size:17px; line-height:1.4;}
   .intro__box2 > p:nth-of-type(1) {font-size:20px; padding-top:18px;}
   .intro__box2 > p:nth-of-type(2) {font-size:20px; padding-top:8px;}
   .intro__box2 h1 {font-size:35px; padding-top:25px;}
