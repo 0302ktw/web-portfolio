@@ -37,7 +37,7 @@
   .movie-area__video {width:760px;}
   .intro {padding-top:55px; width:88%;}
   .intro__box1 {text-align:center;}
-  .intro__box1 div {width:80%; height:50px; margin:0 auto;}
+  .intro__box1 > div {width:90%; height:50px; margin:0 auto;}
   .intro__box1 .profile__img {display:none;}
   .intro__box1 #typing {font-size:17px; line-height:1.4;}
   .intro__box2 > p:nth-of-type(1) {font-size:20px; padding-top:18px;}
