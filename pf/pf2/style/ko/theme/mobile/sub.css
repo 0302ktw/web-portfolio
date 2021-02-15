@@ -1,0 +1,21 @@
+﻿@media screen and (max-width:520px) {
+	#divHeader .inner {padding:0 10px;}
+	#divHeader #wholeMenu .menuWrap .inner .topArea  .head .m_head {padding:21px 12px;}
+	#divHeader #wholeMenu .menuWrap .inner .topArea  .head .close_btn {right:12px;}
+	#divHeader #wholeMenu .menuWrap {width:100%;right:-100%;}
+	#divHeader #wholeMenu .menuWrap .inner > ul > li > a {width:100%;padding-left:58px;}
+	#divHeader #wholeMenu .menuWrap .inner > ul > li:nth-child(1) > a {background-position:20px 16px !important;}
+	#divHeader #wholeMenu .menuWrap .inner > ul > li:nth-child(2) > a {background-position:17px 19px !important;}
+	#divHeader #wholeMenu .menuWrap .inner > ul > li:nth-child(3) > a {background-position:18px 21px !important;}
+	#divHeader #wholeMenu .menuWrap .inner > ul > li:nth-child(4) > a {background-position:16px 16px !important;}
+	#divHeader #wholeMenu .menuWrap .inner > ul > li:nth-child(5) > a {background-position:18px 15px !important;}
+	#divHeader #wholeMenu .menuWrap .inner > ul > li > ul {margin-left:100%;width:calc(100% - 164px);padding:0 10px 0 15px;}
+	#divHeader #wholeMenu .menuWrap .inner > ul.on > li > a {width:164px;}
+	#divHeader #wholeMenu .menuWrap .inner > ul.on > li > ul {margin-left:164px;}
+	
+	#divFooter > div {padding:36px 10px 36px;}
+	#divFooter .footer_left {float:none;width:118px;height:82px;margin:6px auto;}
+	#divFooter .footer_right {width:100%;margin-left:0;line-height:1.5;padding:0 24px;}
+	#divFooter .privacy {height:48px;margin-top:28px;}
+	#divFooter .copyright {line-height:1.2;}
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex">
+	<meta name="googlebot" content="noindex">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>신입 웹퍼블리셔 김태완입니다.</title>    
+    <link rel="stylesheet" href="./css/pc-tablet_sub.css" type="text/css" />
+    <link rel="stylesheet" href="./css/mobile_sub.css" type="text/css" media="screen and (max-width:530px)">    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>    
+    <script src="./js/main.js"></script>
+    <!-- [if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+    <![end if]-->
+</head>
+<body class="light" onload="startTime()">
+    <header class="cb">
+        <nav>
+            <h1 class="logo">
+                <a href="./index.html" class="hidden">로고이미지</a>
+            </h1>
+            <div class="nav__list">
+                <ul class="cb">
+                    <li><a href="./index.html">about</a></li>
+                    <li><a href="./works.html">works</a></li>
+                    <li><a href="./contact.html">contact</a></li>
+                </ul>
+                <div class="menu-button">
+                    <button type="button" class="tab-index">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+                <div class="sub-menu">
+                    <div class="sub-menu__content">
+                        <ul class="sub-menu__list">
+                            <li><a onclick="return limitTimedLink(this, linkTime, 500);" href="./index.html">about</a></li>
+                            <li><a onclick="return limitTimedLink(this, linkTime, 500);" href="./works.html">works</a></li>
+                            <li class="active"><a onclick="return false;" href="./contact.html">contact</a></li>
+                        </ul>
+                        <div class="info-wrap">
+                            <dl>
+                                <dt>김태완</dt>
+                                <dd>
+                                    Web Publisher <span>UI Designer</span>
+                                </dd>
+                                <dd>010 - 7434 - 7134</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+            <div class="dim"></div>
+        </nav>
+    </header>
+    <div class="main">
+        <section class="contact">
+            <div class="text-content2">
+                <div class="text-content2__wrap-box">
+                    <h2 class="appear appear1">Contact me</h2>
+                    <div class="p-box cb appear appear1">
+                        <div class="p-left">
+                            <span>SOUTH KOREA</span>
+                            <span class="mm-dd"></span>
+                            <span>서울시 송파구 마천동 거주</span>
+                        </div>
+                        <div class="p-right"><img src="images/profile.png" alt="프로필 사진" class="profile-img" /></div>
+                    </div>
+                    <span id="time" class="date-timer appear appear2"></span>
+                    <a href="tel:+8201074347134" class="phone appear appear3">+82&nbsp;&nbsp;010&nbsp;&nbsp;7434&nbsp;&nbsp;7134</a>
+                    <p class="conclusion appear appear4">
+                        <span><strong>디자인을 이해하는 퍼블리셔</strong> 김태완입니다.</span>
+                        <span>함께 나누고싶은 얘기가 있으시다면</span>
+                        <span>위의 번호로 언제든지 연락바랍니다.</span>
+                        <span>소중한 연락 기다리겠습니다.</span>
+                    </p>
+                    <a href="mailto:0302ktw@naver.com" class="send-mail appear appear5">Send Email</a>
+                </div>
+            </div>
+        </section>
+        <footer>            
+            <div class="footer-bottom">
+                <div class="footer-bottom__content cb">
+                    <div class="footer-bottom__nav cb">
+                        <ul class="cb">
+                            <li><a href="./index.html" class="hidden footer-bottom__nav--logo">logo</a></li>
+                            <li><a href="./index.html">about</a></li>
+                            <li><a href="./works.html">works</a></li>
+                            <li><a href="./contact.html">contact</a></li>
+                        </ul>
+                        <div class="footer-bottom__copy-right">@&nbsp;&nbsp;2021 &nbsp;KIMTAN. &nbsp;All &nbsp;Rights &nbsp;Reserved</div>
+                    </div>
+                    <div class="f-last">
+                        <p class="tab-index" tabindex="0">본 사이트는 상업적 목적이 아닌 개인 포트폴리오 사이트로 제작되었습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>    
+    <button class="theme-color-btn tab-index cb">
+        <span class="theme-color-btn__icon"></span>
+        <span class="theme-color-btn__text">다크 모드로 보기</span>
+    </button>
+    <button class="scroll-top-btn tab-index">
+        <span class="scroll-top-btn__icon"></span>
+    </button>
+    <script>
+        $(document).ready(function(){
+            TweenMax.from('.skGroup', 27, {x:'0%', ease:Linear.easeNone}); TweenMax.to('.skGroup', 27, {x:'-100%', repeat:-1, ease:Linear.easeNone});
+            TweenMax.from('.t0', 10, {x:'0%', ease:Linear.easeNone}); TweenMax.to('.t0', 10, {x:'-102.3%', repeat:-1, ease:Linear.easeNone}); 
+            TweenMax.to('.rotate1', 15, {rotation:360, transformOrigin:'50% 50%', repeat:-1, ease:Linear.easeNone });
+            TweenMax.to('.rotate2', 35, {rotation:-360, transformOrigin:'50% 50%', repeat:-1, ease:Linear.easeNone });
+            TweenMax.to('.rotate3', 50, {rotation:360, transformOrigin:'50% 50%', repeat:-1, ease:Linear.easeNone });
+        });
+    </script>
+</body>
+</html>

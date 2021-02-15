@@ -1,0 +1,29 @@
+
+@media (max-width:1500px){
+
+
+.news_rel .news_container {width:130rem; transition:all 0.5s;}
+	.r_data li {padding-left:2.5rem;}
+	.r_data li a {display:block;  width:100%; margin-bottom:.5rem; font-size:1.6rem;}
+	.r_data li .date { display:block; width:100%; text-align:left;}
+	
+.hope_rel .hope_container {width:130rem; height:73rem;}	
+	
+#gnb ul>li {padding-right:6rem;}
+#gnb ul>li>a {font-size:2rem;}
+
+.k_visual_rel .k_text_box5 {position:absolute; top:140px; left:0;}
+
+}
+
+@media (max-width:1380px) {
+
+
+
+.news_rel .news_container {width:125rem; transition:all 0.5s;}	
+	.q_content .q_mark {font-size:2.5rem; color:#a29273; margin-right:1rem; display:block; margin-bottom:1rem;}
+	.q_content .q_content_text {font-size:1.5rem;}
+.hope_rel .hope_container {width:125rem; height:73rem;}	
+
+	
+}

@@ -1,0 +1,94 @@
+@media (max-width:750px) {
+
+.news_header .news_title {color:#fff; font-size:2rem; line-height:28px;}
+#news .news_left {float:left; width:100%; height:80%;}
+
+	
+	.news_left .support {float:left; width:100%; height:50%; border-left:1px solid #ccc;}
+
+	
+	.news_left .donate {float:right; width:100%; height:50%; border-left:1px solid #ccc;}
+		.donate_text_box .donate_vector {left:-3rem;}
+
+
+#news .news_center {float:left; width:100%; height:100rem;}
+	.news_center .notice {width:100%; height:50%;}
+		.notice nav {width:100%; height:4rem; padding:0 0 4rem 0;}
+		.notice .notice_content {padding-bottom:3rem;}	
+
+		.notice_bottom p {margin-top:15px;}
+		.notice_bottom p .nb1 {width:100%; }
+		.notice_bottom p .nb1 a {}
+		.notice_bottom p .nb2 {display:block; float:left; font-size:1.5rem;}
+		
+	
+	.news_center .qandA {width:100%; height:23%;}
+		.q_content {margin-top:-1rem;}
+	.news_center .reference {width:100%; height:27%; border-left:1px solid #ccc; box-sizing:border-box;}
+
+
+
+#news .news_right {float:right; width:100%; height:100%; }
+	
+	.news_right .blood { float:left; width:100%; height:50%; border-left:1px solid #ccc; box-sizing:border-box; }
+	
+	.news_right .education {float:left; width:100%; height:50%; border-left:1px solid #ccc; box-sizing:border-box; }
+		.education .more {position:absolute; top:3.2rem; right:4.2rem;}
+
+
+.hope_rel .hope_container {width:100%; height:73rem;}
+.hope_header .hope_title {color:#fff; font-size:2rem; line-height:28px;}
+.hope_container #hope_left {float:left; width:100%; height:100%;}
+	#hope_left .left_cell_1 {float:left; width:100%; height:50%;}
+	#hope_left .left_cell_2 {float:left; width:100%; height:50%;}
+.hope_container #hope_center {float:left; width:100%; height:100%;}
+	#hope_center .center_cell_1 {float:left; width:100%; height:50%;}
+	#hope_center .center_cell_2 {float:left; width:100%; height:50%;}
+.hope_container #hope_right {float:left; width:100%; height:100%;}
+	#hope_right .right_cell_1 {float:left; width:100%; height:50%;}
+	#hope_right .right_cell_2 {float:left; width:100%; height:50%;}	
+
+	
+.history_rel .his_L_text_box {top:48px; left:5.5%; width:40%; height:97px;}
+.history_rel .his_R_text_box {top:48px; right:5.6%; width:40%;}
+
+#mid_event .mid_event_rel {width:100%; height:auto; background:#fefefe background:url('../images/bg_patton_01.gif'); margin:0 auto; box-sizing:border-box; }
+.mid_event_rel>ul {width:100%; height:100%; margin:0 auto;}
+.mid_event_rel>ul>li {width:100%; height:163px; float:left; border:1px solid #ccc; box-sizing:border-box; margin-bottom:20px;}
+.mid_event_rel>ul>li.event_item4 {margin-right:0;}
+.mid_event_rel>ul>li .mid_img {width:40%;}
+.mid_event_rel>ul>li .mid_text {width:60%;}
+
+
+#sns_event .sns_event_rel {width:100%; height:auto;}
+	.sns_event_rel .sns_container {width:100%; height:834px; padding-top:100px;}
+	
+	.sns_header .sns_title {color:#fff; font-size:2rem; line-height:28px;}
+	
+	
+	.sns_container .sns_column1 {float:left; width:100%; height:95%;}
+				   .sns_column1 .column1_cell_1 {float:left; width:100%; height:50%; padding:45px 55px 0;}
+				   .sns_column1 .column1_cell_2 {float:left; width:100%; height:50%;}
+				   
+	.sns_container .sns_column2 {float:left; width:100%; height:95%;}
+				   .sns_column2 .column2_cell_3 {float:left; width:100%; height:50%;}
+				   .sns_column2 .column2_cell_4 {float:left; width:100%; height:50%;}
+					
+	.sns_container .sns_column3 {float:left; width:100%; height:95%;}
+				   .sns_column3 .column3_cell_5 {float:left; width:100%; height:50%;}
+				   .sns_column3 .column3_cell_6 {float:left; width:100%; height:50%;}
+					
+	.sns_container .sns_column4 {float:left; width:100%; height:95%;}
+				   .sns_column4 .column4_cell_7 {float:left; width:100%; height:50%;}
+				   .sns_column4 .column4_cell_8 {float:left; width:100%; height:50%;}
+
+.footer_rel {padding:0;}
+	.footer_rel .footer_top {padding:0px 0 20px 0;}
+	.footer_rel .footer_top .list {width:100%;}
+	.footer_rel .footer_top .list_title {text-align:center; border-bottom:1px solid #ccc; margin:0; padding:15px 0;}
+	
+	.footer_rel .footer_bottom {padding:20px 20px 150px;}
+	
+	.footer_end_mark {position:absolute; top:600px; right:0; bottom:0; left:0; margin:auto; height:100px;}
+
+}

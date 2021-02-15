@@ -1,0 +1,54 @@
+.mobileTable.breakpoint > tbody > tr > td.expand {
+	padding:14px 23px 14px 10px;
+	background:url(../../../../image/ko/solution/common/ico/tableOn.png) no-repeat 97% 50%
+}
+.mobileTable.breakpoint > tbody > tr.footable-detail-show > td.expand {
+	background:url(../../../../image/ko/solution/common/ico/tableOff.png) no-repeat 97% 50%;
+}
+
+
+.mobileTable.breakpoint > tbody > tr > td.tableTit.expand {
+	padding:14px 23px 14px 10px;
+	background:url(../../../../image/ko/solution/common/ico/tableOn.png) no-repeat 97% 50% #f3f3f3;
+}
+.mobileTable.breakpoint > tbody > tr.footable-detail-show > td.tableTit.expand {
+	background:url(../../../../image/ko/solution/common/ico/tableOff.png) no-repeat 97% 50% #f3f3f3;
+}
+
+
+#listTable .footable-last-column{
+	padding-right:30px
+}
+.mobileTable.breakpoint > tbody > tr:hover:not(.footable-row-detail) {
+	cursor: pointer;
+}
+.mobileTable > tbody > tr > td.footable-cell-detail{
+	border-top:none;
+	border-left: none;
+}
+.mobileTable > thead{
+	display:none
+}
+.mobileTable > thead > tr > th.footable-first-column, .footable > thead > tr > td.footable-first-column,
+.mobileTable > tbody > tr > td.footable-first-column {
+	border-left: none;
+}
+.mobileTable > tbody img {
+	vertical-align:middle;
+}
+.mobileTable > tbody img.star{
+	width:75px;
+	height:14px
+}
+.mobileTable > tbody img.cover{
+	width:70px;
+	height:97px
+}
+
+.footable-row-detail-inner > div {
+	margin-top:7px;
+}
+.footable-row-detail-inner > div > strong{display:inline-block;margin-right:10px;}
+.footable-row-detail-inner > div:first-child {
+	margin-top:0;
+}

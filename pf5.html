@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pf5</title>    
+    <link rel="stylesheet" href="./css/pc-tablet_sub.css" type="text/css" />    
+    <link rel="stylesheet" href="./css/mobile_sub.css" type="text/css" media="screen and (max-width:530px)" />    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="./js/footable.min.js"></script>
+    <script src="./js/main.js"></script>
+    <!-- [if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+    <![end if]-->
+</head>
+<body class="light">
+    <header class="cb">
+        <nav>
+            <h1 class="logo">
+                <a href="./index.html" class="hidden">로고이미지</a>
+            </h1>
+            <div class="nav__list">
+                <ul class="cb">
+                    <li><a href="./index.html">about</a></li>
+                    <li><a href="./works.html">works</a></li>
+                    <li><a href="./contact.html">contact</a></li>
+                </ul>
+                <div class="menu-button">
+                    <button type="button" class="tab-index">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+                <div class="sub-menu">
+                    <div class="sub-menu__content">
+                        <ul class="sub-menu__list">
+                            <li><a onclick="return limitTimedLink(this, linkTime, 500);" href="./index.html">about</a></li>
+                            <li><a onclick="return limitTimedLink(this, linkTime, 500);" href="./works.html">works</a></li>
+                            <li><a onclick="return limitTimedLink(this, linkTime, 500);" href="./contact.html">contact</a></li>
+                        </ul>
+                        <div class="info-wrap">
+                            <dl>
+                                <dt>김태완</dt>
+                                <dd>
+                                    Web Publisher <span>UI Designer</span>
+                                </dd>
+                                <dd>010 - 7434 - 7134</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dim"></div>
+        </nav>
+    </header>
+    <div class="main">
+        <section class="key-visual">
+            <div class="key-visual-content">
+                <img src="images/sub/slide05.jpg" alt="이력서 랜딩 페이지 ver 1 슬라이드 이미지" />
+            </div>
+        </section>
+        <section class="pf-wrap">
+            <div class="pf-content">
+                <div class="pf-explain">
+                    <dl class="pf-explain__top">
+                        <dt><span>이력서 랜딩 페이지 ver 1</span></dt>
+                        <dd><p>이력서와 포트폴리오를 담은 랜딩페이지입니다. 스크롤 다운시 상단 내비 슬라이드 업 및 스크롤 업시 내비고정, 클릭 시 특정 위치로 이동. 사이드 내비 와 각종 페이드 인 아웃 애니메이션 플러그인이 사용되었습니다. 기존까지 사용해온 CSS "요소.선택자{스타일}" 작성방식을 탈피하여 보편적인 코딩 컨벤션 스타일에 맞게 변경하였습니다.</p></dd>
+                    </dl>
+                    <ul class="pf-explain__bottom">
+                        <li>
+                            <dl>
+                                <dt>Date</dt>
+                                <dd>2019. 12</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>Role</dt>
+                                <dd>Web design, Publishing 100%</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>Viewport</dt>
+                                <dd>Adaptive</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>Cross Browsing</dt>
+                                <dd>Edge, Ie10+, Chrome, Firefox, Opera</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>URL</dt>
+                                <dd>
+                                    <a href="./pf/pf5/index.html" target="_blank"># Main</a>
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pf-git">
+                    <table class="pf-git-table footable">
+                        <thead>
+                            <tr>
+                                <th>Category</th>
+                                <th data-breakpoints="xs">Source</th>
+                                <th data-breakpoints="xs">Related keywords</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="html expand"><i>html</i></td>
+                                <td><a href="https://github.com/yoniseo/-yoniseo-portfolio---samsung-responsive/blob/master/index.html" target="_blank">index.html</a></td>
+                                <td>html5</td>
+                            </tr>
+                            <tr>
+                                <td class="css expand"><i>css</i></td>
+                                <td><a href="https://github.com/yoniseo/-yoniseo-portfolio---samsung-responsive/blob/master/common.css" target="_blank">style.css</a>
+                                    <a href="https://github.com/yoniseo/-yoniseo-portfolio---samsung-responsive/blob/master/common.css" target="_blank">stylemodal.css</a>
+                                    <a href="https://github.com/yoniseo/-yoniseo-portfolio---samsung-responsive/blob/master/common.css" target="_blank">lightbox.css</a>                                    
+                                </td>
+                                <td>css3</td>
+                            </tr>                            
+                            <tr class="last-bottom">
+                                <td class="js expand"><i>js</i></td>
+                                <td><a href="https://github.com/yoniseo/-yoniseo-portfolio---samsung-responsive/blob/master/common.js" target="_blank">floatingMenu.js</a>
+                                    <a href="https://github.com/yoniseo/-yoniseo-portfolio---samsung-responsive/blob/master/common.js" target="_blank">fnv.js</a>
+                                    <a href="https://github.com/yoniseo/-yoniseo-portfolio---samsung-responsive/blob/master/common.js" target="_blank">fp.js</a>
+                                    <a href="https://github.com/yoniseo/-yoniseo-portfolio---samsung-responsive/blob/master/common.js" target="_blank">html5shiv.js</a>
+                                    <a href="https://github.com/yoniseo/-yoniseo-portfolio---samsung-responsive/blob/master/common.js" target="_blank">jquery.easypiechart.js</a>
+                                    <a href="https://github.com/yoniseo/-yoniseo-portfolio---samsung-responsive/blob/master/common.js" target="_blank">jquery.modal.js</a>
+                                    <a href="https://github.com/yoniseo/-yoniseo-portfolio---samsung-responsive/blob/master/common.js" target="_blank">light_box.js</a>
+                                    <a href="https://github.com/yoniseo/-yoniseo-portfolio---samsung-responsive/blob/master/common.js" target="_blank">light_box_modal.js</a>
+                                    <a href="https://github.com/yoniseo/-yoniseo-portfolio---samsung-responsive/blob/master/common.js" target="_blank">main.js</a>
+                                    <a href="https://github.com/yoniseo/-yoniseo-portfolio---samsung-responsive/blob/master/common.js" target="_blank">menu_fixed.js</a>
+                                    <a href="https://github.com/yoniseo/-yoniseo-portfolio---samsung-responsive/blob/master/common.js" target="_blank">menu2.js</a>
+                                    <a href="https://github.com/yoniseo/-yoniseo-portfolio---samsung-responsive/blob/master/common.js" target="_blank">tab_menu.js</a>
+                                </td>
+                                <td>jquery</td>
+                            </tr>                            
+                        </tbody>
+                    </table>
+                </div>
+                <div class="back-btn-box">
+                    <button class="back-btn tab-index"><a href="./works.html">목록으로 돌아가기</a></button>
+                </div>
+            </div>
+        </section>
+        <footer>            
+            <div class="footer-bottom">
+                <div class="footer-bottom__content cb">
+                    <div class="footer-bottom__nav cb">
+                        <ul class="cb">
+                            <li><a href="./index.html" class="hidden footer-bottom__nav--logo">logo</a></li>
+                            <li><a href="./index.html">about</a></li>
+                            <li><a href="./works.html">works</a></li>
+                            <li><a href="./contact.html">contact</a></li>
+                        </ul>
+                        <div class="footer-bottom__copy-right">@&nbsp;&nbsp;2021 &nbsp;KIMTAN. &nbsp;All &nbsp;Rights &nbsp;Reserved</div>
+                    </div>
+                    <div class="f-last">
+                        <p class="tab-index" tabindex="0">본 사이트는 상업적 목적이 아닌 개인 포트폴리오 사이트로 제작되었습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <button class="theme-color-btn tab-index cb">
+        <span class="theme-color-btn__icon"></span>
+        <span class="theme-color-btn__text">다크 모드로 보기</span>
+    </button>
+    <button class="scroll-top-btn tab-index">
+        <span class="scroll-top-btn__icon"></span>
+    </button>
+    <script>
+        $(function(){
+            $('.footable').footable();
+        });
+    </script>
+</body>
+</html>

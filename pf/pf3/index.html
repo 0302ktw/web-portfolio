@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+    <meta name="googlebot" content="noindex">
+    <!-- <meta name="description" content="우석대학교도서관">
+    <meta name="keyword" content="우석대학교도서관, 우석대 도서관">
+    <meta name="copyright" content="WOOSUK UNIVERSITY LIBRARY"> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1, width=device-width, user-scalable=0">           
+    <title>우석대학교 도서관 마크업 연습</title>
+    <link rel="shortcut icon" href="image/ko/local/favicon.ico">
+    <link rel="apple-touch-icon" href="image/ko/local/appletouch-icon.png">
+    <link rel="stylesheet" type="text/css" href="style/ko//standard/common.css">
+    <link rel="stylesheet" href="style/ko/theme/pc/main.css">    
+    <link rel="stylesheet" href="style/ko/theme/tablet/main.css" media="screen and (min-width:768px) and (max-width:1024px)">
+    <link rel="stylesheet" href="style/ko/theme/mobile/main.css" media="screen and (max-width:767px)">
+    <link rel="stylesheet" href="style/ko/theme/pc/jquery.mCustomScrollbar.css">    
+    <script src="script/jquery-1.8.3.min.js"></script>
+    <script src="script/jquery.easing.1.3.js"></script>
+    <script src="script/jquery.actual.js"></script>
+    <script src="script/jquery.dotdotdot.js"></script>
+    <!--말줄임표-->
+    <script src="script/jquery.mCustomScrollbar.js"></script>
+    <script src="script/main.js"></script>
+    <!--[if lt IE 9]>
+	<script  src="script/css3-mediaqueries.js"></script>
+	<![endif]-->
+    <script src="script/jquery.placeholder.min.js"></script>
+</head>
+<body>
+    <div id="divWrapper">
+        <div class="topInfo">
+            <div class="topInfoW">
+                <div class="topCloseBtn">
+                    <label>
+                        <input type="checkbox" id="todayClose">오늘 하루 창 닫기
+                    </label>
+                    <a href="#">닫기버튼</a>
+                </div>
+                <div class="openMsg">
+                    <p class="openMessage1"><a href="#">우석대학교 도서관 홈페이지가 새롭게 단장하였습니다.</a></p>
+                    <p class="openMessage2"><a href="#">우석대학교 도서관 공지사항입니다.</a></p>
+                </div>
+                
+            </div>
+        </div>
+        <div id="divHeader">
+            <div class="headerTop">
+                <div class="headerTopW">                    
+                    <div id="divGlobalMenu">
+                        <ul class="locationBtn">
+                            <li class="on"><a href="#">전주</a></li>
+                            <li><a href="#">진천</a></li>
+                        </ul>
+                        <ul class="profile">
+                            <li><a href="#"><b>김태완</b>님</a></li>
+                            <li class="summary"><a href="#">요약정보</a></li>
+                            <li class="mobileID"><a href="#">모바일열람증</a></li>
+                            <li><a href="#">로그아웃</a></li>
+                            <li class="univ"><a href="#">우석대학교</a></li>
+                            <li class="langBtn">
+                                <a href="#">LANGUAGE<span></span></a>
+                                <ul class="langBox">
+                                    <li><a href="#">KO</a></li>
+                                    <li><a href="#">EN</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <h1 class="logo"><a href="#" title="우석대학교 도서관"><img src="image/ko/local/logo.png" alt="우석대학교 도서관 로고"></a></h1>
+                </div>
+            </div>
+            <div class="headerBottom">
+                <div class="headerBottomW">
+                    <div id="divTopMenu">
+                        <ul>
+                            <li>
+                                <a href="#" title="">자료검색</a>
+                                <div class="subMenu">
+                                    <div class="subMenuW">
+                                        <div class="subLeft subIcon1">
+                                            <p class="subMTitle">자료검색</p>
+                                            <p class="subDetail">우석대학교 도서관 소장자료를<br>검색하실 수 있습니다.</p>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <p>자료검색</p>
+                                                <ul>
+                                                    <li><a href="#"><i></i>통합검색</a></li>
+                                                    <li><a href="#"><i></i>소장자료</a></li>
+                                                    <li><a href="#"><i></i>전자자료</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <p>유형별검색</p>
+                                                <ul>
+                                                    <li><a href="#"><i></i>단행본</a></li>
+                                                    <li><a href="#"><i></i>연속간행물</a></li>
+                                                    <li><a href="#"><i></i>학위논문</a></li>
+                                                    <li><a href="#"><i></i>학위논문</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <p>전자자료</p>
+                                                <ul>
+                                                    <li><a href="#"><i></i>통합검색</a></li>
+                                                    <li><a href="#"><i></i>소장자료</a></li>
+                                                    <li><a href="#"><i></i>전자자료</a></li>
+                                                    <li><a href="#"><i></i>전자자료</a></li>
+                                                    <li><a href="#"><i></i>전자자료</a></li>
+                                                    <li><a href="#"><i></i>전자자료</a></li>
+                                                    <li><a href="#"><i></i>전자자료</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>                                
+                            </li>
+                            <li>
+                                <a href="#" title="">연구학습지원</a>
+                                <div class="subMenu">
+                                    <div class="subMenuW">
+                                        <div class="subLeft subIcon2">
+                                            <p class="subMTitle">연구학습지원</p>
+                                            <p class="subDetail">사용자의 연구학습에 필요한 자료를<br> 제공받을 수 있습니다.</p>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <p>자료검색</p>
+                                                <ul>
+                                                    <li><a href="#"><i></i>통합검색</a></li>
+                                                    <li><a href="#"><i></i>통합검색</a></li>
+                                                    <li><a href="#"><i></i>통합검색</a></li>
+                                                    <li><a href="#"><i></i>통합검색</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <p>유형별검색</p>
+                                                <ul>
+                                                    <li><a href="#"><i></i>단행본</a></li>
+                                                    <li><a href="#"><i></i>연속간행물</a></li>
+                                                    <li><a href="#"><i></i>학위논문</a></li>
+                                                    <li><a href="#"><i></i>학위논문</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <p>전자자료</p>
+                                                <ul>
+                                                    <li><a href="#"><i></i>통합검색</a></li>
+                                                    <li><a href="#"><i></i>소장자료</a></li>
+                                                    <li><a href="#"><i></i>전자자료</a></li>
+                                                    <li><a href="#"><i></i>전자자료</a></li>
+                                                    <li><a href="#"><i></i>전자자료</a></li>
+                                                    <li><a href="#"><i></i>전자자료</a></li>
+                                                    <li><a href="#"><i></i>전자자료</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" title="">도서관서비스</a>
+                                <div class="subMenu">
+                                    <div class="subMenuW">
+                                        <div class="subLeft subIcon3">
+                                            <p class="subMTitle">도서관서비스</p>
+                                            <p class="subDetail">우석대학교 도서관의 다양한<br>서비스를 이용하실 수 있습니다.</p>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <p>자료검색</p>
+                                                <ul>
+                                                    <li><a href="#"><i></i>소장자료</a></li>
+                                                    <li><a href="#"><i></i>소장자료</a></li>                                                    
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <p>유형별검색</p>
+                                                <ul>
+                                                    <li><a href="#"><i></i>연속간행물</a></li>
+                                                    <li><a href="#"><i></i>연속간행물</a></li>
+                                                    <li><a href="#"><i></i>연속간행물</a></li>                                                    
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <p>전자자료</p>
+                                                <ul>
+                                                    <li><a href="#"><i></i>통합검색</a></li>                                                    
+                                                    <li><a href="#"><i></i>전자자료</a></li>
+                                                    <li><a href="#"><i></i>전자자료</a></li>
+                                                    <li><a href="#"><i></i>전자자료</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" title="">컬렉션</a>
+                                <div class="subMenu">
+                                    <div class="subMenuW">
+                                        <div class="subLeft subIcon4">
+                                            <p class="subMTitle">컬렉션</p>
+                                            <p class="subDetail">도서관 컬렉션을 통해<br>
+                                                이용자 개인별 추천자료를<br>
+                                                제공합니다.
+                                            </p>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <p>자료검색</p>
+                                                <ul>
+                                                    <li><a href="#"><i></i>통합검색</a></li>
+                                                    <li><a href="#"><i></i>소장자료</a></li>
+                                                    <li><a href="#"><i></i>전자자료</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <p>유형별검색</p>
+                                                <ul>
+                                                    <li><a href="#"><i></i>단행본</a></li>
+                                                    <li><a href="#"><i></i>연속간행물</a></li>
+                                                    <li><a href="#"><i></i>학위논문</a></li>
+                                                    <li><a href="#"><i></i>학위논문</a></li>
+                                                    <li><a href="#"><i></i>연속간행물</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <p>전자자료</p>
+                                                <ul>
+                                                    <li><a href="#"><i></i>통합검색</a></li>
+                                                    <li><a href="#"><i></i>소장자료</a></li>
+                                                    <li><a href="#"><i></i>전자자료</a></li>
+                                                    <li><a href="#"><i></i>전자자료</a></li>
+                                                    <li><a href="#"><i></i>전자자료</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" title="">도서관안내</a>
+                                <div class="subMenu">
+                                    <div class="subMenuW">
+                                        <div class="subLeft subIcon5">
+                                            <p class="subMTitle">도서관안내</p>
+                                            <p class="subDetail">우석대학교 도서관 소장자료를<br>검색하실 수 있습니다.</p>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <p>자료검색</p>
+                                                <ul>
+                                                    <li><a href="#"><i></i>통합검색</a></li>
+                                                    <li><a href="#"><i></i>소장자료</a></li>
+                                                    <li><a href="#"><i></i>전자자료</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <p>유형별검색</p>
+                                                <ul>
+                                                    <li><a href="#"><i></i>단행본</a></li>
+                                                    <li><a href="#"><i></i>연속간행물</a></li>
+                                                    <li><a href="#"><i></i>학위논문</a></li>
+                                                    <li><a href="#"><i></i>학위논문</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <p>전자자료</p>
+                                                <ul>
+                                                    <li><a href="#"><i></i>통합검색</a></li>
+                                                    <li><a href="#"><i></i>소장자료</a></li>
+                                                    <li><a href="#"><i></i>전자자료</a></li>
+                                                    <li><a href="#"><i></i>전자자료</a></li>
+                                                    <li><a href="#"><i></i>전자자료</a></li>
+                                                    <li><a href="#"><i></i>전자자료</a></li>
+                                                    <li><a href="#"><i></i>전자자료</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" title="">My Library</a>
+                                <div class="subMenu">
+                                    <div class="subMenuW">
+                                        <div class="subLeft subIcon6">
+                                            <p class="subMTitle">My Library</p>
+                                            <p class="subDetail">우석대학교 도서관 소장자료를<br>검색하실 수 있습니다.</p>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <p>자료검색</p>
+                                                <ul>
+                                                    <li><a href="#"><i></i>통합검색</a></li>
+                                                    <li><a href="#"><i></i>소장자료</a></li>
+                                                    <li><a href="#"><i></i>전자자료</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <p>유형별검색</p>
+                                                <ul>
+                                                    <li><a href="#"><i></i>단행본</a></li>
+                                                    <li><a href="#"><i></i>연속간행물</a></li>
+                                                    <li><a href="#"><i></i>학위논문</a></li>
+                                                    <li><a href="#"><i></i>학위논문</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <p>전자자료</p>
+                                                <ul>
+                                                    <li><a href="#"><i></i>통합검색</a></li>
+                                                    <li><a href="#"><i></i>소장자료</a></li>
+                                                    <li><a href="#"><i></i>전자자료</a></li>
+                                                    <li><a href="#"><i></i>전자자료</a></li>
+                                                    <li><a href="#"><i></i>전자자료</a></li>
+                                                    <li><a href="#"><i></i>전자자료</a></li>
+                                                    <li><a href="#"><i></i>전자자료</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>                            
+                        </ul>
+                        <p class="wholeMenuBtn"><a href="#" title="" class="">전체메뉴</a></p>
+                    </div>
+                    <div class="wholeMenu">
+                        <div>
+                            <h2>전체메뉴</h2>
+                            <ul>
+                                <li>
+                                    <a href="#">자료검색</a>
+                                    <ul>                                        
+                                        <li>
+                                            <a href="#">자료검색</a>
+                                            <ul>
+                                                <li><a href="#">통합검색</a></li>
+                                                <li><a href="#">소장자료</a></li>
+                                                <li><a href="#">전자자료</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">유형별검색</a>
+                                            <ul>
+                                                <li><a href="#">단행본</a></li>
+                                                <li><a href="#">연속간행물</a></li>
+                                                <li><a href="#">학위논문</a></li>
+                                                <li><a href="#">비도서</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">전자자료</a>
+                                            <ul>
+                                                <li><a href="#">학술DB/전자저널</a></li>
+                                                <li><a href="#">전자책</a></li>
+                                                <li><a href="#">오디오북</a></li>
+                                                <li><a href="#">학위논문</a></li>
+                                                <li><a href="#">동영상강좌</a></li>
+                                                <li><a href="#">자료공정이용</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">연구학습지원</a>
+                                    <ul>                                        
+                                        <li>
+                                            <a href="#">연구지원</a>
+                                            <ul>
+                                                <li><a href="#">서지관리도구</a></li>
+                                                <li><a href="#">연구윤리</a></li>                                                
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">학습지원</a>
+                                            <ul>
+                                                <li><a href="#">지정도서</a></li>
+                                                <li><a href="#">이용교육</a></li>
+                                                <li><a href="#">학과별 주제가이드</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">도서관서비스</a>
+                                    <ul>                                        
+                                        <li>
+                                            <a href="#">대출/반납</a>
+                                            <ul>
+                                                <li><a href="#">대출/예약/연장</a></li>
+                                                <li><a href="#">반납/연체/변상</a></li>                                                
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">자료이용</a>
+                                            <ul>
+                                                <li><a href="#">서가에 없는 책 찾기</a></li>
+                                                <li><a href="#">장애학생 책배달 서비스</a></li>                                                
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">자료신청</a>
+                                            <ul>
+                                                <li><a href="#">희망도서신청</a></li>
+                                                <li><a href="#">원문복사서비스</a></li>
+                                                <li><a href="#">타대학자료대출</a></li>
+                                                <li><a href="#">타도서관이용</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">컬렉션</a>
+                                    <ul>                                        
+                                        <li>
+                                            <a href="#">우석 컬렉션</a>
+                                            <ul>
+                                                <li><a href="#">다산 정약용 자료</a></li>
+                                                <li><a href="#">교수저서</a></li>
+                                                <li><a href="#">강한영박사</a></li>
+                                                <li><a href="#">조병희박사</a></li>
+                                                <li><a href="#">우석 Larchiveum</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">추천도서</a>
+                                            <ul>
+                                                <li><a href="#">우석100선</a></li>
+                                                <li><a href="#">토론도서</a></li>
+                                                <li><a href="#">우수학술도서</a></li>
+                                            </ul>
+                                        </li>         
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">도서관 안내</a>
+                                    <ul>                                        
+                                        <li>
+                                            <a href="#">도서관소개</a>
+                                            <ul>
+                                                <li><a href="#">인사말</a></li>
+                                                <li><a href="#">도서관연혁</a></li>
+                                                <li><a href="#">조직/직원</a></li>
+                                                <li><a href="#">도서관규정</a></li>                                                
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">이용안내</a>
+                                            <ul>
+                                                <li><a href="#">이용시간</a></li>
+                                                <li><a href="#">이용자별안내</a></li>
+                                                <li><a href="#">층별안내</a></li>
+                                                <li><a href="#">자료이용안내</a></li>
+                                                <li><a href="#">기증안내</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">게시판</a>
+                                            <ul>
+                                                <li><a href="#">일반공지</a></li>
+                                                <li><a href="#">행사공지</a></li>
+                                                <li><a href="#">자주묻는질문</a></li>
+                                                <li><a href="#">자유게시판</a></li>
+                                                <li><a href="#">서식자료다운</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">시설/기기이용</a>
+                                            <ul>
+                                                <li><a href="#">열람실이용</a></li>
+                                                <li><a href="#">스터디룸</a></li>
+                                                <li><a href="#">사물함</a></li>
+                                                <li><a href="#">모방리이용증</a></li>
+                                                <li><a href="#">무선랜(wifi)</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">My Library</a>
+                                    <ul>                                        
+                                        <li>
+                                            <a href="#">자료 이용</a>
+                                            <ul>
+                                                <li><a href="#">대출연장/예약</a></li>
+                                                <li><a href="#">희망도서신청</a></li>
+                                                <li><a href="#">서가에없는 책 찾기</a></li>
+                                                <li><a href="#">원문복사서비스</a></li>
+                                                <li><a href="#">타대학자료대출</a></li>
+                                                <li><a href="#">타도서관이용</a></li>
+                                                <li><a href="#">장애학생 책배달 서비스</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">시설/서비스 이용</a>
+                                            <ul>
+                                                <li><a href="#">스터디룸예약</a></li>
+                                                <li><a href="#">신착자료알림서비스</a></li>
+                                                <li><a href="#">이용교육</a></li>                                                
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">개인화서비스</a>
+                                            <ul>
+                                                <li><a href="#">나의서재</a></li>
+                                                <li><a href="#">마일리지</a></li>
+                                                <li><a href="#">개인정보관리</a></li>                                                
+                                            </ul>
+                                        </li>                                        
+                                    </ul>
+                                </li>
+                            </ul>
+                            <a href="#" class="wholeCloseBtn"><img src="image/ko/local/wholeMenuClose.png" alt="전체메뉴 닫기"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="divContents">
+            <div class="contents1">
+                <div class="keyVisual">
+                    <img src="image/ko/local/main/keyVisual1.png" alt="키비주얼" class="KeyImg">
+                </div>
+                <div id="divSearch">
+                    <div class="searchW">
+                        <ul class="searchForm">
+                            <li class="search1 on">
+                                <a href="#">소장자료</a>
+                                <form action="" name="searchForm" class="search">
+                                    <fieldset>
+                                        <legend>소장자료검색</legend>
+                                        <input type="text" name="" value="" class="searchBox"
+                                            placeholder="전주캠퍼스에서 소장중인 도서, 전자책, 저널 등을 검색합니다.">
+                                        <a href="#" class="searchLogBtn">
+                                            <img src="image/ko/local/main/searchLogBtn.png" alt="검색기록확인버튼">
+                                        </a>
+                                        <input type="submit" value="검색" class="searchBtn">
+                                    </fieldset>
+                                </form>
+                            </li>
+                            <li>
+                                <a href="#">통합검색</a>
+                                <form action="" name="searchForm" class="search">
+                                    <fieldset>
+                                        <legend>소장자료검색</legend>
+                                        <input type="text" name="" value="" class="searchBox"
+                                            placeholder="도서관 소장자료와 전자자료, 외부자료를 통합하여 검색합니다.">
+                                        <a href="#" class="searchLogBtn">
+                                            <img src="image/ko/local/main/searchLogBtn.png" alt="검색기록확인버튼">
+                                        </a>
+                                        <input type="submit" value="검색" class="searchBtn">
+                                    </fieldset>
+                                </form>
+                            </li>
+                            <li>
+                                <a href="#">전자자료</a>
+                                <form action="" name="searchForm" class="search">
+                                    <fieldset>
+                                        <legend>소장자료검색</legend>
+                                        <input type="text" name="" value="" class="searchBox"
+                                            placeholder="구독중인 학술DB/전자저널, 학위논문 등을 검색합니다.">
+                                        <a href="#" class="searchLogBtn">
+                                            <img src="image/ko/local/main/searchLogBtn.png" alt="검색기록확인버튼">
+                                        </a>
+                                        <input type="submit" value="검색" class="searchBtn">
+                                    </fieldset>
+                                </form>
+                            </li>
+                        </ul>
+                        <ul class="searchLink">
+                            <li><a href="#">학술DB/전자저널</a></li>
+                            <li><a href="#">전자책</a></li>
+                            <li><a href="#">동영상강좌</a></li>
+                            <li><a href="#">학위논문</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="useHour">
+                    <div>
+                        <p class="hourTitle">
+                            <span>TODAY'S HOURS</span>
+                            <a href="#" title="더보기" class="skip">더보기</a>
+                        </p>
+                        <div class="rollingHour">
+                            <ul class="">
+                                <li>
+                                    <dl>
+                                        <dt>학기중</dt>
+                                        <dd>
+                                            <ul>
+                                                <li>
+                                                    <span>평일</span>
+                                                    09:00 ~ 20:00
+                                                </li>
+                                                <li>
+                                                    <span>토요일</span>
+                                                    09:00 ~ 12:00
+                                                </li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>방학중</dt>
+                                        <dd>
+                                            <ul>
+                                                <li>
+                                                    <span>평일</span>
+                                                    09:00 ~ 20:00
+                                                </li>
+                                                <li>
+                                                    <span>토요일</span>
+                                                    09:00 ~ 12:00
+                                                </li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
+                        <p class="attention">* 휴관일 : 일요일, 법정공휴일, 개교기념일</p>
+                        <div class="hourControl">
+                            <a href="#" class="up"><img src="image/ko/local/main/hourUp.png" alt="이전"></a>
+                            <a href="#" class="down"><img src="image/ko/local/main/hourDown.png" alt="다음"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contents2">
+                <div class="quickMenuW">
+                    <div>
+                        <ul>
+                            <li class="quick1"><a href="#">대출/연장/예약</a></li>
+                            <li class="quick2"><a href="#">희망도서신청</a></li>
+                            <li class="quick3"><a href="#">원문복사</a></li>
+                            <li class="quick4"><a href="#">스터디룸신청</a></li>
+                            <li class="quick5"><a href="#">모바일 이용증</a></li>
+                        </ul>
+                    </div>
+                    <a href="#" class="quickPrev">이전</a>
+                    <a href="#" class="quickNext">다음</a>
+                </div>                
+            </div>
+            <div class="contents3">
+                <div class="contents3W">
+                    <div class="notice">
+                        <h2>
+                            일반공지
+                            <a href="#" class="more"><img src="image/ko/local/main/more.png" alt="일반공지 더보기"></a>
+                        </h2>
+                        <ul>
+                            <li>
+                                <a href="#">우석대학교 도서관 홈페이지 오픈안내</a>
+                                <span>2019-12-10</span>
+                            </li>
+                            <li>
+                                <a href="#">협업 스토리 이용 신청 안내드립니다.</a>
+                                <span>2019-11-21</span>
+                            </li>
+                            <li>
+                                <a href="#">RefWorks 추가교육 관련 안내</a>
+                                <span>2019-10-30</span>
+                            </li>
+                            <li>
+                                <a href="#">2019학년도 2학기 열람시간 안내</a>
+                                <span>2019-09-04</span>
+                            </li>
+                            <li>
+                                <a href="#">대출 도서 기간 연장하는 방법</a>
+                                <span>2019-09-01</span>
+                            </li>
+                            <li>
+                                <a href="#">진천도서관 열람실 이용안내</a>
+                                <span>2019-09-01</span>
+                            </li>
+                            <li>
+                                <a href="#">진천도서관 도서관 근로장학생 모집 공고</a>
+                                <span>2019-08-01</span>
+                            </li>
+                            <li>
+                                <a href="#">도서관 자료실 이용 수칙 안내</a>
+                                <span>2019-06-30</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="event">
+                        <h2>
+                            행사공지
+                            <a href="#" class="more"><img src="image/ko/local/main/more.png" alt="일반공지 더보기"></a>
+                        </h2>
+                        <div>
+                            <ul>
+                                <li>
+                                    <p><img src="image/ko/local/main/eventBanner1.png" alt="RefWorks 추가교육 관련 교육 안내"></p>
+                                    <div class="eventTextBox">
+                                        <p class="eventDate">2019-10-30</p>
+                                        <p class="eventTitle"><a href="#">RefWorks 추가교육 관련 교육 안내</a></p>
+                                        <p class="eventDetail">
+                                            오늘진행된 RefWorks 이용교육에 참여하
+                                            지 못했던 분들을 위한 교육을 안내드립니
+                                            다. 먼저 아래1번의 동영상을 클릭하시고...</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p><img src="image/ko/local/main/eventBanner2.png" alt="사이버학습관 박문각 동영상 강좌 안내"></p>
+                                    <div class="eventTextBox">
+                                        <p class="eventDate">2019-10-30</p>
+                                        <p class="eventTitle"><a href="#">사이버학습관 박문각 동영상 강좌 안내</a></p>
+                                        <p class="eventDetail">
+                                            우석대학교 도서관 홈페이지의 사이버 학
+                                            습관을 통해서 이용이 가능합니다. 7급 9급
+                                            공무원, 경찰소방공무원 강좌를 수강하실...
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="#" class="prev">이전</a>
+                        <a href="#" class="next">다음</a>
+                    </div>                    
+                </div>
+            </div>
+            <div class="contents4">
+                <div class="contents4W">
+                    <div class="book">
+                        <ul>
+                            <li class="on">
+                                <a href="#" class="tab">신착자료</a>
+                                <div>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="image/ko/local/main/book1.png" alt="소년이로 - 전혜영 저">
+                                                    <span class="bookTitle">소년이로</span>
+                                                    <span class="bookWriter">전혜영</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="image/ko/local/main/book2.png" alt="방랑자들 - 올가 토카르추크 저">
+                                                    <span class="bookTitle">방랑자들</span>
+                                                    <span class="bookWriter">올가 토카르추크</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="image/ko/local/main/book3.png" alt="안중근과 걷다 - 박영희, 최종수 저">
+                                                    <span class="bookTitle">안중근과 걷다</span>
+                                                    <span class="bookWriter">박영희, 최종수</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="image/ko/local/main/book4.png" alt="가재가 노래하는 곳 - 박영희 저">
+                                                    <span class="bookTitle">가재가 노래하는 곳</span>
+                                                    <span class="bookWriter">박영희</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="image/ko/local/main/book1.png" alt="소년이로 - 전혜영 저">
+                                                    <span class="bookTitle">소년이로</span>
+                                                    <span class="bookWriter">전혜영</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="image/ko/local/main/book2.png" alt="방랑자들 - 올가 토카르추크 저">
+                                                    <span class="bookTitle">방랑자들</span>
+                                                    <span class="bookWriter">올가 토카르추크</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="image/ko/local/main/book3.png" alt="안중근과 걷다 - 박영희, 최종수 저">
+                                                    <span class="bookTitle">안중근과 걷다</span>
+                                                    <span class="bookWriter">박영희, 최종수</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="image/ko/local/main/book4.png" alt="가재가 노래하는 곳 - 박영희 저">
+                                                    <span class="bookTitle">가재가 노래하는 곳</span>
+                                                    <span class="bookWriter">박영희</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="image/ko/local/main/book1.png" alt="소년이로 - 전혜영 저">
+                                                    <span class="bookTitle">소년이로</span>
+                                                    <span class="bookWriter">전혜영</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="image/ko/local/main/book2.png" alt="방랑자들 - 올가 토카르추크 저">
+                                                    <span class="bookTitle">방랑자들</span>
+                                                    <span class="bookWriter">올가 토카르추크</span>
+                                                </a>
+                                            </li>
+                                            
+                                        </ul>
+                                    </div>
+                                    <a href="#" class="bookPrev">이전</a>
+                                    <a href="#" class="bookNext">다음</a>
+                                </div>                                
+                            </li>
+                            <li>
+                                <a href="#" class="tab">인기자료</a>
+                                <div>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="image/ko/local/main/book1.png" alt="소년이로 - 전혜영 저">
+                                                    <span class="bookTitle">소년이로</span>
+                                                    <span class="bookWriter">전혜영</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="image/ko/local/main/book2.png" alt="방랑자들 - 올가 토카르추크 저">
+                                                    <span class="bookTitle">방랑자들</span>
+                                                    <span class="bookWriter">올가 토카르추크</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="image/ko/local/main/book3.png" alt="안중근과 걷다 - 박영희, 최종수 저">
+                                                    <span class="bookTitle">안중근과 걷다</span>
+                                                    <span class="bookWriter">박영희, 최종수</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="image/ko/local/main/book4.png" alt="가재가 노래하는 곳 - 박영희 저">
+                                                    <span class="bookTitle">가재가 노래하는 곳</span>
+                                                    <span class="bookWriter">박영희</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="image/ko/local/main/book1.png" alt="소년이로 - 전혜영 저">
+                                                    <span class="bookTitle">소년이로</span>
+                                                    <span class="bookWriter">전혜영</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="image/ko/local/main/book2.png" alt="방랑자들 - 올가 토카르추크 저">
+                                                    <span class="bookTitle">방랑자들</span>
+                                                    <span class="bookWriter">올가 토카르추크</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="image/ko/local/main/book3.png" alt="안중근과 걷다 - 박영희, 최종수 저">
+                                                    <span class="bookTitle">안중근과 걷다</span>
+                                                    <span class="bookWriter">박영희, 최종수</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="image/ko/local/main/book4.png" alt="가재가 노래하는 곳 - 박영희 저">
+                                                    <span class="bookTitle">가재가 노래하는 곳</span>
+                                                    <span class="bookWriter">박영희</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="image/ko/local/main/book1.png" alt="소년이로 - 전혜영 저">
+                                                    <span class="bookTitle">소년이로</span>
+                                                    <span class="bookWriter">전혜영</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="image/ko/local/main/book2.png" alt="방랑자들 - 올가 토카르추크 저">
+                                                    <span class="bookTitle">방랑자들</span>
+                                                    <span class="bookWriter">올가 토카르추크</span>
+                                                </a>
+                                            </li>
+                                            
+                                        </ul>
+                                    </div>
+                                    <a href="#" class="bookPrev">이전</a>
+                                    <a href="#" class="bookNext">다음</a>
+                                </div>                                
+                            </li>                            
+                        </ul>
+                        <a href="#" class="bookMore"><img src="image/ko/local/main/more.png" alt="더보기"></a>
+                    </div>
+                    <div class="eventZone">                        
+                        <ul>
+                            <li class="on"><a href="#"><img src="image/ko/local/main/eventZone1.png" alt=""></a></li>
+                            <li><a href="#"><img src="image/ko/local/main/eventZone2.png" alt=""></a></li>
+                            <li><a href="#"><img src="image/ko/local/main/eventZone3.png" alt=""></a></li>
+                            <li><a href="#"><img src="image/ko/local/main/eventZone4.png" alt=""></a></li>
+                        </ul>
+                        <div class="controller">
+                            <span>
+                                <span class="leftCnt"></span> / <span class="rightCnt"> 4</span>
+                                <a href="#" class="eventZonePrev"><img src="image/ko/local/main/eventZonePrev.png" alt="이전"></a>
+                                <a href="#" class="eventZonePause"><img src="image/ko/local/main/eventZonePause.png" alt="정지"></a>
+                                <a href="#" class="eventZoneNext"><img src="image/ko/local/main/eventZoneNext.png" alt="다음"></a>
+                            </span>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <div id="divFooter">
+            <div class="contents5">
+                <div class="banner">
+                    <div class="bannerList">
+                        <ul>
+                            <li><a href="#"><img src="image/ko/local/banner1.png" alt=""></a></li>
+                            <li><a href="#"><img src="image/ko/local/banner2.png" alt=""></a></li>
+                            <li><a href="#"><img src="image/ko/local/banner3.png" alt=""></a></li>
+                            <li><a href="#"><img src="image/ko/local/banner4.png" alt=""></a></li>
+                            <li><a href="#"><img src="image/ko/local/banner5.png" alt=""></a></li>
+                            <li><a href="#"><img src="image/ko/local/banner6.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                    <div class="controller">
+                        <a href="#" class="prev"><img src="image/ko/local/bannerPrev.jpg" alt="이전"></a>
+                        <a href="#" class="play"><img src="image/ko/local/bannerPlay.jpg" alt="재생"></a>
+                        <a href="#" class="pause"><img src="image/ko/local/bannerPause.jpg" alt="정지"></a>
+                        <a href="#" class="next"><img src="image/ko/local/bannerNext.jpg" alt="다음"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footerTop">
+                <div>
+                    <ul>
+                        <li>
+                            <a href="#" class="mainCall"><span>주요전화번호</span></a>                            
+                        </li>
+                        <li>
+                            <a href="#" class="userGuide"><span>이용자별 안내</span></a>
+                            <div>
+                                <ul>
+                                    <li><a href="#">재학생</a></li>
+                                    <li><a href="#">교직원</a></li>
+                                    <li><a href="#">졸업생</a></li>
+                                    <li><a href="#">외부이용자</a></li>
+                                </ul>
+                            </div>                            
+                        </li>
+                        <li>
+                            <a href="#" class="insideSite"><span>교내사이트</span></a>
+                            <div>
+                                <ul>
+                                    <li><a href="#">우석대학교</a></li>
+                                    <li><a href="#">학과 홈페이지</a></li>
+                                    <li><a href="#">교수학습지원센터</a></li>
+                                    <li><a href="#">취업지원센터</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footerBottom">
+                <div>
+                    <ul class="footLink1">
+                        <li><a href="#"><span class="redColor">개인정보 처리방침</span></a></li>
+                        <li><a href="#">이메일무단수집거부</a></li>
+                    </ul>
+                    <ul class="footLink2">
+                        <li>
+                            <span class="school">전주캠퍼스</span>
+                            <span>Address  :  55338  전북 완주군 삼례읍 삼례로 443 우석대학교</span>
+                            <span>Tel : 063-290-1093</span>
+                            <span>Fax :  063-290-1093</span>
+                        </li>
+                        <li>
+                            <span class="school">전주캠퍼스</span>
+                            <span>Address  :  55338  전북 완주군 삼례읍 삼례로 443 우석대학교</span>
+                            <span>Tel : 063-290-1093</span>
+                            <span>Fax :  063-290-1093</span>
+                        </li>
+                        <li class="copy">COPYRIGHT ⓒ WOOSUK University Library. ALL RIGHTS RESERVED.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="dim"></div>
+    </div>
+</body>
+
+</html>
