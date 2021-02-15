@@ -223,7 +223,7 @@ main #slider .swiper-container .swiper-wrapper .swiper-slide.swiper-slide-active
 }
 
 .back-btn-box {padding-top:120px;}
-.back-btn {display:block; width:180px; height:70px; background:#00c68e; border:none; border-radius:8px; margin:0 auto;}
+.back-btn {width:180px; height:70px; background:#00c68e; border:none; border-radius:8px; margin:0 auto; text-align:center;}
 .back-btn a {display:block; width:100%; height:100%; font:700 18px 'NanumSquare',sans-serif; color:#fff; line-height:70px;}
 
 

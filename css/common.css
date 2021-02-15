@@ -44,6 +44,8 @@ body {background:#f2f5f4; margin-top:70px; font-family:'NanumSquare',sans-serif;
 ul {list-style:none;}
 a {text-decoration:none; color:#333; transition-duration:0.5s; transition-property:color;}
 .hidden {text-indent:-99999px;}
+.hidden2 {position:absolute; top:-9999px; left:-9999px;}
+.hidden3 {/* it's perfect hidden */ overflow:hidden; position:absolute; border:0; width:1px; height:1px; clip: rect(1px, 1px, 1px, 1px);}
 .cb:after {content:""; display:block; clear:both;}
 .pt1 {padding-top:25px;}
 .tab-index:focus:not(:focus-visible) {outline:0 !important;}
