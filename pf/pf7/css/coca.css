@@ -1,0 +1,694 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap&subset=korean');
+
+/* reset */
+* {margin:0; padding:0;}
+body {font:300 14px/1.5 'Noto Sans KR',Malgun Gothic,Dotum,Arial;}
+ul {list-style:none;}
+a {text-decoration:none; color:#333;}
+.fl {float:left;} .fr {float:right;} .cb:after {content:""; display:block; clear:both;}
+.hidden {text-indent:-10000px;}
+
+
+
+
+
+/* 기본 레이아웃 */
+
+header nav.gnb {position:absolute; top:0; z-index:998; width:100%; height:47px; background:rgba(0,0,0,.9); }
+header nav.lnb {position:absolute; top:47px; z-index:999; width:100%;  height:87px; background:rgba(255,10,10,.8); transition:all 0.5s;}
+
+section article:nth-of-type(1) {position:relative; top:0; left:0; width:100%; height:1024px; background:url(../images/contentbg2.png) no-repeat; background-size:cover; transition:all 0.5s; overflow:hidden;}
+section article:nth-of-type(2) {width:100%; height:700px; background:#fff; overflow:hidden;}
+section article:nth-of-type(3) {width:100%; height:700px; background:#fff; overflow:hidden;}
+section article:nth-of-type(4) {width:100%; height:700px; background:#fff; overflow:hidden;}
+section article:nth-of-type(5) {width:100%; height:1138px; background:#bbb; overflow:hidden;}
+section article:nth-of-type(6) {width:100%; height:900px; background:#aaa; overflow:hidden;}
+section article:nth-of-type(7) {width:100%; height:405px; background:#999; overflow:hidden;}
+section article:nth-of-type(8) {width:100%; height:700px; background:#888; overflow:hidden;}
+section>h2 {position:absolute; display:block; width:100px; height:50px; background:#000; overflow:hidden;}
+
+/* article1 비디오 배경 */
+/*section article:nth-of-type(1) figure video {position:relative; top:-55px;width:100%; height:100%; opacity:1;}*/
+
+
+
+
+
+
+/* header nav 영역 */ 
+header nav.gnb ul li {margin:12px 64px 12px 0;}
+header nav.gnb ul li a {color:#fff; font-size:12px;}
+header nav.gnb>ul:nth-child(1) li {float:left;}
+header nav.gnb>ul:nth-child(2) {float:right;}
+header nav.gnb>ul:nth-child(2) li {float:left; margin:12px 31px 12px 0;}
+header nav.gnb>ul:nth-child(1) li:nth-child(1) {margin-left:47px;}
+
+/* header nav gnb li span 아이콘 */
+header nav.gnb>ul:nth-child(1) li:nth-child(1) span {position:relative; top:-2px; width:25px; height:25px; background:url(../images/global_mark.png) no-repeat center center; display:inline-block; vertical-align:middle; margin-right:13px;}
+header nav.gnb>ul:nth-child(1) li:nth-child(2) span {position:relative; top:-2px; width:25px; height:25px; background:url(../images/company_mark.png) no-repeat center center; display:inline-block; vertical-align:middle; margin-right:13px;}
+header nav.gnb>ul:nth-child(1) li:nth-child(3) span {position:relative; top:-2px; width:25px; height:25px; background:url(../images/paper_bag.png) no-repeat center center; display:inline-block; vertical-align:middle; margin-right:13px;}
+
+/* 로고 사이즈 122x40 */
+header nav.lnb h1 a {position:absolute; top:23px; left:45px; width:122px; height:40px; background:url(../images/coca_logo.png) no-repeat center center;} 
+header nav.lnb ul.mainMenu {position:absolute; top:-10px; left:35px; right:0; bottom:0; margin:auto; width:960px; height:19px; }
+header nav.lnb ul.mainMenu li {float:left; margin-right:114px;}
+header nav.lnb ul.mainMenu li:nth-child(6) {margin-right:0;}
+header nav.lnb ul.mainMenu li a {color:#fff; font:700 20px 'Noto Sans KR'; text-shadow:1px 1px 2px #333;}
+
+/* 우측 lnb 아이콘 메뉴 */
+header nav.lnb ul.mainMenuIcon {position:absolute; top:-5px; right:45px; bottom:0; margin:auto; width:225px; height:25px;}
+header nav.lnb ul.mainMenuIcon li {float:left;}
+header nav.lnb ul.mainMenuIcon li a {margin-right:41px;}
+header nav.lnb ul.mainMenuIcon li:nth-child(1) a {width:25px; height:25px; background:url(../images/search.png) no-repeat center center; display:inline-block;}
+header nav.lnb ul.mainMenuIcon li:nth-child(2) a {width:25px; height:25px; background:url(../images/menu_icon.png) no-repeat center center; display:inline-block;}
+header nav.lnb ul.mainMenuIcon li:nth-child(3) a {width:25px; height:25px; background:url(../images/shopping.png) no-repeat center center; display:inline-block;}
+header nav.lnb ul.mainMenuIcon li:nth-child(4) a {width:25px; height:25px; margin-right:0; background:url(../images/bell.png) no-repeat center center; display:inline-block;}
+
+
+/* article 1 */
+section article:nth-of-type(1) div .leftBtn1 {position:absolute; top:507px; left:148px; width:41px; height:80px; background:url(../images/articleicon.png) no-repeat center center; background-position:0,0;  display:inline-block;}
+section article:nth-of-type(1) div .rightBtn1 {position:absolute; top:507px; right:148px; width:41px; height:80px; background:url(../images/articleicon.png) no-repeat center center; background-position:-80px,0;  display:inline-block;}
+section article:nth-of-type(1) div p.mainCopy {position:absolute; top:20px; right:0; bottom:0; left:0; margin:auto; width:665px; height:205px; -webkit-transition:all 0.5s; -moz-transition:all 0.5s; -o-transition:all 0.5s; transition:all 0.5s;}
+section article:nth-of-type(1) div p.mainCopy a {color:#fff; font:700 70px 'Noto Sans KR'; display:block; letter-spacing:-3px; text-align:center; text-shadow:1px 1px 45px #333; line-height:1.2; -webkit-transition:all 0.5s; -moz-transition:all 0.5s; -o-transition:all 0.5s; transition:all 0.5s;}
+section article:nth-of-type(1) div p.mainCopy a span {font-weight:500; /*opacity:.6;*/}
+section article:nth-of-type(1) div p.subCopy {position:absolute; top:611px; left:0; right:0; margin:auto; text-align:center;}
+section article:nth-of-type(1) div p.subCopy a {color:#fff; display:inline-block; font:300 30px 'Noto Sans KR'; letter-spacing:-1px; font-style:italic; opacity:.7;}
+section article:nth-of-type(1) div ul {position:absolute; top:500px; right:0; bottom:0; left:0; margin:auto; width:157px; height:13px;}
+section article:nth-of-type(1) div ul li {float:left;}
+section article:nth-of-type(1) div ul li a {display:inline-block; margin-right:35px;}
+section article:nth-of-type(1) div ul li:nth-child(1) a {width:13px; height:18px; background:url(../images/articleicon.png) no-repeat center center; background-position:-180px,-31px;}
+section article:nth-of-type(1) div ul li:nth-child(2) a {width:13px; height:18px; background:url(../images/articleicon.png) no-repeat center center; background-position:-180px,-31px; opacity:.4;}
+section article:nth-of-type(1) div ul li:nth-child(3) a {width:13px; height:18px; background:url(../images/articleicon.png) no-repeat center center; background-position:-180px,-31px; opacity:.4;}
+section article:nth-of-type(1) div ul li:nth-child(4) a {width:13px; height:18px; background:url(../images/articleicon.png) no-repeat center center; background-position:-270px,-31px; margin-right:0; opacity:.6;}
+
+
+/* article 2 */
+section article:nth-of-type(2) {position:relative; width:100%; height:851px; background:url('../images/article2bg.png') no-repeat; background-size:cover;}
+section article:nth-of-type(2) div.waveVector {position:absolute; top:230px; width:100%; height:520px; background:url('../images/waveVector.png') no-repeat center center;  transition:all 0.5s;}
+section article:nth-of-type(2) div.textBox1 {position:absolute; top:210px; left:212px; width:507px; height:320px;  transition:all 0.5s;}
+section article:nth-of-type(2) div.textBox1 p:nth-child(1) {color:#fff; font:800 35px 'Noto Sans KR'; letter-spacing:-0.05em; line-height:1; margin-bottom:35px;}
+section article:nth-of-type(2) div.textBox1 p:nth-child(2) {width:480px;color:#fff; font:800 55px 'Noto Sans KR'; line-height:65px; margin-bottom:20px;}
+section article:nth-of-type(2) div.textBox1 p:nth-child(3) {color:#fff; width:509px; font:300 15px 'Noto Sans KR'; letter-spacing:-0.08em; line-height:25px; margin-bottom:27px;}
+section article:nth-of-type(2) div.textBox1 div {position:relative; width:168px; height:33px; border:2.5px solid #fff; border-radius:50px;}
+section article:nth-of-type(2) div.textBox1 div>a {position:absolute; top:0; left:0; bottom:0; right:0; margin:auto; width:100%; height:55%; text-align:center; color:#fff; font:600 16px 'Noto Sans KR'; letter-spacing:-0.08em; line-height:1;}
+section article:nth-of-type(2) ul.cokeProduct {position:absolute; top:210px; right:196px; width:715px; height:410px; -webkit-transition:all 0.5s; -moz-transition:all 0.5s; -o-transition:all 0.5s; transition:all 0.5s;}
+section article:nth-of-type(2) ul.cokeProduct li {float:left;}
+section article:nth-of-type(2) ul.cokeProduct li a {-webkit-transition:all 0.5s; -moz-transition:all 0.5s; -o-transition:all 0.5s; transition:all 0.5s;}
+section article:nth-of-type(2) ul.cokeProduct li:nth-child(1) a {position:absolute; top:50px; width:215px; height:380px; background:url('../images/cokeclassic.png') no-repeat center center; background-size:cover;}
+section article:nth-of-type(2) ul.cokeProduct li:nth-child(2) a {position:absolute; top:50px; left:258px; width:215px; height:380px; background:url('../images/cokezero.png') no-repeat center center; background-size:cover;}
+section article:nth-of-type(2) ul.cokeProduct li:nth-child(3) a {position:absolute; top:50px; left:517px; width:215px; height:380px; background:url('../images/dietcoke.png') no-repeat center center; background-size:cover;}
+section article:nth-of-type(2) ul.cokeProduct li a span {position:absolute; color:#fff; font:400 18px 'Noto Sans KR'; display:inline-block;}
+section article:nth-of-type(2) ul.cokeProduct li:nth-child(1) a span {top:-50px; left:38px;}
+section article:nth-of-type(2) ul.cokeProduct li:nth-child(2) a span {top:-50px; left:42px;}
+section article:nth-of-type(2) ul.cokeProduct li:nth-child(3) a span {top:-50px; left:45px;}
+section article:nth-of-type(2) div.arrowBtn {position:absolute; bottom:120px; right:480px; width:146px; height:52px;}
+section article:nth-of-type(2) div.arrowBtn a:nth-child(1) {position:absolute; top:0; left:0; width:52px; height:52px; background: url('../images/arrowBtn.png') no-repeat; background-position:-124px -24px;}
+section article:nth-of-type(2) div.arrowBtn a:nth-child(2) {position:absolute; top:0; right:0; width:52px; height:52px; background: url('../images/arrowBtn.png') no-repeat; background-position:-50px -24px;}
+section article:nth-of-type(2) div.arrowBtn a:nth-child(1):hover {background: url('../images/arrowBtn.png') no-repeat; background-position:-278px -24px;}
+section article:nth-of-type(2) div.arrowBtn a:nth-child(2):hover {background: url('../images/arrowBtn.png') no-repeat; background-position:-201px -24px;}
+section article:nth-of-type(2) ul.cokeProduct li a:hover {transform:scale(1.1);}
+
+
+/* article 3 */
+section article:nth-of-type(3) {position:relative; width:100%; height:851px; background:url('../images/article3bg.jpg') no-repeat; background-size:cover;}
+section article:nth-of-type(3) div.blackOverlay {position:absolute; top:0; width:100%; height:851px; background:rgba(0,0,0,.15);}
+section article:nth-of-type(3) p {position:absolute; width:100%; color:#fff;  text-align:center; }
+section article:nth-of-type(3) p:nth-of-type(1) {top:96px; font:700 108px 'Noto Sans KR'; line-height:100%; letter-spacing:-0.08em;}
+section article:nth-of-type(3) p:nth-of-type(2) {top:230px; font:300 15px 'Noto Sans KR'; line-height:25px; letter-spacing:-0.08em;}
+section article:nth-of-type(3) ul {position:absolute; top:0; right:0; bottom:0; left:0; margin:auto; width:1184px; height:238px; text-align:center;}
+section article:nth-of-type(3) ul li {display:inline-block; margin-left:64px; transition:all 0.5s;}
+section article:nth-of-type(3) ul li a {position:relative; top:30px;margin:auto; display:inline-block; width:220px; height:220px; background:rgba(255,255,255,0.85); border-radius:150px; vertical-align:middle;}
+section article:nth-of-type(3) ul li a span {position:absolute; top:52px; left:0; font:400 16px 'Noto Sans KR';}
+section article:nth-of-type(3) ul li:nth-child(1) a span {position:absolute; left:30px; top:60px;}
+section article:nth-of-type(3) ul li:nth-child(2) a span {position:absolute; left:25px; top:40px;}
+section article:nth-of-type(3) ul li:nth-child(3) a span {position:absolute; left:25px; top:40px;}
+section article:nth-of-type(3) ul li:nth-child(4) a span {position:absolute; left:20px; top:40px;}
+section article:nth-of-type(3) ul li a span em {font:800 28px 'Noto Sans KR'; letter-spacing:-0.08em; line-height:30px; display:inline-block; margin-bottom:10px;}
+section article:nth-of-type(3) ul li:nth-child(1) a span em {margin-bottom:20px;}
+section article:nth-of-type(3) ul li a span small {font:500 22px 'Noto Sans KR'; margin-left:3px;}
+section article:nth-of-type(3) ul li a span .small1 {margin-left:-5px;}
+
+
+/* article 4 */
+section article:nth-of-type(4) {position:relative; width:100%; height:851px;}
+section article:nth-of-type(4) div.map {position:absolute; top:0; right:0; bottom:0; left:0; width:1215px; height:600px; background:url('../images/worldmap.png') no-repeat center center; margin:auto; -webkit-transition:all 0.5s; -moz-transition:all 0.5s; -o-transition:all 0.5s; transition:all 0.5s;}
+section article:nth-of-type(4) h2 {position:absolute; top:50px; right:0; bottom:0; left:0; text-align:center; font:800 108px 'Noto Sans KR'; color:#dc1921; letter-spacing:-0.06em;}
+section article:nth-of-type(4)>a:nth-of-type(1) {position:absolute; left:230px; top:370px; width:150px; height:150px; background:url('../images/redArrowLeftBtn.png') no-repeat center center; -webkit-transition:all 0.5s; -moz-transition:all 0.5s; -o-transition:all 0.5s; transition:all 0.5s;}
+section article:nth-of-type(4)>a:nth-of-type(2) {position:absolute; right:230px; top:370px; width:150px; height:150px; background:url('../images/redArrowRightBtn.png') no-repeat center center; -webkit-transition:all 0.5s; -moz-transition:all 0.5s; -o-transition:all 0.5s; transition:all 0.5s;}
+section article:nth-of-type(4) ul:nth-of-type(1) {position:absolute; top:35px; right:0; bottom:0; left:0; margin:auto; width:882px; height:315px;}
+section article:nth-of-type(4) ul:nth-of-type(1) li {position:relative; display:inline-block; width:269px; height:314px; background:#aaa; /*margin-right:34px;*/ -webkit-transition:all 0.5s; -moz-transition:all 0.5s; -o-transition:all 0.5s; transition:all 0.5s;}
+section article:nth-of-type(4) ul:nth-of-type(1) li:nth-child(1) {position:absolute; left:0;}
+section article:nth-of-type(4) ul:nth-of-type(1) li:nth-child(2) {position:absolute; left:35%;}
+section article:nth-of-type(4) ul:nth-of-type(1) li:nth-child(3) {position:absolute; left:70%; margin-right:0;}
+section article:nth-of-type(4) ul:nth-of-type(1) li a {display:inline-block; width:100%; height:100%; }
+section article:nth-of-type(4) ul:nth-of-type(1) li:nth-child(1) a {background:url(../images/slide1.jpg) no-repeat; }
+section article:nth-of-type(4) ul:nth-of-type(1) li:nth-child(2) a {background:url(../images/slide2.jpg) no-repeat;}
+section article:nth-of-type(4) ul:nth-of-type(1) li:nth-child(3) a {background:url(../images/slide3.jpg) no-repeat;}
+section article:nth-of-type(4) ul:nth-of-type(1) li a span {position:absolute; bottom:10px; right:0; left:0;display:inline-block; text-align:center; font:400 17px 'Noto Sans KR'; color:#fff; line-height:23px; letter-spacing:-0.08em;}
+section article:nth-of-type(4) ul:nth-of-type(2) {position:absolute; bottom:125px; left:0; right:0;  margin:auto; width:160px; height:17px;}
+section article:nth-of-type(4) ul:nth-of-type(2) li {float:left;}
+section article:nth-of-type(4) ul:nth-of-type(2) li a {display:inline-block; width:38px; height:17px; background:#ccc; border-radius:40px; margin-right:23px;}
+section article:nth-of-type(4) ul:nth-of-type(2) li:nth-child(1) a {background:#ee0a14;}
+section article:nth-of-type(4) ul:nth-of-type(2) li:nth-child(3) a {margin-right:0;}
+
+
+
+/* article 5 */
+section article:nth-of-type(5) {position:relative; width:100%; height:1141px; overflow:hidden; background:#f1fcfe;}
+section article:nth-of-type(5) div.colaBody {position:absolute; bottom:0px; width:100%; height:973px; background:url('../images/colabody.png') no-repeat; z-index:10;}
+section article:nth-of-type(5) h2 {position:absolute; top:122px; left:0; right:0; text-align:center; font:800 147px 'Noto Sans KR'; letter-spacing:-0.06em; color:#dc1921; z-index:9;}
+section article:nth-of-type(5) div.whiteboard {position:absolute; z-index:15; top:95px; right:0; bottom:0; left:0; margin:auto; width:1201px; height:472px; background:#fff;}
+section article:nth-of-type(5) div.whiteboard p {margin:63px 0 0 91px;}
+section article:nth-of-type(5) div.whiteboard p:nth-of-type(1) {font:300 40px 'Noto Sans KR'; color:#333; line-height:1; letter-spacing:-0.1em;}
+section article:nth-of-type(5) div.whiteboard p:nth-of-type(2) {font:400 70px 'Noto Sans KR'; color:#333; line-height:1; letter-spacing:-0.06em; margin-top:28px;}
+section article:nth-of-type(5) div.whiteboard p:nth-of-type(3) {font:300 20px 'Noto Sans KR'; color:#333; line-height:30px; letter-spacing:-0.06em; margin-top:33px;}
+section article:nth-of-type(5) div.whiteboard a {display:inline-block; width:180px; height:60px; background:#ee0a14; border-radius:50px; margin-left:91px; margin-top:47px;}
+section article:nth-of-type(5) div.whiteboard a:nth-of-type(1) {-webkit-transition:all 0.5s; -moz-transition:all 0.5s; -o-transition:all 0.5s; transition:all .5s;}
+section article:nth-of-type(5) div.whiteboard a:nth-of-type(2) {margin-left:12px;}
+section article:nth-of-type(5) div.whiteboard a span {display:inline-block; width:100%; text-align:center; margin-top:15px; color:#fff; font:500 20px 'Noto Sans KR';}
+section article:nth-of-type(5) div.whiteboard div {position:absolute; top:-100px; right:80px;width:451px; height:595px; background:url(../images/cokeimg.png) no-repeat; -webkit-transition:all 0.5s; -moz-transition:all 0.5s; -o-transition:all 0.5s; transition:all 0.5s;}
+section article:nth-of-type(5) div.hr1 {position:absolute; bottom:230px; left:0; right:0; z-index:30; width:100%; height:2px; background:rgba(255,255,255,.6);}
+section article:nth-of-type(5) div.hr1 div.ball {position:absolute; top:-7px; left:21.5%; width:17px; height:17px; background:#fff; border-radius:30px;}
+section article:nth-of-type(5) div.hr1 ul {position:absolute; top:46px; left:20%; width:1210px; -webkit-transition:all 0.5s; -moz-transition:all 0.5s; -o-transition:all 0.5s; transition:all 0.5s;}
+section article:nth-of-type(5) div.hr1 ul li {float:left; margin-right:75px; }
+section article:nth-of-type(5) div.hr1 ul li:nth-child(9) {margin-right:0;}
+section article:nth-of-type(5) div.hr1 ul li a {color:rgba(255,255,255,.7); font:400 20px 'Noto Sans KR'; }
+section article:nth-of-type(5) div.hr1 ul li:nth-child(1) a {font-weight:400; color:rgba(255,255,255,1);}
+section article:nth-of-type(5) div.hr1>a {position:absolute; bottom:-160px; left:0; right:0; margin:auto; display:inline-block; width:181px; height:41px; background:#fff; border-radius:30px;}
+section article:nth-of-type(5) div.hr1>a span {display:inline-block; width:100%; font:600 20px 'Noto Sans KR'; text-align:center; line-height:41px;}
+
+
+
+
+/* article 6 */
+section article:nth-of-type(6) {position:relative; width:100%; height:951px; background:url(../images/article6bg.jpg) no-repeat center center; background-size:cover;}
+section article:nth-of-type(6) div.blackOverlay2 {position:absolute; top:0; right:0; bottom:0; left:0; margin:auto; width:1201px; height:584px; background:rgba(0,0,0,.3); -webkit-transition:all 0.5s; -moz-transition:all 0.5s; -o-transition:all 0.5s; transition:all 0.5s;}
+section article:nth-of-type(6) div.blackOverlay2>p {position:absolute; top:135px; left:88px; color:#fff; letter-spacing:-0.06em; -webkit-transition:all 0.5s; -moz-transition:all 0.5s; -o-transition:all 0.5s; transition:all 0.5s;}
+section article:nth-of-type(6) div.blackOverlay2>p:nth-of-type(1) {font:700 58px 'Noto Sans KR'; line-height:1;}
+section article:nth-of-type(6) div.blackOverlay2>p:nth-of-type(2) {top:217px; font:400 30px 'Noto Sans KR';}
+section article:nth-of-type(6) div.blackOverlay2>a {position:absolute; bottom:194px; left:88px; display:inline-block; width:101px; height:45px; background:url(../images/VIEWBtn.png) no-repeat center center;}
+section article:nth-of-type(6) div.blackOverlay2 figure p {position:absolute; top:55px; right:175px; width:304px; color:#fff; font:600 40px 'Noto Sans KR'; letter-spacing:-0.06em; line-height:1; -webkit-transition:all 0.5s; -moz-transition:all 0.5s; -o-transition:all 0.5s; transition:all 0.5s;}
+section article:nth-of-type(6) div.blackOverlay2 figure video {position:absolute; top:141px; right:86px; width:517px; height:292px; -webkit-transition:all 0.5s; -moz-transition:all 0.5s; -o-transition:all 0.5s; transition:all 0.5s;}
+section article:nth-of-type(6) div.blackOverlay2 ul {position:absolute; bottom:66px; left:0; right:0; margin:auto; width:378px; height:20px;}
+section article:nth-of-type(6) div.blackOverlay2 ul li {float:left; -webkit-transition:all 0.5s; -moz-transition:all 0.5s; -o-transition:all 0.5s; transition:all 0.5s;}
+section article:nth-of-type(6) div.blackOverlay2 ul li a {display:inline-block; width:60px; height:15px; background:rgba(255,255,255,.5); margin-right:46px; border-radius:30px;}
+section article:nth-of-type(6) div.blackOverlay2 ul li:nth-child(4) a {margin-right:0;}
+section article:nth-of-type(6) div.blackOverlay2 ul li:nth-child(1) a {background:rgba(255,255,255,1);}
+
+
+
+/* article 7 */
+section article:nth-of-type(7) {position:relative; overflow:hidden; width:100%; }
+section article:nth-of-type(7) div.leftSkew {position:absolute; z-index:100; left:-200px; width:50%; height:100%; transform:skew(-25deg)scale(1.4); overflow:hidden; -webkit-transition:all 0.5s; -moz-transition:all 0.5s; -o-transition:all 0.5s; transition:all 0.5s;}
+section article:nth-of-type(7) div.leftSkew div.CSRbg {position:absolute; left:0px; width:100%; height:100%; background:url('../images/skewImg1.png') no-repeat 100px -50px/cover; transform:skewX(25deg)scale(1.3); -webkit-transition:all 0.5s; -moz-transition:all 0.5s; -o-transition:all 0.5s; transition:all 0.5s;}
+
+section article:nth-of-type(7) div.leftSkew div.textBox2 {position:absolute; z-index:103; top:89px; left:519px; width:300px; height:270px; letter-spacing:-0.06em; color:#fff; transform:skew(25deg)scale(.8); -webkit-transition:all 0.5s; -moz-transition:all 0.5s; -o-transition:all 0.5s; transition:all 0.5s;}
+section article:nth-of-type(7) div.leftSkew div.textBox2 p:nth-child(1) {font:700 45px 'Noto Sans KR'; line-height:1; margin-top:10px; text-shadow:1px 1px 5px #333;}
+section article:nth-of-type(7) div.leftSkew div.textBox2 p:nth-child(2) {font-size:18px; line-height:25px; margin-top:30px; text-shadow:1px 1px 5px #333;}
+section article:nth-of-type(7) div.leftSkew div.textBox2 a {width:101px; height:45px; background:url('../images/VIEWBtn.png') no-repeat; display:inline-block; margin-top:30px;}
+
+section article:nth-of-type(7) div.leftSkew:hover div.CSRbg {background:url('../images/skewImg1hover.png') no-repeat 50px -150px/cover;}
+
+
+section article:nth-of-type(7) div.rightSkew {position:absolute; right:0px; width:50%; height:100%; transform:skew(-25deg)scale(1.4); -webkit-transition:all 0.5s; -moz-transition:all 0.5s; -o-transition:all 0.5s; transition:all 0.5s; }
+section article:nth-of-type(7) div.rightSkew div.RECRUITbg {position:absolute; right:100px; width:100%; height:100%; background:url('../images/skewImg2.png') no-repeat 0px -60px/cover; transform:skewX(25deg)scale(1.2); -webkit-transition:all 0.5s; -moz-transition:all 0.5s; -o-transition:all 0.5s; transition:all 0.5s;}
+
+section article:nth-of-type(7) div.rightSkew div.textBox3 {position:absolute; z-index:103; top:89px; right:330px; width:500px; height:300px; /*text-align:right;*/ letter-spacing:-0.1em; color:#fff; transform:skew(25deg)scale(.8); -webkit-transition:all 0.5s; -moz-transition:all 0.5s; -o-transition:all 0.5s; transition:all 0.5s;}
+section article:nth-of-type(7) div.rightSkew div.textBox3 p:nth-child(1) {font:700 45px 'Noto Sans KR'; line-height:1; margin-top:10px; text-shadow:1px 1px 5px #333; text-align:right;}
+section article:nth-of-type(7) div.rightSkew div.textBox3 p:nth-child(2) {font-size:18px; line-height:25px; margin-top:30px; text-shadow:1px 1px 5px #333; text-align:right;}
+section article:nth-of-type(7) div.rightSkew div.textBox3 a {width:101px; height:45px; overflow:hidden; background:url('../images/VIEWBtn.png') no-repeat; display:inline-block; margin-top:30px; margin-left:400px;}
+
+section article:nth-of-type(7) div.rightSkew:hover div.RECRUITbg {background:url('../images/skewImg2hover.png') no-repeat 80px -20px/cover;}
+
+
+
+/* article 8 */
+section article:nth-of-type(8) {position:relative; width:100%; height:1800px; background:#fff; overflow:hidden;}
+section article:nth-of-type(8)>p {position:absolute; top:70px; left:0; right:0; text-align:center; font:800 58px 'Noto Sans KR'; line-height:1; color:#dc1921; letter-spacing:-0.06em;}
+section article:nth-of-type(8) ul.snsBox {position:absolute; top:210px; right:0; left:0; margin:auto; width:1716px; height:430px; -webkit-transition:all 0.5s; -moz-transition:all 0.5s; -o-transition:all 0.5s; transition:all 0.5s;}
+section article:nth-of-type(8) ul.snsBox li {position:relative; width:25%; height:100%; float:left;}
+section article:nth-of-type(8) ul.snsBox li:nth-child(1) {background:url('../images/sns1.jpg') no-repeat center center/cover;}
+section article:nth-of-type(8) ul.snsBox li:nth-child(2) {background:url('../images/sns2.jpg') no-repeat center center/cover;}
+section article:nth-of-type(8) ul.snsBox li:nth-child(3) {background:url('../images/sns3.jpg') no-repeat center center/cover;}
+section article:nth-of-type(8) ul.snsBox li:nth-child(4) {background:url('../images/sns4.jpg') no-repeat center center/cover;}
+section article:nth-of-type(8) ul.snsBox li span {display:inline-block; position:absolute; bottom:24px; left:34px; width:50px; height:50px; background:#fff;}
+section article:nth-of-type(8) ul.snsBox li:nth-child(1) span {background:url('../images/snsLogo.png') no-repeat -47px -57px;}
+section article:nth-of-type(8) ul.snsBox li:nth-child(2) span {background:url('../images/snsLogo.png') no-repeat -125px -57px;}
+section article:nth-of-type(8) ul.snsBox li:nth-child(3) span {background:url('../images/snsLogo.png') no-repeat -211px -56px;}
+section article:nth-of-type(8) ul.snsBox li:nth-child(4) span {width:60px; background:url('../images/snsLogo.png') no-repeat -286px -55px;}
+section article:nth-of-type(8) div.waveFooter {position:absolute; top:1050px; right:0; bottom:0; left:0; margin:auto; width:1440px; height:750px; background:url('../images/waveFooter.png') no-repeat; transform:scaleX(1.35)scaleY(1.2);}
+section article:nth-of-type(8) div.worldMap2 {position:absolute; top:430px; right:0; bottom:0; left:500px; margin:auto; width:1215px; height:599px; background:url('../images/worldmap2.png') no-repeat; opacity:.4; -webkit-transition:all 0.5s; -moz-transition:all 0.5s; -o-transition:all 0.5s; transition:all 0.5s;}
+section article:nth-of-type(8) div.phoneImg {position:absolute; top:913px; left:20%; width:329px; height:699px; background:url('../images/phone.png') }
+section article:nth-of-type(8) div.textBox4 {position:absolute; top:970px; left:52%; -webkit-transition:all 0.5s; -moz-transition:all 0.5s; -o-transition:all 0.5s; transition:all 0.5s;}
+section article:nth-of-type(8) div.textBox4 span:nth-of-type(1) {display:block; width:300px; font:600 30px 'Noto Sans KR'; line-height:1; margin-bottom:10px;}
+section article:nth-of-type(8) div.textBox4 span:nth-of-type(2) {display:block; width:300px; font:600 30px 'Noto Sans KR'; line-height:1; margin-bottom:30px; letter-spacing:-0.06em;}
+section article:nth-of-type(8) div.textBox4 span.sp {display:block; width:600px; font:500 24px 'Noto Sans KR'; letter-spacing:-0.06em;}
+section article:nth-of-type(8) div.textBox4 a:nth-of-type(1) {position:absolute; bottom:-70px; width:133px; height:39px; background:#ccc url('../images/appstore.png') no-repeat center center/cover; border-radius:6px; display:inline; margin-top:17px;}
+section article:nth-of-type(8) div.textBox4 a:nth-of-type(2) {position:absolute; bottom:-70px; left:150px; width:133px; height:39px; background:#ccc url('../images/googleplay.png') no-repeat center center/cover; border-radius:6px; display:inline; margin-top:17px;}
+
+
+/* footer */
+footer {position:relative; width:100%; height:400px; background:#f40000; overflow:hidden;}
+footer>ul {position:absolute; top:-200px; right:0; bottom:0; left:0; margin:auto; width:860px; height:250px; -webkit-transition:all 0.5s; -moz-transition:all 0.5s; -o-transition:all 0.5s; transition:all 0.5s;}
+footer>ul>li {float:left; width:180px; height:100%; margin-right:46px;}
+footer>ul>li:nth-child(2) {margin-right:36px;}
+footer>ul>li:nth-child(3) {margin-right:56px;}
+footer>ul>li:nth-child(4) {margin-right:0;}
+
+
+footer>ul>li ul>li {line-height:25px;}
+footer>ul>li ul>li a {color:#fff; font:400 15px 'Noto Sans KR'; letter-spacing:-0.02em;}
+footer>ul>li ul>li:nth-child(1) p {font:700 15px 'Noto Sans KR'; color:#fff;}
+footer>ul>li ul>li:nth-child(2) {margin-top:18px;}
+
+
+footer>ul>li:nth-child(1) ul>li:nth-child(1) p {font:700 15px 'Noto Sans KR'; text-align:center; color:#fff;}
+footer>ul>li:nth-child(1) ul>li:nth-child(2) {margin-left:7px; margin-top:18px;}
+footer>ul>li:nth-child(1) ul>li:nth-child(2) a {margin-right:10px;}
+footer>ul>li:nth-child(1) ul>li:nth-child(2) a:nth-child(1) {display:inline-block; width:31px; height:31px; background:url('../images/footerSns.png') no-repeat -37px -9px;}
+footer>ul>li:nth-child(1) ul>li:nth-child(2) a:nth-child(2) {display:inline-block; width:31px; height:31px; background:url('../images/footerSns.png') no-repeat -85px -9px;}
+footer>ul>li:nth-child(1) ul>li:nth-child(2) a:nth-child(3) {display:inline-block; width:31px; height:31px; background:url('../images/footerSns.png') no-repeat -133px -9px;}
+footer>ul>li:nth-child(1) ul>li:nth-child(2) a:nth-child(4) {display:inline-block; width:31px; height:31px; background:url('../images/footerSns.png') no-repeat -181px -9px; margin-right:0;}
+footer>ul>li:nth-child(1) ul>li:nth-child(3) a {display:block; width:140px; height:45px; background:url('../images/coca_logo.png') no-repeat center center/cover; margin:12px auto;}
+
+
+
+
+/* 미디어 스크린 */
+
+@media screen and (max-width:1679px) {
+	
+	/* article 1 */
+	section article:nth-of-type(1) {background:url(../images/contentbg2.png) no-repeat -200px 0;}
+	
+	
+	/* article 2 */
+	section article:nth-of-type(2) {position:relative; width:100%; height:851px; background:url('../images/article2bg.png') no-repeat; background-size:cover;}
+	section article:nth-of-type(2) div.waveVector {position:absolute; top:70px; width:100%; height:520px; background:url('../images/waveVector.png') no-repeat center center;}
+	section article:nth-of-type(2) div.textBox1 {position:absolute; top:50px; right:0; bottom:0; left:0; margin:0 auto; width:507px; height:320px;}
+	section article:nth-of-type(2) div.textBox1 p:nth-child(1) {color:#fff; font:800 18px 'Noto Sans KR'; letter-spacing:-0.05em; line-height:1; margin-bottom:5px; text-align:center;}
+	section article:nth-of-type(2) div.textBox1 p:nth-child(2) {color:#fff; font:800 31px 'Noto Sans KR'; line-height:40px; margin-bottom:10px; text-align:center;}
+	section article:nth-of-type(2) div.textBox1 p:nth-child(3) {color:#fff; width:100%; font:300 15px 'Noto Sans KR'; letter-spacing:-0.08em; line-height:25px; margin-bottom:27px; text-align:center;}
+	section article:nth-of-type(2) div.textBox1 div {position:relative; top:0; right:0; bottom:0; left:0; margin:auto; width:168px; height:33px; border:2.5px solid #fff; border-radius:50px;}
+	section article:nth-of-type(2) div.textBox1 div>a {position:absolute; top:0; left:0; bottom:0; right:0; margin:auto; width:100%; height:55%; text-align:center; color:#fff; font:600 16px 'Noto Sans KR'; letter-spacing:-0.08em; line-height:1;}
+	section article:nth-of-type(2) ul.cokeProduct {position:absolute; top:100px; right:0; bottom:0; left:140px; margin:auto; width:715px; height:410px;}
+	section article:nth-of-type(2) ul.cokeProduct li:nth-child(1) a {position:absolute; top:50px; width:170px; height:296px; background:url('../images/cokeclassic.png') no-repeat center center; background-size:cover;}
+	section article:nth-of-type(2) ul.cokeProduct li:nth-child(2) a {position:absolute; top:50px; left:208px; width:170px; height:296px; background:url('../images/cokezero.png') no-repeat center center; background-size:cover;}
+	section article:nth-of-type(2) ul.cokeProduct li:nth-child(3) a {position:absolute; top:50px; left:417px; width:170px; height:296px; background:url('../images/dietcoke.png') no-repeat center center; background-size:cover;}
+	section article:nth-of-type(2) ul.cokeProduct li:nth-child(1) a span {top:300px; left:13px;}
+	section article:nth-of-type(2) ul.cokeProduct li:nth-child(2) a span {top:300px; left:23px;}
+	section article:nth-of-type(2) ul.cokeProduct li:nth-child(3) a span {top:300px; left:30px;}
+	section article:nth-of-type(2) div.arrowBtn {position:absolute; right:0; bottom:100px; left:0; margin: auto; width:146px; height:52px;}
+	
+
+	/* article 4 */
+	section article:nth-of-type(4) div.map {position:absolute; top:0; right:0; bottom:0; left:0; width:70%; height:550px; background:url('../images/worldmap.png') no-repeat center center/cover; margin:auto;}
+	section article:nth-of-type(4)>a:nth-of-type(1) {position:absolute; left:3%; top:370px; width:150px; height:150px; background:url('../images/redArrowLeftBtn.png') no-repeat center center;}
+	section article:nth-of-type(4)>a:nth-of-type(2) {position:absolute; right:3%; top:370px; width:150px; height:150px; background:url('../images/redArrowRightBtn.png') no-repeat center center;}
+	
+
+	/* article 7 */
+	section article:nth-of-type(7) {position:relative; overflow:hidden; width:100%; }
+	section article:nth-of-type(7) div.leftSkew {transform:skew(0deg)scale(1.4); overflow:hidden; left:-120px;}
+	section article:nth-of-type(7) div.leftSkew div.CSRbg {transform:skewX(0deg)scale(1.3);}
+	section article:nth-of-type(7) div.leftSkew div.textBox2 {top:89px; left:35%; width:300px; height:300px; transform:skew(0deg)scale(.8);}
+	section article:nth-of-type(7) div.leftSkew:hover div.CSRbg {background:url('../images/skewImg1hover.png') no-repeat 50px 0px/cover;}
+	section article:nth-of-type(7) div.rightSkew {position:absolute; right:0px; width:50%; height:100%; transform:skew(-25deg)scale(1.4); overflow:;}
+	section article:nth-of-type(7) div.rightSkew div.textBox3 {top:89px; right:15%;}
+	section article:nth-of-type(7) div.rightSkew:hover div.RECRUITbg {background:url('../images/skewImg2hover.png') no-repeat -40px -80px/cover;}
+	
+	
+	
+	/* article 8 */
+	section article:nth-of-type(8) {position:relative; width:100%; height:1800px; background:#fff; overflow:hidden;}
+	section article:nth-of-type(8)>p {position:absolute; top:70px; left:0; right:0; text-align:center; font:800 58px 'Noto Sans KR'; line-height:1; color:#dc1921; letter-spacing:-0.06em;}
+	section article:nth-of-type(8) ul.snsBox {position:absolute; top:210px; right:0; left:0; margin:auto; width:85%; height:320px;}
+	section article:nth-of-type(8) ul.snsBox li {position:relative; width:25%; height:100%; float:left;}
+	section article:nth-of-type(8) ul.snsBox li:nth-child(1) {background:url('../images/sns1.jpg') no-repeat center center/cover;}
+	section article:nth-of-type(8) ul.snsBox li:nth-child(2) {background:url('../images/sns2.jpg') no-repeat center center/cover;}
+	section article:nth-of-type(8) ul.snsBox li:nth-child(3) {background:url('../images/sns3.jpg') no-repeat center center/cover;}
+	section article:nth-of-type(8) ul.snsBox li:nth-child(4) {background:url('../images/sns4.jpg') no-repeat center center/cover;}
+	section article:nth-of-type(8) ul.snsBox li span {display:inline-block; position:absolute; bottom:24px; left:34px; width:50px; height:50px; background:#fff;}
+	section article:nth-of-type(8) ul.snsBox li:nth-child(1) span {background:url('../images/snsLogo.png') no-repeat -47px -57px;}
+	section article:nth-of-type(8) ul.snsBox li:nth-child(2) span {background:url('../images/snsLogo.png') no-repeat -125px -57px;}
+	section article:nth-of-type(8) ul.snsBox li:nth-child(3) span {background:url('../images/snsLogo.png') no-repeat -211px -56px;}
+	section article:nth-of-type(8) ul.snsBox li:nth-child(4) span {width:60px; background:url('../images/snsLogo.png') no-repeat -286px -55px;}
+	
+	
+	section article:nth-of-type(8) div.waveFooter {position:absolute; top:1050px; right:0; bottom:0; left:0; margin:auto; width:1440px; height:750px; background:url('../images/waveFooter.png') no-repeat; transform:scaleX(1.35)scaleY(1.2);}
+	section article:nth-of-type(8) div.worldMap2 {position:absolute; top:430px; right:0; bottom:0; left:500px; margin:auto; width:1215px; height:599px; background:url('../images/worldmap2.png') no-repeat; }
+	section article:nth-of-type(8) div.phoneImg {position:absolute; top:913px; left:20%; width:329px; height:699px; background:url('../images/phone.png')}
+	section article:nth-of-type(8) div.textBox4 {position:absolute; top:970px; left:52%;}
+	section article:nth-of-type(8) div.textBox4 span:nth-of-type(1) {display:block; width:300px; font:600 30px 'Noto Sans KR'; line-height:1; margin-bottom:10px;}
+	section article:nth-of-type(8) div.textBox4 span:nth-of-type(2) {display:block; width:300px; font:600 30px 'Noto Sans KR'; line-height:1; margin-bottom:30px; letter-spacing:-0.06em;}
+	section article:nth-of-type(8) div.textBox4 span.sp {display:block; width:600px; font:500 24px 'Noto Sans KR'; letter-spacing:-0.06em;}
+	section article:nth-of-type(8) div.textBox4 a:nth-of-type(1) {position:absolute; bottom:-70px; width:133px; height:39px; background:#ccc url('../images/appstore.png') no-repeat center center/cover; border-radius:6px; display:inline; margin-top:17px;}
+	section article:nth-of-type(8) div.textBox4 a:nth-of-type(2) {position:absolute; bottom:-70px; left:150px; width:133px; height:39px; background:#ccc url('../images/googleplay.png') no-repeat center center/cover; border-radius:6px; display:inline; margin-top:17px;}
+	
+	
+}
+
+
+@media screen and (max-width:1599px) {
+	
+	/* lnb */
+	header nav.lnb ul.mainMenuIcon {right:35px; width:25px; height:25px;}
+	header nav.lnb ul.mainMenuIcon li:nth-child(1) a {width:25px; height:25px; background:url(../images/search.png) no-repeat center center; display:inline-block; display:none;}
+	header nav.lnb ul.mainMenuIcon li:nth-child(2) a {width:25px; height:25px; background:url(../images/menu_icon.png) no-repeat center center; display:inline-block; display:none;}
+	header nav.lnb ul.mainMenuIcon li:nth-child(3) a {width:25px; height:25px; background:url(../images/shopping.png) no-repeat center center; display:inline-block; display:none;}
+	header nav.lnb ul.mainMenuIcon li:nth-child(4) a {width:25px; height:25px; margin-right:0; background:url(../images/menu_icon2.png) no-repeat center center; display:inline-block;}
+
+
+	/* article8 */
+	section article:nth-of-type(8) {position:relative; width:100%; height:1900px; background:#fff; overflow:hidden;}
+	section article:nth-of-type(8) ul.snsBox {position:absolute; top:210px; right:0; left:0; margin:auto; width:60%; height:340px;}
+	section article:nth-of-type(8) ul.snsBox li {position:relative; width:50%; min-width:50%; height:100%; float:left;}
+	section article:nth-of-type(8) ul.snsBox li:nth-child(1) {background:url('../images/sns1.jpg') no-repeat no-repeat center center/cover;;}
+	section article:nth-of-type(8) ul.snsBox li:nth-child(2) {background:url('../images/sns2.jpg') no-repeat no-repeat center center/cover;;}
+	section article:nth-of-type(8) ul.snsBox li:nth-child(3) {background:url('../images/sns3.jpg') no-repeat no-repeat center center/cover;;}
+	section article:nth-of-type(8) ul.snsBox li:nth-child(4) {background:url('../images/sns4.jpg') no-repeat no-repeat center center/cover;;}
+	section article:nth-of-type(8) ul.snsBox li span {display:inline-block; position:absolute; bottom:24px; left:34px; width:50px; height:50px; background:#fff;}
+	section article:nth-of-type(8) ul.snsBox li:nth-child(1) span {background:url('../images/snsLogo.png') no-repeat -47px -57px;}
+	section article:nth-of-type(8) ul.snsBox li:nth-child(2) span {background:url('../images/snsLogo.png') no-repeat -125px -57px;}
+	section article:nth-of-type(8) ul.snsBox li:nth-child(3) span {background:url('../images/snsLogo.png') no-repeat -211px -56px;}
+	section article:nth-of-type(8) ul.snsBox li:nth-child(4) span {width:60px; background:url('../images/snsLogo.png') no-repeat -286px -55px;}	
+	
+	section article:nth-of-type(8) div.waveFooter {position:absolute; top:1050px; right:0; bottom:0; left:0; margin:auto; width:1440px; height:750px; background:url('../images/waveFooter.png') no-repeat; transform:scaleX(1.35)scaleY(1.2);}
+	section article:nth-of-type(8) div.worldMap2 {position:absolute; top:730px; right:0; bottom:0; left:40%; margin:auto; width:1015px; height:499px; background:url('../images/worldmap2.png') no-repeat center center/cover;}
+	section article:nth-of-type(8) div.phoneImg {position:absolute; top:1070px; left:20%; width:329px; height:699px; background:url('../images/phone.png')}
+	section article:nth-of-type(8) div.textBox4 {position:absolute; top:1070px; left:52%;}
+	section article:nth-of-type(8) div.textBox4 span:nth-of-type(1) {display:block; width:300px; font:600 30px 'Noto Sans KR'; line-height:1; margin-bottom:10px;}
+	section article:nth-of-type(8) div.textBox4 span:nth-of-type(2) {display:block; width:300px; font:600 30px 'Noto Sans KR'; line-height:1; margin-bottom:30px; letter-spacing:-0.06em;}
+	section article:nth-of-type(8) div.textBox4 span.sp {display:block; width:600px; font:500 24px 'Noto Sans KR'; letter-spacing:-0.06em;}
+	section article:nth-of-type(8) div.textBox4 a:nth-of-type(1) {position:absolute; bottom:-70px; width:133px; height:39px; background:#ccc url('../images/appstore.png') no-repeat center center/cover; border-radius:6px; display:inline; margin-top:17px;}
+	section article:nth-of-type(8) div.textBox4 a:nth-of-type(2) {position:absolute; bottom:-70px; left:150px; width:133px; height:39px; background:#ccc url('../images/googleplay.png') no-repeat center center/cover; border-radius:6px;}
+	
+}
+
+@media screen and (max-width:1379px) {
+	
+	/* lnb gnb */
+	header nav.gnb {display:block;}
+	header nav.lnb h1 a {position:absolute; top:-39px; right:0; bottom:0; left:0; margin:0 auto; width:112px; height:30px; background:url(../images/coca_logo.png) no-repeat center center; background-size:contain;} 
+	
+	header nav.lnb ul.mainMenuIcon {right:0; width:100%; height:25px;}
+	header nav.lnb ul.mainMenuIcon li:nth-child(1) a {position:absolute; left:35px; width:25px; height:25px; background:url(../images/search.png) no-repeat center center; display:block;}
+	header nav.lnb ul.mainMenuIcon li:nth-child(4) a {position:absolute; right:35px; width:25px; height:25px; background:url(../images/menu_icon2.png) no-repeat center center; display:block;}
+	
+	
+	/* article1 */
+	section article:nth-of-type(1) {background:url(../images/contentbg2.png) no-repeat -300px 0;}
+	
+	/* article3 */
+	section article:nth-of-type(3) p:nth-of-type(1) {top:56px; font:700 108px 'Noto Sans KR'; line-height:100%;}
+	section article:nth-of-type(3) p:nth-of-type(2) {top:210px; font:300 15px 'Noto Sans KR'; line-heigh:1;}
+	section article:nth-of-type(3) ul {position:absolute; top:200px; right:0; bottom:0; left:0; margin:auto; width:600px; height:550px; text-align:center; overflow:hidden;}
+	section article:nth-of-type(3) ul li {display:inline-block; margin-left:44px; margin-bottom:35px;}
+	
+	/* article4 */
+	section article:nth-of-type(4) div.map {position:absolute; top:0; right:0; bottom:0; left:0; width:70%; height:450px; background:url('../images/worldmap.png') no-repeat center center/cover; margin:auto;}
+	section article:nth-of-type(4) ul:nth-of-type(1) li:nth-child(1) {left:35%;}
+	section article:nth-of-type(4) ul:nth-of-type(1) li:nth-child(2) {display:none;}
+	section article:nth-of-type(4) ul:nth-of-type(1) li:nth-child(3) {display:none;}
+	
+	
+}
+
+
+@media screen and (max-width:1219px) {
+	
+	/* article 5 */
+	section article:nth-of-type(5) h2 {position:absolute; top:122px; left:0; right:0; text-align:center; font:800 147px 'Noto Sans KR'; letter-spacing:-0.06em; color:#dc1921; z-index:9;}
+	section article:nth-of-type(5) div.whiteboard {width:85%; height:472px; background:#fff; overflow:hidden;}
+	
+	section article:nth-of-type(5) div.whiteboard div {position:absolute; top:150px; right:-55px; width:301px; height:395px; background:url(../images/cokeimg.png) no-repeat center center/cover;}
+	section article:nth-of-type(5) div.hr1 {position:absolute; bottom:230px; left:0%; right:0; z-index:30; width:100%; height:2px; background:rgba(255,255,255,.6);}
+	section article:nth-of-type(5) div.hr1 div.ball {position:absolute; top:-7px; left:10.5%; width:17px; height:17px; background:#fff; border-radius:30px;}
+	section article:nth-of-type(5) div.hr1 ul {position:absolute; top:46px; left:7.5%; width:1210px;}
+	
+	section article:nth-of-type(5) div.hr1 ul li:nth-child(8) {display:none;}
+	section article:nth-of-type(5) div.hr1 ul li:nth-child(9) {margin-right:0; display:none;}
+	
+	
+	/* article 6 */
+	
+	section article:nth-of-type(6) div.blackOverlay2 {position:absolute; top:0; right:0; bottom:0; left:0; margin:auto; width:90%; height:584px; background:rgba(0,0,0,.3);}
+	section article:nth-of-type(6) div.blackOverlay2>p {position:absolute; top:135px; left:68px; color:#fff; letter-spacing:-0.06em;}
+	section article:nth-of-type(6) div.blackOverlay2>p:nth-of-type(1) {font:700 48px 'Noto Sans KR'; line-height:1;}
+	section article:nth-of-type(6) div.blackOverlay2>p:nth-of-type(2) {top:217px; font:400 25px 'Noto Sans KR';}
+	
+	section article:nth-of-type(6) div.blackOverlay2 figure p {position:absolute; top:90px; right:9%; width:304px; color:#fff; font:600 30px 'Noto Sans KR'; letter-spacing:-0.06em; line-height:1;}
+	section article:nth-of-type(6) div.blackOverlay2 figure video {position:absolute; top:141px; right:86px; width:407px; height:292px;}
+	section article:nth-of-type(6) div.blackOverlay2 ul {position:absolute; bottom:66px; left:0; right:0; margin:auto; width:378px; height:20px;}
+	section article:nth-of-type(6) div.blackOverlay2 ul li {float:left;}
+	section article:nth-of-type(6) div.blackOverlay2 ul li a {display:inline-block; width:60px; height:15px; background:rgba(255,255,255,.5); margin-right:46px; border-radius:30px;}
+	section article:nth-of-type(6) div.blackOverlay2 ul li:nth-child(4) a {margin-right:0;}
+	section article:nth-of-type(6) div.blackOverlay2 ul li:nth-child(1) a {background:rgba(255,255,255,1);}
+	
+}
+
+
+@media screen and (max-width:1165px) {
+	
+	/* article1 */
+	section article:nth-of-type(1) div .leftBtn1 {display:none;}
+	section article:nth-of-type(1) div .rightBtn1 {display:none;}
+	
+	/* lnb */
+	header nav.lnb ul.mainMenu {display:none;}
+	header nav.lnb h1 a {position:absolute; top:20px; right:0; bottom:0; left:0; margin:0 auto; width:122px; height:40px; background:url(../images/coca_logo.png) no-repeat center center;} 
+	
+	
+	/* article8 */
+	section article:nth-of-type(8) {position:relative;  width:100%; height:2300px; background:#fff;}
+	section article:nth-of-type(8) div.waveFooter {position:absolute; right:0; bottom:-350px; left:0; margin:auto; width:1440px; height:750px; background:url('../images/waveFooter.png') no-repeat; transform:scaleX(1.35)scaleY(1.2);}
+	section article:nth-of-type(8) div.worldMap2 {position:absolute; top:230px; right:0; bottom:0; left:0%; margin:auto; width:100%; height:599px; background:url('../images/worldmap2.png') no-repeat center center/cover; opacity:.4;}
+	section article:nth-of-type(8) div.phoneImg {position:absolute; top:1470px; left:0; right:0; margin:auto; width:329px; height:699px; background:url('../images/phone.png')}
+	section article:nth-of-type(8) div.textBox4 {position:absolute; width:500px; top:1070px; left:15%; right:0; margin:auto;}
+	section article:nth-of-type(8) div.textBox4 span:nth-of-type(1) {display:block; width:300px; font:600 30px 'Noto Sans KR'; line-height:1; margin-bottom:10px;}
+	section article:nth-of-type(8) div.textBox4 span:nth-of-type(2) {display:block; width:300px; font:600 30px 'Noto Sans KR'; line-height:1; margin-bottom:30px; letter-spacing:-0.06em;}
+	section article:nth-of-type(8) div.textBox4 span.sp {display:block; width:600px; font:500 24px 'Noto Sans KR'; letter-spacing:-0.06em;}
+	section article:nth-of-type(8) div.textBox4 a:nth-of-type(1) {position:absolute; bottom:-70px; width:133px; height:39px; background:#ccc url('../images/appstore.png') no-repeat center center/cover; border-radius:6px; display:inline; margin-top:17px;}
+	section article:nth-of-type(8) div.textBox4 a:nth-of-type(2) {position:absolute; bottom:-70px; left:150px; width:133px; height:39px; background:#ccc url('../images/googleplay.png') no-repeat center center/cover; border-radius:6px;}
+	
+	
+	/* footer */
+	footer {position:relative; top:0; width:100%; height:600px; background:#f40000;}
+	footer>ul {position:absolute; top:-200px; right:0; bottom:0; left:0; margin:auto; width:860px; height:250px;}
+	footer>ul>li {float:left; width:180px; height:100%;}
+	footer>ul>li:nth-child(1) {margin-right:60px;}
+	footer>ul>li:nth-child(2) {margin-right:0;}
+	footer>ul>li:nth-child(3) {margin-right:56px;}
+	footer>ul>li:nth-child(4) {margin-right:0;}
+	
+}
+
+
+@media screen and (max-width:989px) {
+	
+	/* article 6 */
+	
+	section article:nth-of-type(6) div.blackOverlay2 {position:absolute; top:0; right:0; bottom:0; left:0; margin:auto; width:90%; height:684px;}
+	section article:nth-of-type(6) div.blackOverlay2>p {position:absolute; letter-spacing:-0.08em;}
+	section article:nth-of-type(6) div.blackOverlay2>p:nth-of-type(1) {top:35px; left:0; right:0; text-align:center; font:700 48px 'Noto Sans KR';}
+	section article:nth-of-type(6) div.blackOverlay2>p:nth-of-type(2) {top:140px; left:0; right:0; text-align:center; font:500 25px 'Noto Sans KR';}
+	section article:nth-of-type(6) div.blackOverlay2>a {display:none;}
+	section article:nth-of-type(6) div.blackOverlay2 figure {position:absolute; bottom:0; width:100%; height:63.3%;}
+	section article:nth-of-type(6) div.blackOverlay2 figure p {position:absolute; top:15px; left:0; right:0; margin:auto; text-align:center; width:304px; color:#fff; font:600 30px 'Noto Sans KR'; letter-spacing:-0.06em; line-height:1;}
+	section article:nth-of-type(6) div.blackOverlay2 figure video {position:absolute; right:0; left:0; bottom:180px; margin:auto; width:450px; height:270px;}
+	section article:nth-of-type(6) div.blackOverlay2 ul {position:absolute; bottom:56px; left:0; right:0; margin:auto; width:378px; height:20px;}
+	section article:nth-of-type(6) div.blackOverlay2 ul li a {display:inline-block; width:60px; height:13px; background:rgba(255,255,255,.5); margin-right:46px; border-radius:30px;}
+	section article:nth-of-type(6) div.blackOverlay2 ul li:nth-child(4) a {margin-right:0;}
+	section article:nth-of-type(6) div.blackOverlay2 ul li:nth-child(1) a {background:rgba(255,255,255,1);}
+	
+	
+	/* article 7 */
+	section article:nth-of-type(7) {position:relative; width:100%; height:750px; }
+	section article:nth-of-type(7) div.leftSkew {position:static; top:50px; width:100%; height:50%; transform:skew(0deg)scale(1.4);} 
+	section article:nth-of-type(7) div.leftSkew div.CSRbg {transform:skewX(0deg)scale(1); width:100%; height:100%; background:url('../images/skewImg1.png') no-repeat 0px -50px/cover;}
+
+	section article:nth-of-type(7) div.leftSkew div.textBox2 {top:60px; left:30%; width:300px; height:300px; transform:skew(0deg)scale(.8);}
+	
+
+	section article:nth-of-type(7) div.rightSkew {position:static; display:block; width:100%; height:50%; transform:skew(0deg)scale(1);}
+	section article:nth-of-type(7) div.rightSkew div.RECRUITbg {position:absolute; right:0; width:100%; height:100%; background:url('../images/skewImg2.png') no-repeat center center/cover; transform:skewX(0deg)scale(1);}
+
+	section article:nth-of-type(7) div.rightSkew div.textBox3 {position:absolute; z-index:103; top:80px; right:28%; width:500px; height:300px;transform:skew(0)scale(1.1);}
+	section article:nth-of-type(7) div.rightSkew div.textBox3 p:nth-child(1) {font:700 45px 'Noto Sans KR'; line-height:1; margin-top:10px; text-shadow:1px 1px 5px #333;}
+	section article:nth-of-type(7) div.rightSkew div.textBox3 p:nth-child(2) {font-size:18px; line-height:25px; margin-top:30px; text-shadow:1px 1px 5px #333;}
+	section article:nth-of-type(7) div.rightSkew div.textBox3 a {width:101px; height:45px; background:url('../images/VIEWBtn.png') no-repeat; display:inline-block; margin-top:30px;}
+	
+	section article:nth-of-type(7) div.rightSkew:hover div.RECRUITbg {background:url('../images/skewImg2hover.png') no-repeat 0px 0px/cover;}
+	
+	
+	/* footer */
+	footer {position:relative; top:0; width:100%; height:600px; background:#f40000;}
+	footer>ul {position:absolute; top:-300px; right:0; bottom:0; left:10%; margin:auto; width:100%; height:250px;}
+	footer>ul>li {float:left; width:38%; height:100%; margin-right:75px; margin-bottom:20px;}
+	footer>ul>li ul>li {line-height:25px;}
+	footer>ul>li ul>li a {color:#fff; font:400 15px 'Noto Sans KR'; letter-spacing:-0.02em;}
+	footer>ul>li ul>li:nth-child(1) p {font:700 15px 'Noto Sans KR'; color:#fff;}
+	footer>ul>li ul>li:nth-child(2) {margin-top:18px;}
+
+	footer>ul>li:nth-child(1) ul>li:nth-child(1) p {font:700 15px 'Noto Sans KR'; text-align:center; color:#fff; text-align:left;}
+	footer>ul>li:nth-child(1) ul>li:nth-child(2) {margin-left:0px; margin-top:18px;}
+	footer>ul>li:nth-child(1) ul>li:nth-child(3) a {display:block; width:140px; height:45px; background:url('../images/coca_logo.png') no-repeat center center/cover; margin:20px 0;}
+
+}
+
+
+@media screen and (max-width:879px) {
+	
+	/* gnb , lnb */
+	header nav.gnb {display:none;}
+	header nav.lnb {position:absolute; top:0px; z-index:999; width:100%;  height:87px; background:rgba(255,10,10,.8);}
+	header nav.lnb ul.mainMenuIcon li:nth-child(2) a {position:absolute; top:-11px; left:75px; width:45px; height:45px; background:url(../images/people.png) no-repeat center center; display:block;}
+	
+	
+	section article:nth-of-type(1) {background:url(../images/contentbg2.png) no-repeat -450px -50px;}
+	
+	/* article 2 */
+	section article:nth-of-type(2) {position:relative; width:100%; height:851px; background:url('../images/article2bg.png') no-repeat; background-size:cover;}
+	section article:nth-of-type(2) div.waveVector {position:absolute; top:70px; width:100%; height:520px; background:url('../images/waveVector.png') no-repeat center center;}
+	section article:nth-of-type(2) div.textBox1 {position:absolute; top:50px; right:0; bottom:0; left:0; margin:0 auto; width:507px; height:320px;}
+	section article:nth-of-type(2) div.textBox1 p:nth-child(1) {color:#fff; font:800 18px 'Noto Sans KR'; letter-spacing:-0.05em; line-height:1; margin-bottom:5px; text-align:center;}
+	section article:nth-of-type(2) div.textBox1 p:nth-child(2) {color:#fff; font:800 31px 'Noto Sans KR'; line-height:40px; margin-bottom:10px; text-align:center;}
+	section article:nth-of-type(2) div.textBox1 p:nth-child(3) {color:#fff; width:100%; font:300 15px 'Noto Sans KR'; letter-spacing:-0.08em; line-height:25px; margin-bottom:27px; text-align:center;}
+	section article:nth-of-type(2) div.textBox1 div {position:relative; top:0; right:0; bottom:0; left:0; margin:auto; width:168px; height:33px; border:2.5px solid #fff; border-radius:50px;}
+	section article:nth-of-type(2) div.textBox1 div>a {position:absolute; top:0; left:0; bottom:0; right:0; margin:auto; width:100%; height:55%; text-align:center; color:#fff; font:600 16px 'Noto Sans KR'; letter-spacing:-0.08em; line-height:1;}
+	section article:nth-of-type(2) ul.cokeProduct {left:12%; -webkit-transition:all 0.5s; -moz-transition:all 0.5s; -o-transition:all 0.5s; transition:all 0.5s;}
+	
+	/* article4 */
+	section article:nth-of-type(4) ul:nth-of-type(1) {width:500px; left:-15%;}
+	
+	
+	/* article 5 */
+	section article:nth-of-type(5) div.whiteboard {width:85%; height:472px; background:#fff; overflow:hidden;}
+	section article:nth-of-type(5) div.whiteboard p {margin:63px 0 0 0; text-align:center;}
+	section article:nth-of-type(5) div.whiteboard p:nth-of-type(1) {font:300 40px 'Noto Sans KR'; color:#333; line-height:1; letter-spacing:-0.1em;}
+	section article:nth-of-type(5) div.whiteboard p:nth-of-type(2) {font:400 70px 'Noto Sans KR'; color:#333; line-height:1; letter-spacing:-0.06em; margin-top:28px;}
+	section article:nth-of-type(5) div.whiteboard p:nth-of-type(3) {font:300 20px 'Noto Sans KR'; color:#333; line-height:30px; letter-spacing:-0.06em; margin-top:33px;}
+	section article:nth-of-type(5) div.whiteboard a:nth-of-type(1) {margin-left:22%;}
+	section article:nth-of-type(5) div.whiteboard div {display:none;}
+	section article:nth-of-type(5) div.hr1 {position:absolute; bottom:230px; left:0%; right:0; z-index:30; width:100%; height:2px; background:rgba(255,255,255,.6);}
+	section article:nth-of-type(5) div.hr1 div.ball {position:absolute; top:-7px; left:10.5%; width:17px; height:17px; background:#fff; border-radius:30px;}
+	section article:nth-of-type(5) div.hr1 ul {position:absolute; top:46px; left:7.5%; width:1210px;}
+	section article:nth-of-type(5) div.hr1 ul li:nth-child(6) {display:none;}
+	section article:nth-of-type(5) div.hr1 ul li:nth-child(7) {display:none;}
+	section article:nth-of-type(5) div.hr1 ul li:nth-child(8) {display:none;}
+	section article:nth-of-type(5) div.hr1 ul li:nth-child(9) {display:none;}
+	
+	
+}
+
+
+
+@media screen and (max-width:679px) {
+	
+/* article1 */
+	section article:nth-of-type(1) {background:url(../images/contentbg2.png) no-repeat -450px -50px;}
+	section article:nth-of-type(1) div p.mainCopy {position:absolute; top:20px; right:0; bottom:0; left:-18%; margin:auto; width:665px; height:205px;}
+	section article:nth-of-type(1) div p.mainCopy a {color:#fff; font:700 40px 'Noto Sans KR'; display:block; letter-spacing:-3px; text-align:center; text-shadow:1px 1px 45px #333; line-height:1.2;}
+	section article:nth-of-type(1) div p.mainCopy a span {font-weight:500; /*opacity:.6;*/ display:block;}
+	section article:nth-of-type(1) div p.mainCopy a span:nth-of-type(2) {display:inline;}
+	
+	
+
+/* article 2 */
+	section article:nth-of-type(2) {position:relative; width:100%; height:851px; background:url('../images/article2bg.png') no-repeat; background-size:cover;}
+	section article:nth-of-type(2) div.waveVector {position:absolute; top:90px; width:100%; height:520px; background:url('../images/waveVector.png') no-repeat center center;}
+	
+	section article:nth-of-type(2) div.textBox1 {position:absolute; top:50px; right:0; bottom:0; left:0; margin:0 auto; width:507px; height:320px;}
+	section article:nth-of-type(2) div.textBox1 p:nth-child(1) {font:800 16px 'Noto Sans KR'; letter-spacing:-0.05em; line-height:1; margin-bottom:10px; text-align:center;}
+	section article:nth-of-type(2) div.textBox1 p:nth-child(2) {font:800 25px 'Noto Sans KR'; width:350px; line-height:30px; margin:0 auto; margin-bottom:15px; }
+	section article:nth-of-type(2) div.textBox1 p:nth-child(3) {width:50%; margin:0 auto; margin-bottom:25px;}
+	
+	section article:nth-of-type(2) ul.cokeProduct {top:200px; left:12%; -webkit-transition:all 0.5s; -moz-transition:all 0.5s; -o-transition:all 0.5s; transition:all 0.5s;}
+	section article:nth-of-type(2) ul.cokeProduct li:nth-child(1) a {position:absolute; top:50px; width:107px; height:196px; background:url('../images/cokeclassic.png') no-repeat center center; background-size:cover;}
+	section article:nth-of-type(2) ul.cokeProduct li:nth-child(2) a {position:absolute; top:50px; left:20%; width:107px; height:196px; background:url('../images/cokezero.png') no-repeat center center; background-size:cover;}
+	section article:nth-of-type(2) ul.cokeProduct li:nth-child(3) a {position:absolute; top:50px; left:40%; width:107px; height:196px; background:url('../images/dietcoke.png') no-repeat center center; background-size:cover;}
+	section article:nth-of-type(2) ul.cokeProduct li:nth-child(1) a span {font-size:1.1em; width:60px; top:200px; left:13px; text-align:center;}
+	section article:nth-of-type(2) ul.cokeProduct li:nth-child(2) a span {font-size:1.1em; width:60px; top:200px; left:15px; text-align:center;}
+	section article:nth-of-type(2) ul.cokeProduct li:nth-child(3) a span {font-size:1.1em; width:60px; top:200px; left:15px; text-align:center;}
+	
+	section article:nth-of-type(2) div.arrowBtn {top:600px;}
+	
+	
+	
+	
+/* article3 */
+	section article:nth-of-type(3) p {position:absolute; width:100%; color:#fff;  text-align:center; }
+	section article:nth-of-type(3) p:nth-of-type(1) {top:56px; font:700 88px 'Noto Sans KR'; line-height:100%; letter-spacing:-0.08em;}
+	section article:nth-of-type(3) p:nth-of-type(2) {top:180px; right:0; bottom:0; left:0; margin:auto; width:250px; font:300 15px 'Noto Sans KR'; line-height:25px; letter-spacing:-0.08em; text-align:center;}
+	
+	section article:nth-of-type(3) ul {top:0; right:0; bottom:0; left:-10%; width:500px; height:750px;}
+	section article:nth-of-type(3) ul li a {position:relative; top:270px; margin:auto; display:inline-block; width:194px; height:194px; background:rgba(255,255,255,0.85); border-radius:150px; vertical-align:middle;}
+	section article:nth-of-type(3) ul li a span {position:absolute; top:52px; left:0; width:200px; font:400 15px 'Noto Sans KR';}
+	
+	section article:nth-of-type(3) ul li:nth-child(1) a span {position:absolute; left:0; top:60px;}
+	section article:nth-of-type(3) ul li:nth-child(2) a span {position:absolute; left:0; top:40px;}
+	section article:nth-of-type(3) ul li:nth-child(3) a span {position:absolute; left:0; top:40px;}
+	section article:nth-of-type(3) ul li:nth-child(4) a span {position:absolute; left:0; top:40px;}
+
+	section article:nth-of-type(3) ul li:nth-child(1) a span em {margin-bottom:20px;}
+	section article:nth-of-type(3) ul li:nth-child(3) a span em {margin-left:15px;}
+	
+	
+/* article 4 */
+	section article:nth-of-type(4) h2 {font-size:88px; top:90px;}
+	section article:nth-of-type(4) div.map {position:absolute; top:0; right:0; bottom:0; left:0; width:100%; height:400px; background:url('../images/worldmap.png') no-repeat center center/cover; margin:auto;}
+	section article:nth-of-type(4)>a:nth-of-type(1) {position:absolute; left:0%; top:370px; width:100px; height:100px; background:url('../images/redArrowLeftBtn.png') no-repeat center center/cover;}
+	section article:nth-of-type(4)>a:nth-of-type(2) {position:absolute; right:0%; top:370px; width:100px; height:100px; background:url('../images/redArrowRightBtn.png') no-repeat center center/cover;}
+	section article:nth-of-type(4) ul:nth-of-type(1) {width:500px; left:-25%;}
+
+/* article 5 */	
+	section article:nth-of-type(5) div.whiteboard a {display:inline-block; width:180px; height:60px; background:#ee0a14; border-radius:50px;}
+	section article:nth-of-type(5) div.whiteboard a:nth-of-type(1) {margin-left:5%;}	
+	section article:nth-of-type(5) div.hr1 {position:absolute; bottom:230px; left:0%; right:0; z-index:30; width:100%; height:2px; background:rgba(255,255,255,.6);}
+	section article:nth-of-type(5) div.hr1 div.ball {position:absolute; top:-7px; left:21%; width:17px; height:17px; background:#fff; border-radius:30px;}
+	section article:nth-of-type(5) div.hr1 ul {position:absolute; top:46px; left:15%; width:1210px;}
+	section article:nth-of-type(5) div.hr1 ul li:nth-child(4) {display:none;}
+	section article:nth-of-type(5) div.hr1 ul li:nth-child(5) {display:none;}
+	section article:nth-of-type(5) div.hr1 ul li:nth-child(6) {display:none;}
+	section article:nth-of-type(5) div.hr1 ul li:nth-child(7) {display:none;}
+	section article:nth-of-type(5) div.hr1 ul li:nth-child(8) {display:none;}
+	section article:nth-of-type(5) div.hr1 ul li:nth-child(9) {display:none;}
+
+
+/* article 6 */	
+	section article:nth-of-type(6) div.blackOverlay2 figure video {position:absolute; right:0; left:0; bottom:180px; margin:auto; width:350px; height:220px;}
+	
+/* article 7 */	
+	section article:nth-of-type(7) div.rightSkew div.textBox3 {width:260px; right:20%;}
+	section article:nth-of-type(7) div.rightSkew div.textBox3 a {margin-left:160px;}
+	
+/* article8 */
+	section article:nth-of-type(8) {position:relative;  width:100%; height:2300px; background:#fff;}
+	section article:nth-of-type(8) div.waveFooter {position:absolute; right:0; bottom:-350px; left:0; margin:auto; width:1440px; height:750px; background:url('../images/waveFooter.png') no-repeat; transform:scaleX(1.35)scaleY(1.2);}
+	section article:nth-of-type(8) div.textBox4 {position:absolute; width:500px; top:1070px; left:15%; right:0; margin:auto;}
+	section article:nth-of-type(8) div.textBox4 span:nth-of-type(1) {display:block; width:300px; font:600 27px 'Noto Sans KR'; line-height:1; margin-bottom:10px;}
+	section article:nth-of-type(8) div.textBox4 span:nth-of-type(2) {display:block; width:300px; font:600 27px 'Noto Sans KR'; line-height:1; margin-bottom:30px; letter-spacing:-0.06em;}
+	section article:nth-of-type(8) div.textBox4 span.sp {display:block; width:600px; font:500 18px 'Noto Sans KR'; letter-spacing:-0.06em;}
+	section article:nth-of-type(8) div.textBox4 a:nth-of-type(1) {position:absolute; bottom:-70px; width:133px; height:39px; background:#ccc url('../images/appstore.png') no-repeat center center/cover; border-radius:6px; display:inline; margin-top:17px;}
+	section article:nth-of-type(8) div.textBox4 a:nth-of-type(2) {position:absolute; bottom:-70px; left:150px; width:133px; height:39px; background:#ccc url('../images/googleplay.png') no-repeat center center/cover; border-radius:6px;}
+	
+	section article:nth-of-type(8) ul.snsBox {position:absolute; top:240px; right:0; left:0; margin:auto; width:90%; height:250px;}
+	section article:nth-of-type(8) ul.snsBox li {position:relative; width:50%; min-width:50%; height:100%; float:left;}
+	section article:nth-of-type(8) ul.snsBox li:nth-child(1) {background:url('../images/sns1.jpg') no-repeat no-repeat center center/cover;;}
+	section article:nth-of-type(8) ul.snsBox li:nth-child(2) {background:url('../images/sns2.jpg') no-repeat no-repeat center center/cover;;}
+	section article:nth-of-type(8) ul.snsBox li:nth-child(3) {background:url('../images/sns3.jpg') no-repeat no-repeat center center/cover;;}
+	section article:nth-of-type(8) ul.snsBox li:nth-child(4) {background:url('../images/sns4.jpg') no-repeat no-repeat center center/cover;;}
+	section article:nth-of-type(8) ul.snsBox li span {display:inline-block; position:absolute; bottom:24px; left:34px; width:50px; height:50px; background:#fff;}
+	section article:nth-of-type(8) ul.snsBox li:nth-child(1) span {background:url('../images/snsLogo.png') no-repeat -47px -57px;}
+	section article:nth-of-type(8) ul.snsBox li:nth-child(2) span {background:url('../images/snsLogo.png') no-repeat -125px -57px;}
+	section article:nth-of-type(8) ul.snsBox li:nth-child(3) span {background:url('../images/snsLogo.png') no-repeat -211px -56px;}
+	section article:nth-of-type(8) ul.snsBox li:nth-child(4) span {width:60px; background:url('../images/snsLogo.png') no-repeat -286px -55px;}		
+	
+	
+}
+
+
+
+
+
+

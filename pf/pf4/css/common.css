@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swa&subset=korean');
+
+/* reset css */
+* {margin:0; padding:0; outline:none;}
+html {font-size:10px; color:#333;}
+@media (max-width: 750px) {html{font-size:9px;}}
+
+body {font:400 1rem 'Noto Sans KR',sans-serif; letter-spacing:-0.06em;}
+ul {list-style:none;}
+a {text-decoration:none; color:#333;}
+
+.hidden {text-indent:-99999px;}
+.blind {overflow:hidden;position:absolute;top:0;left:0;width:1px;height:1px;font-size:1px;line-height:100px;white-space:nowrap}
+.fl {float:left;} .fr {float:right;} .cb:after {content:""; display:block; clear:both;}
+.fNotoSansT {font:100 1rem 'Noto Sans KR',sans-serif; line-height:1;} .fNotoSansL {font:300 1rem 'Noto Sans KR',sans-serif; line-height:1;} .fNotoSansR {font:400 1rem 'Noto Sans KR',sans-serif; line-height:1;} .fNotoSansM {font:500 1rem 'Noto Sans KR',sans-serif; line-height:1;} .fNotoSansB {font:700 1rem 'Noto Sans KR',sans-serif; line-height:1;} .fNotoSansEB {font:900 1rem 'Noto Sans KR',sans-serif; line-height:1;}
+.scene {position:relative;}
+.transition {-webkit-transition:all 0.5s; -moz-transition:all 0.5s; -o-transition:all 0.5s; transition:all 0.5s;}
+.hide {display:none;}
+.show {display:block;}
+
+
+/* section별 타이틀 관련 텍스트 스타일 */
+.red_color {color:#ed1b24;}
+.title_box {float:left;}
+.title_text {display:block; font:700 4.5rem 'Noto Sans KR',sans-serif; color:#333; line-height:1.2;}
+
+/* 적십자 마크 글머리 기호(none=레드마크 , 2=화이트마크) */
+.bullet_box {position:relative; top:-15px; float:left; width:45px; height:100%;}
+.bullet {width:100%; height:100%; display:block; width:31px; height:35px; background:url('../images/bullet.png') no-repeat center center/cover;}
+.bullet2 {display:inline-block; width:25px; height:27px; background:url('../images/bullet2.png') no-repeat center center; float:left; margin-right:10px;}
+
+/* 테이블 border 스타일 */
+.bdr_L {border-left:1px solid #ccc; box-sizing:border-box;}
+.bdr_RB {border-right:1px solid #ccc; border-bottom:1px solid #ccc; box-sizing:border-box;}
+
+
+/* 테이블내 박스 스타일 */
+.box {padding:3.2rem 4.2rem 0 4.2rem; box-sizing:border-box;}
+.sbj1 {font:700 2.5rem 'Noto Sans KR',sans-serif; line-height:1;}
+.nowrap {display:inline-block; white-space:nowrap; text-overflow:ellipsis; overflow:hidden;}
+.more_btn {display:inline-block; width:14px; height:14px; background:url('../images/more_btn.png') no-repeat center center;}
+
+
+/* transition 취소*/
+.no_trans {transition:none !important;}
+
+
+/* footer ul */
+.list {float:left; width:16%; font-size:1.4rem; line-height:1.9;}
+.list_title {font:700 1.7rem 'Noto Sans KR',sans-serif;}
+
+
+/* 테이블 test L1L2 R1R2 */
+.test {display:inline-block; padding:40%; color:#555; font:700 4rem 'Noto Sans KR',sans-serif; box-sizing:border-box;}
+
+
+
+/* 가변 그리드 (사용안함) */
+/*.test {
+    position: relative;
+    width: 59%; /* 원하는 너비 */ /*
+	background:url('../images/dummy.png') no-repeat center center/cover;}
+ 
+.test:before {
+    content: "";
+    display: block;
+    padding-top: 50%; /* 2:1 비율 */ /*
+}*/
+
+ 
+

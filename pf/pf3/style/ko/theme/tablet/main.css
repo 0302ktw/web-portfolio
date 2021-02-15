@@ -1,0 +1,98 @@
+@charset "utf-8"; 
+
+/* topInfo */
+.topInfo {position:relative;}
+.topInfoW {width:auto;}
+.topInfoW .openMsg p.openMessage1 {width:50%; padding-left:30px; padding-top:35px;}
+.topInfoW .openMsg p.openMessage1 a:before {top:40px; left:10px;}
+.topInfoW .openMsg p.openMessage2 {width:50%; padding-left:30px; padding-top:35px;}
+.topInfoW .openMsg p.openMessage2 a:before {position:absolute; top:40px; left:10px;}
+
+/* header */
+.headerTop {height:120px;}
+.headerTopW {width:auto;}
+.headerTopW #divGlobalMenu {position:relative; top:0; right:0; width:100%; height:auto; margin-top:0; border-bottom:1px solid #ccc;}
+.headerTopW #divGlobalMenu .locationBtn {position:static; top:0; left:0; margin-top:0;}
+.headerTopW #divGlobalMenu .locationBtn > li {margin-right:0;}
+.headerTopW #divGlobalMenu .locationBtn > li > a {height:30px; border:0; border-right:1px solid #ccc; box-sizing:border-box; line-height:30px;}
+.headerTopW #divGlobalMenu .locationBtn > li.on > a {background:#0c4ca3; color:#fff;}
+.headerTopW #divGlobalMenu .profile {position:absolute; top:4px; right:0; margin-right:15px;}
+.headerTopW #divGlobalMenu .profile > li:nth-child(3) {background:url('../../../../image/ko/local/globalVerticalBar.png') no-repeat left center;}
+.headerTopW #divGlobalMenu .profile > li.summary > a {background:none; color:#4c4c4c; padding:0;}
+.headerTopW .logo {position:absolute; top:50%; left:50%; margin:-5px 0 0 -115px;}
+
+.headerBottomW {width:auto;}
+.headerBottomW #divTopMenu > ul {display:none;}
+
+.wholeMenu > div > a.wholeCloseBtn {position:absolute; top:-48px; right:20px; width:20px; height:20px; background:url('../../../../image/ko/local/wholeCloseM.png') no-repeat center center; background-size:20px 20px;}
+.wholeMenu > div > a.wholeCloseBtn img {display:none;} 
+.wholeMenuBtn {width:auto; margin-right:20px;}
+.wholeMenu {position:absolute; top:190px; height:auto; overflow-y:visible;}
+.wholeMenu > div {width:auto; height:100%;}
+.wholeMenu > div > h2 {display:none;}
+.wholeMenu > div > ul > li {float:none; margin-left:0; width:auto; border-bottom:1px solid #3b6eb2; background:#08408b;}
+.wholeMenu > div > ul > li > a {border:none; margin:0 20px; color:#fff; text-align:left; background:url(../../../../image/ko/local/menuArrow1.png) no-repeat 100% 50%; background-size:11px 18px;}
+.wholeMenu > div > ul > li > ul {display:none; position:static; margin-top:0; width:100%; height:100%;}
+.wholeMenu > div > ul > li > ul > li {margin-bottom:0; padding:0 20px; background-color:#fff; border-bottom:1px solid #ebebeb;}
+.wholeMenu > div > ul > li > ul > li.on {background:#7d7d7d;}
+.wholeMenu > div > ul > li > ul > li > a {margin-bottom:0; display:block; padding:15px 0 15px 0; color:#535354; font-size:18px; background:url(../../../../image/ko/local/menuArrow3.png) no-repeat 100% 50%; background-size:11px 18px;}
+.wholeMenu > div > ul > li > ul > li.on > a {background:url(../../../../image/ko/local/menuArrow4.png) no-repeat 100% 50% #7d7d7d;background-size:18px 11px;color:#fff;}
+.wholeMenu > div > ul > li > ul > li > ul {display:none; background-color:#ebebeb; margin:0 -20px; padding:5px 0;}
+.wholeMenu > div > ul > li > ul > li > ul > li {padding:5px 20px;}
+.wholeMenu > div > ul > li > ul > li > ul > li > a {color:#535354;font-size:15px;}
+
+
+/* contents1 */
+.searchW {width:auto; padding:70px 20px;}
+.searchForm {position:relative; width:100%; height:155px;}
+.useHour {height:105px;}
+.useHour > div {width:auto; padding:0 20px;}
+.useHour p.hourTitle {float:none; font-size:14px; margin-top:21px; padding-left:37px; height:25px; line-height:25px; background:url('../../../../image/ko/local/main/clock.png') no-repeat left center;}
+.useHour p.attention {float:none; margin:15px 66px 0 230px; color:#f67a7a;}
+.useHour .rollingHour {position:absolute; top:0; width:80%; height:22px;}
+.useHour .rollingHour > ul > li > dl > dt {font-size:15px; float:left; margin-right:15px;}
+.useHour .hourControl {right:20px;}
+
+/* contents2 */
+.quickMenuW {width:auto;}
+
+
+/* contents3 */
+.contents3W {width:auto; margin:0 20px;}
+.event {position:relative; width:280px; margin-right:58px;}
+.event > div {position:relative; height:307px; overflow:hidden;}
+.event > div > ul {position:absolute;}
+.event > a {display:block; position:absolute; top:198px; width:22px; height:35px; text-indent:-9999px;}
+.event > a.prev {left:-37px; background:url('../../../../image/ko/local/main/bookPrev.png') no-repeat center center;}
+.event > a.next {right:-30px; background:url('../../../../image/ko/local/main/bookNext.png') no-repeat center center;}
+
+/* contents4 */
+.contents4W {width:auto; padding:0 20px;}
+.book {width:50%;}
+.book > ul > li:first-child {background:none;}
+.book > ul > li > div > a.bookPrev {left:10px;}
+.book > ul > li > div > a.bookNext {right:-25px;}
+.book > ul > li > div > div {left:55px; width:90%;}
+.book > ul > li > div > div > ul {width:135%;}
+.book > ul > li > div > div > ul > li{width:35%;}
+.eventZone {width:340px; height:262px; margin-top:80px;}
+.eventZone .controller {bottom:0;}
+
+/* contents5 */
+.contents5 {position:relative;}
+.contents5 .banner {width:auto; margin-left:145px;}
+.banner .bannerList {position:relative; width:100%; height:100%;}
+.banner .bannerList ul {position:absolute; width:200%;}
+.banner .bannerList ul li {width:16%; padding:0;}
+.banner .bannerList ul li a img {width:auto;}
+.banner .controller {display:block; position:absolute; left:30px; top:50%; margin-top:-14.5px;}
+.banner .controller a {float:left; display:inline-block; border:1px solid #efefef;}
+.banner .controller a.play {display:none;}
+.banner .controller a img {display:inline-block; width:25px; height:25px; vertical-align:top;}
+
+/* footer */
+#divFooter .footerTop > div {width:auto;}
+#divFooter .footerTop > div > ul > li > a.mainCall {background:url('../../../../image/ko/local/phoneIcon.png') no-repeat 10% 50%;}
+#divFooter .footerTop > div > ul > li > a.userGuide {background:url('../../../../image/ko/local/link1Bg.png') no-repeat 10% 50%;}
+#divFooter .footerTop > div > ul > li > a.insideSite {background:url('../../../../image/ko/local/link2Bg.png') no-repeat 10% 50%;}
+#divFooter .footerBottom > div {width:auto; padding:20px;}

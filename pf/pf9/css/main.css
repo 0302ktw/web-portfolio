@@ -1,0 +1,103 @@
+
+/* 레이아웃 */
+
+header {width:100%; height:auto; overflow:hidden;}
+nav {width:100%; height:auto; overflow:hidden;}
+
+
+/* header 스타일 */
+
+header {position:fixed; top:0; z-index:999;}
+#logo_wrap {background:#5273bf; width:100vw; height:13.45vw; margin:0 auto; padding:1.5vw 6.7vw; box-sizing:border-box; overflow:hidden;}
+		#logo_wrap .logo {top:0; right:5vw; bottom:0; left:0; margin:auto; width:27vw; height:6vw; background:url('../images/logo.svg') no-repeat center center/contain;}
+		.search {display:inline-block; top:0; bottom:0; right:6.6vw; margin:auto 0; width:5vw; height:5vw; background:url('../images/search.svg') no-repeat center center/contain; cursor:pointer;}
+		.all_menu {display:inline-block; top:0; bottom:0; left:6.6vw; margin:auto 0; width:5vw; height:5vw; background:url('../images/all_menu.svg') no-repeat center center/contain;}
+
+#nav {width:100%; height:10.45vw; background:#525252; overflow:hidden;}
+		.nav_list {padding:1.5vw 7vw; margin:0 auto;}
+		.nav_list li {float:left; padding-right:7vw;}
+		.nav_list li a {color:#fff; font:400 4vw 'Noto Sans KR',sans-serif;}
+		.nav_list .nav_list_last {padding-right:0;}
+		
+		.nav_list .on {text-decoration:underline;}
+
+#main_key {width:100%; height:175vw; background:#ededee; padding:28vw 0 0 0; overflow:hidden;}
+		.key1 {top:0vw; width:93.7vw; height:60vw;  background:#f5f6f7 url('../images/key1.png') no-repeat left center/contain; margin:0 auto; border-radius:10px; box-shadow:0 0 3vw #ccc; margin-bottom:5vw;}
+		.key1 .key1_text {top:11vw; right:6vw; text-align:right; color:#555;}
+		.key1_text .text1 {font-size:5.2vw; line-height:1.1;}
+		.key1_text .text2 {display:inline-block; width:26vw; margin:2vw 0; vertical-align:bottom;}
+		.key1_text .text3 {font-size:3.9vw; line-height:1.2;}
+		.key1_text .quote_up {display:inline-block; top:-5.5vw; left:61vw; width:4vw; height:3vw; background:url('../images/quote_up.svg') no-repeat center center/contain; font-size:1px;}
+		.key1_text .quote_down {display:inline-block; top:39vw; left:89.5vw; width:4vw; height:3vw; background:url('../images/quote_down.svg') no-repeat center center/contain; font-size:1px;}
+		
+		.key2 {width:93.7vw; height:45vw; background:#fff; margin:0 auto; border-radius:10px; box-shadow:0 0 3vw #ccc; margin-bottom:5vw;}
+		.key2_content {padding:8vw 5.7vw 8.9vw 5.7vw;}
+		.key2_list {}
+		.key2_list .k_list {float:left; padding-right:4.3vw;}
+		.key2_list .key2_list_4 {padding-right:0;}
+		
+		.key2_list .k_list a {display:inline-block; font:700 3.6vw 'Noto Sans KR',sans-serif; color:#555; width:20.5vw; height:20vw;}
+		.key2_list .k_list a .q_mark {display:block; width:9vw; height:15vw; margin-left:4vw;}
+		.key2_list .k_list a .quick_text {display:block;}
+		
+		.key2_list .k_list .q1 {width:14vw;}
+		.key2_list .k_list .q2 {width:17vw;}
+		.key2_list .k_list .q3 {width:17vw;}
+		.key2_list .k_list .q4 {width:20vw;}
+		
+		.key2_list .k_list .q1 .quick1 {margin-left:3vw; background:url('../images/join.svg') no-repeat center center/contain;}
+		.key2_list .k_list .q2 .quick2 {background:url('../images/receipt.svg') no-repeat center center/contain;}
+		.key2_list .k_list .q3 .quick3 {background:url('../images/book.svg') no-repeat center center/contain;}
+		.key2_list .k_list .q4 .quick4 {width:11vw; background:url('../images/consume.svg') no-repeat center center/contain;}
+		
+		.key2 .more {left:0; right:0; bottom:5vw; margin:0 auto; font-size:3.2vw; text-align:center; color:#666; cursor:pointer;}
+		.key2 .more span {display:inline-block; width:8vw; background:url('../images/arrow.svg') no-repeat center center/contain;}
+
+
+
+		.key3 {bottom:-105vw; z-index:100; width:100%; height:160vw;  border-radius:10px; box-shadow:0px 0px 20px #999; transition:all 1s;}
+		.key3 .client_header {z-index: 111; width:100%; height:13vw; background:#f07272; border-radius:10px 10px 0 0;}
+		.key3 .client_content {width:100%; height:100%; background:#fff; padding:0vw 0 0 0; transition:all .8s;}
+		
+			  .client_header p {text-align:center; color:#fff; line-height:13vw; font-size:4vw; margin-left:3vw; cursor:pointer;}
+			  .client_header p span {display:inline-block; width:5vw; background:url('../images/client.svg') no-repeat center center/contain; margin-left:3vw;}
+		
+		
+		.key4 {bottom:-118vw; z-index:200; width:100%; height:160vw;  border-radius:10px; box-shadow:0px 0px 20px #666; transition:all 1s;}
+		.key4 .client_header2 {z-index:111; width:100%; height:13vw; background:#ead15d; border-radius:10px 10px 0 0;}
+		.key4 .client_content2 {width:100%; height:100%; background:#fff; padding:0vw 0 0 0; transition:all .8s;}
+		
+			  .client_header2 p {text-align:center; color:#555; line-height:13vw; font-size:4vw; margin-left:3vw; cursor:pointer;}
+			  .client_header2 p span {display:inline-block; width:5vw; background:url('../images/card.svg') no-repeat center center/contain; margin-left:3vw;}
+		
+		
+		.key5 {bottom:-130.5vw; z-index:300; width:100%; height:160vw;  border-radius:10px; box-shadow:0px 0px 20px #666; transition:all 1s;}
+		.key5 .client_header3 {z-index:111; width:100%; height:13vw; background:#e6fdf0; border-radius:10px 10px 0 0;}
+		.key5 .client_content3 {width:100%; height:100%; background:#fff; padding:0vw 0 0 0; transition:all .8s;}
+		
+			  .client_header3 p {text-align:center; color:#555; line-height:13vw; font-size:4vw; margin-left:3vw; cursor:pointer;}
+			  .client_header3 p span {display:inline-block; width:5vw; background:url('../images/news.svg') no-repeat center center/contain; margin-left:3vw;}
+
+	
+#footer_nav {position:fixed; bottom:0; left:0; right:0; z-index:9999; margin:0 auto; padding:2vw 3vw 1.5vw 3vw; box-sizing:border-box; width:100%; height:17vw; background:#fff; box-shadow:0 0 3vw #ccc;}
+		.footer_nav_list {width:100%; height:100%; overflow:hidden;}
+		.footer_nav_list .f_list {float:left; margin-right:6vw;}
+		.footer_nav_list .f_list_5 {margin-right:0;}	
+	
+		.f_list .flink {font:500 3.2vw 'Noto Sans KR',sans-serif; display:inline-block; color:#555; width:12.2vw; height:8vw; text-align:center;}
+		.f_list .f3 {width:16.2vw;}
+		
+		.f_list .flink .f_icon {display:block; width:5vw; height:100%; margin:0 auto;}
+		.f_list .flink .fnav1 {width:8vw; background:url('../images/home.svg') no-repeat center center/contain;}
+		.f_list .flink .fnav2 {background:url('../images/receipt.svg') no-repeat center center/contain;}
+		.f_list .flink .fnav3 {background:url('../images/book.svg') no-repeat center center/contain;}
+		.f_list .flink .fnav4 {width:7vw; background:url('../images/consume.svg') no-repeat center center/contain;}
+		.f_list .flink .fnav5 {background:url('../images/community.svg') no-repeat center center/contain;}
+		.f_list .flink .fnav_text {display:block; width:100%; height:100%;  width:100%; height:100%;}	
+	
+	
+	
+	
+	
+	
+

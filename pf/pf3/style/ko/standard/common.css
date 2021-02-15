@@ -1,0 +1,187 @@
+@charset "utf-8";
+
+
+
+/* base */
+body{font-family:Noto Sans KR,sans-serif;font-size:14px;-webkit-text-size-adjust:none;color:#4d4d4d;word-wrap: break-word;}
+em,address{font-style:normal;}
+dl, dt, dd, ul{list-style:none;margin:0;padding:0}
+body,h1,h2,h3,h4,h5,h6,pre,input,p{margin:0;padding:0}
+img{border:none}
+div, span, ul, li{margin:0;padding:0}
+form, fieldset, blockquote{margin:0;padding:0;border:0}
+legend, hr{position:absolute;width:1px;height:1px;text-indent:-9999px;overflow:hidden}
+caption{width:1px;height:1px;text-indent:-9999px;overflow:hidden}
+hr{display:none}
+textarea{overflow:auto;-webkit-appearance:none;border-radius:0;font-family:NanumBarunGothic,sans-serif}
+input{font-family:NanumBarunGothic,sans-serif}
+input[type="image"]{-webkit-appearance:none;border-radius:0}
+input[type="submit"]{-webkit-appearance:none;border-radius:0}
+input[type="text"]{-webkit-appearance:none;border-radius:0}
+input[type="password"]{-webkit-appearance:none;border-radius:0}
+input[type="checkbox"]{border-radius:0}
+input[type="reset"]{border-radius:0}
+select{border-radius:0;font-family:NanumBarunGothic,sans-serif}
+
+/* ANCHOR */
+a{color:#4c4c4c;text-decoration:none}
+
+a:link{color:#4c4c4c;text-decoration:none}
+a:visited{color:#4c4c4c}
+a:hover{color:#1a96d9;text-decoration:none}
+a:active{color:#1a96d9;text-decoration:none}
+
+/* 숨김영역 */
+.skip{position:absolute;width:1px;height:1px;text-indent:-9999px;overflow:hidden;border:none}
+
+/* 건너뛰기 */
+#divAccessibility{position:absolute;left:0;top:0;z-index:1}
+#divAccessibility li{float:left}
+#divAccessibility a{position:absolute;width:1px;height:1px;top:-50px;overflow:hidden;text-align:center}
+#divAccessibility a:focus, #divAccessibility a:active{position:absolute;top:0;width:200px;height:auto;padding:5px;background-color:#fff;border:solid 1px #0079c6;color:#0079c6;z-index:2} 
+
+/* buttons(하단버튼) */
+.buttons{margin:40px 0 0;text-align:center}
+.buttons input{height:40px;margin:0 5px;padding:0 19px;border:1px solid #585858;background: none;color:#1a1a1a;cursor:pointer;vertical-align:top;line-height:1.0em;font-size:15px;font-weight:600;overflow:visible}
+.buttons input.searchBtn{padding:0 20px 0 45px;background:url(../../../image/ko/solution/common/ico/searchBtnBg.png) no-repeat 20px 50% #46b2d0;border:1px solid #46b2d0;color:#fff}
+.buttons a{height:38px;display:inline-block;margin:0 5px;padding:0 19px;border:1px solid #585858;color:#1a1a1a;font-size:15px;font-weight:600;line-height:2.5em;vertical-align:top}
+@media (min-width:0) and (max-width:767px){
+	.buttons a,.buttons input{margin:0 2px 5px;padding:0 14px}
+	.buttons input.searchBtn{padding:0 14px 0 39px;background-position:14px 50%}
+}
+/* paging */
+.paging{clear:both;margin:40px 0 0;text-align:center}
+.paging a{padding:0 10px}
+.paging > a{display:inline-block;padding:0;border:1px solid #e6e6e6;vertical-align: middle}
+.paging > a img{width:28px;height:28px;vertical-align: middle}
+.paging > a.firstPage{border-right:none}
+.paging > a.lastPage{border-left:none}
+.paging > span{margin:0 10px}
+.paging > span span{padding:0 10px;color:#000;text-decoration:underline}
+.paging > span a{color:#747474}
+
+/* 총 건수, 현재 페이지, 파일다운로드 등 */
+.listInfo{position:relative;margin-bottom:10px;line-height:2.3em;}
+.listInfo > div.listInfo1{float:left;margin-bottom:10px;color:#666}
+.listInfo p{float:left}
+.listInfo > div.listInfo1 > div{float:left}
+.listInfo > div.listInfo1 .totalCnt{color:#000}
+.listInfo > div.listInfo1 .totalCnt span{font-weight:600}
+.listInfo > div.listInfo1 .pageNum span{font-weight:600}
+.listInfo > div.listInfo2{float:right;margin-bottom:10px}
+.listInfo > div.listInfo2 > div{float:left;margin-left:10px;}
+.listInfo > div.listInfo2 div.fileSend li {float:left;border:1px solid #e6e6e6;border-left:0 none}
+.listInfo > div.listInfo2 div.fileSend li:first-child {border-left:1px solid #e6e6e6}
+.listInfo > div.listInfo2 div.fileSend li a {position:relative;display:block;}
+.listInfo > div.listInfo2 div.fileSend li img {width:38px;height:33px;vertical-align:top}
+
+/* selectBox1 */
+.selectBox1{height:35px;border:1px solid #d1d0cf;background-color:#fff;line-height:29px;}
+
+/* 검색 사용 select */
+/* searchOpt1 */
+.searchOpt1{min-width:90px;height:33px;position:relative;font-size:14px;line-height:13px !important;text-decoration:none;text-align:left;color:#555;vertical-align:middle;background:#fff;display:inline-block;cursor:default;border:1px solid #d1d0cf;padding-right:10px} /* futurenuri */
+.searchOpt1:focus .selectBox-arrow {border-color: #d1d0cf;}
+.searchOpt1 .selectBox-label {height:33px !important;display:inline-block;white-space:nowrap;overflow:hidden;line-height:2.5em;padding-left:10px;padding-right:10px}
+.searchOpt1 .selectBox-arrow {position:absolute;top:0;right:0;width:34px;height:33px;background:url(../../../image/ko/solution/common/ico/selectOpt.png) no-repeat 100% 0;}
+.selectBox-dropdown-menu {position:absolute;z-index:99999;max-height:150px;border:1px solid #bbb;background: #fff;overflow:auto;}
+.selectBox-options,
+.selectBox-options li,
+.selectBox-options li a {list-style:none;display:block;cursor:default;padding:0;margin:0;font-size:14px;color:#999;}
+.selectBox-options li a {line-height:18px;padding:0 .5em;white-space:nowrap;overflow:hidden;}
+.selectBox-options li.selectBox-hover a {background-color:#eee;}
+.selectBox-options li.selectBox-disabled a {color:#888;background-color:transparent;}
+.selectBox-options li.selectBox-selected a {background-color:#c8def4;}
+.selectBox-options .selectBox-optgroup {color:#666;background:#eee;font-weight:bold;line-height:18px;padding:0 .5em;white-space:nowrap;}
+.selectBox.selectBox-disabled {color: #888 !important;}
+.selectBox-dropdown.selectBox-disabled .selectBox-arrow {border-color: #666;}
+.selectBox-inline.selectBox-disabled {color: #888 !important;}
+.selectBox-inline.selectBox-disabled .selectBox-options A {background-color: transparent !important;}
+
+/* searchOpt2 */
+.searchOpt2{position:relative;height:33px;font-size:14px;line-height:13px !important;text-decoration:none;text-align:left;color:#555;vertical-align:middle;background:#fff;display:inline-block;cursor:default;border:1px solid #e6e6e6;padding-left:5px}
+.searchOpt2:focus .selectBox-arrow {border-color: #d1d0cf;}
+.searchOpt2 .selectBox-label {display:inline-block;white-space:nowrap;overflow:hidden;line-height:2.5em;padding-left:5px}
+.searchOpt2 .selectBox-arrow {position:absolute;top:0;right:0;width:18px;height:33px;background:url(../../../image/ko/solution/common/ico/selectOpt2.png) no-repeat 0 50%;}
+
+/* contentMessage   --  message로  divContents 안 divTabMenu 아래 위치  */
+.contentMsg{margin:20px 0;padding:20px;background-color:#eee;border:1px solid #e6e6e6;color:#333}
+@media screen and (min-width:0px) and (max-width:767px){
+	.contentMsg{margin:0 0 20px}
+}
+.contentMsg img{vertical-align:middle}
+
+/* contentHeader  --  divContent 안에 위치 */
+.contentHeader{margin:20px 0;padding:20px;background-color:#eee;border:1px solid #e6e6e6;color:#333}
+/* contentHeader-모바일 */
+@media screen and (min-width:0px) and (max-width:767px){
+	.contentHeader{margin:0 0 20px}
+}
+
+/* 제한검색 */
+.searchArea{margin:40px 0 30px 0;}
+.searchArea input{margin-bottom:10px}
+.searchArea .typeSelect{margin:0}
+.searchArea .selectBox1{margin-bottom:10px;}
+.searchArea .limitSearchBtn{display:none}
+.searchArea .limitSearch{height:33px;padding:0 20px 0 45px;border:1px solid #585858;background:url(../../../image/ko/solution/common/ico/limitSearch.gif) no-repeat 15px 50%}
+
+/* contentFooter */
+.contentFooter{margin:20px 0;padding:20px;background-color:#eee;border:1px solid #e6e6e6;color:#333}
+
+/* 버튼, input, select, checkBox, 라디오버튼(공통) */
+a.btnType1{display:inline-block;padding:0 20px;background-color:#fff;border:1px solid #808080;height:33px;color:#4c4c4c;vertical-align:top;line-height:2.3em}
+a.btnType2{display:inline-block;font-size:12px;padding:0 7px;border:1px solid #808080;height:23px;color:#4c4c4c;vertical-align:top;line-height:1.7em}
+a.btnType3{display:inline-block;padding:0 20px;border:1px solid #1c7fca;background-color:#248bd8;height:33px;color:#fff;vertical-align:top;line-height:2.3em}
+a.btnType4{display:inline-block;height:33px;padding:0 20px;border:1px solid #0067b3;color:#0067b3;vertical-align:top;line-height:2.3em}
+a.btnType5{display:inline-block;height:33px;border:1px solid #585858;background:url(../../../image/ko/solution/common/ico/limitSearch.gif) no-repeat 15px 50%;line-height:2.3em;color:#4d4d4d;padding:0 20px 0 45px;vertical-align:top;}
+a.btnType6{display:inline-block;padding:0 10px;background-color:#fff;border:1px solid #ccc;height:33px;color:#666;vertical-align:top;line-height:2.3em}
+a.btnType7{padding:0 10px;height:33px;border:1px solid #ccc;background-color:#fff;color:#666;font-size:13px}
+a.btnType8{display:inline-block;padding:0 20px;background-color:#fff;border:1px solid #808080;height:33px;color:#4c4c4c;vertical-align:top;line-height:2.3em}
+a.btnType9{padding:0 10px;border:1px solid #1c7fca;background-color:#248bd8;color:#fff;font-size:13px} /*검색창 작은 버튼*/
+a.btnType10{display:inline-block;height:23px;padding:0 15px;border:1px solid #0067b3;color:#0067b3;vertical-align:top;line-height:24px;} /*모달전용 희망도서신청, 지정도서 신청버튼에 사용*/
+
+input.btnType1{font-size:14px;height:35px;padding:0 20px;border:1px solid #808080;color:#4c4c4c;vertical-align:top;background-color:#fff;overflow:visible;}
+input.btnType2{height:33px;padding:0 20px;vertical-align:top;padding:0 7px;border:1px solid #808080;height:23px;color:#4c4c4c;background-color:#fff;font-size:12px;overflow:visible}
+input.btnType3{font-size:14px;height:35px;padding:0 20px;border:1px solid #1c7fca;background-color:#248bd8;color:#fff;overflow:visible;vertical-align:top}
+input.btnType4{font-size:14px;height:35px;padding:0 20px;vertical-align:top;border:1px solid #0067b3;color:#0067b3;background-color:#fff;overflow:visible}
+input.btnType5{height:35px;vertical-align:top;border:1px solid #585858;background:url(../../../image/ko/solution/common/ico/limitSearch.gif) no-repeat 15px 50%;padding:0 20px 0 45px;color:#4d4d4d;overflow:visible;cursor:pointer}
+input.btnType6{display:inline-block;padding:0 10px;background-color:#fff;border:1px solid #ccc;height:35px;color:#666;vertical-align:top;line-height:2.3em}
+input.btnType7{padding:0 10px;height:35px;border:1px solid #ccc;background-color:#fff;color:#666;font-size:13px}
+
+
+input.inputBasic{height:33px;border:1px solid #d1d0cf;line-height:2.1em;font-size:14px;vertical-align:top;color:#4c4c4c;padding:0 5px}
+
+input.inputTextType1{width:273px;height:33px;border:1px solid #d1d0cf;line-height:2.1em;font-size:14px;vertical-align:top;color:#4c4c4c;padding:0 5px}
+input.inputTextType1:focus{border:1px solid #2ed8de}
+
+input.datePicker{width:80px;height:33px;border:1px solid #d1d0cf;line-height:2.1em;font-size:14px;vertical-align:top;color:#4c4c4c;padding:0 5px}
+span.divide{display:inline-block;padding:10px 0;}
+
+input.inputTextType2{width:125px;height:33px;border:1px solid #d1d0cf;line-height:2.1em;font-size:14px;vertical-align:top;color:#4c4c4c;padding:0 5px}
+input.inputTextType2:focus{border:1px solid #2ed8de}
+
+
+p.inputTextType3 input{border:none;width:100%;color:#4c4c4c;height:33px;line-height:2.1em}
+input.inputTextType3{width:300px;height:33px;border:1px solid #d1d0cf;line-height:2.1em;font-size:14px;vertical-align:top;color:#4c4c4c;padding:0 5px}
+input.inputTextType3:focus{border:1px solid #2ed8de}
+
+input.inputTextType4{width:42px;height:33px;border:1px solid #d1d0cf;line-height:2.1em;font-size:14px;vertical-align:top;color:#4c4c4c;padding:0 5px}
+
+p.readonly{background-color:#f7f7f7}
+
+input.inputTextType6{width:auto;height:33px;border:1px solid #d1d0cf;padding:0 10px;background-color:#fff;color:#4c4c4c;line-height:2.1em;vertical-align:top}
+
+textarea.txtArea{width:100%;height:70px;border:1px solid #d1d0cf;resize:none}
+
+span.bunch{display:inline-block;vertical-align:middle}
+
+input.inputFileType1{height:35px;}
+@media screen and (min-width:0) and (max-width:767px){
+	input.inputTextType1{padding:0}
+	input.inputFileType1{width:100%}
+	a.btnType8{display:none}
+}
+
+.subTitle {padding:20px 20px 0 5px;}
+.subTitle h1 {height:20px;padding-left:15px;background:url(../../../image/ko/solution/common/subTitleBg.gif) no-repeat 0 3px;color:#1a1a1a;font-size:17px;}

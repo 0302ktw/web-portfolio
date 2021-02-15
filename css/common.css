@@ -1,0 +1,238 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'NanumSquare';
+    font-weight: 400;
+    src: url(../font/NanumSquareR.eot);
+    src: url(../font/NanumSquareR.eot?#iefix) format('embedded-opentype'),
+         url(../font/NanumSquareR.woff) format('woff'),
+         url(../font/NanumSquareR.ttf) format('truetype');
+   }
+   @font-face {
+    font-family: 'NanumSquare';
+    font-weight: 700;
+    src: url(../font/NanumSquareB.eot);
+    src: url(../font/NanumSquareB.eot?#iefix) format('embedded-opentype'),
+         url(../font/NanumSquareB.woff) format('woff'),
+         url(../font/NanumSquareB.ttf) format('truetype');
+   }
+   @font-face {
+    font-family: 'NanumSquare';
+    font-weight: 800;
+    src: url(../font/NanumSquareEB.eot);
+    src: url(../font/NanumSquareEB.eot?#iefix) format('embedded-opentype'),
+         url(../font/NanumSquareEB.woff) format('woff'),
+         url(../font/NanumSquareEB.ttf) format('truetype');
+   }
+   @font-face {
+    font-family: 'NanumSquare';
+    font-weight: 300;
+    src: url(../font/NanumSquareL.eot);
+    src: url(../font/NanumSquareL.eot?#iefix) format('embedded-opentype'),
+         url(../font/NanumSquareL.woff) format('woff'),
+         url(../font/NanumSquareL.ttf) format('truetype');
+   }
+
+
+/* **********************************************************************
+* reset css [body 상단 메뉴고정]
+********************************************************************** */
+* {margin:0; padding:0; letter-spacing:-0.06em;}
+html {width:100%; height:100%;}
+body {background:#f2f5f4; margin-top:70px; font-family:'NanumSquare',sans-serif; color:#333; transition-duration:0.5s; transition-property:background-color;}
+ul {list-style:none;}
+a {text-decoration:none; color:#333; transition-duration:0.5s; transition-property:color;}
+.hidden {text-indent:-99999px;}
+.cb:after {content:""; display:block; clear:both;}
+.pt1 {padding-top:25px;}
+.tab-index:focus:not(:focus-visible) {outline:0 !important;}
+
+
+/* **********************************************************************
+* body.open
+********************************************************************** */
+body.open .menu-button button > span:first-child{top:0; width:100%; transform:rotate(-45deg) translateY(50%); transform-origin:100% 100%;}
+body.open .menu-button button > span:nth-child(2){opacity:0}
+body.open .menu-button button > span:last-child{ width:100%; transform:rotate(45deg) translateY(-50%); transform-origin:100% 0;}
+body.open .sub-menu {right:0;}
+
+
+
+/* ************************************************************************
+* [header]
+* - 메뉴고정
+************************************************************************ */
+header {position:fixed; z-index:100;  top:0; left:0; width:100%; height:70px; border-bottom: 0.5px solid #ccc; box-sizing:border-box; background:#f2f5f4; transition-duration:0.5s; transition-property:background-color;}
+header nav {position:relative; width:100%; height:100%; margin:0 auto;}
+header nav .logo {position:absolute; left:2vw; top:0; bottom:0; margin:auto 0; width:41px; height:44px;}
+header nav .logo a {display:inline-block; width:100%; height:100%; background:url('../images/logo.png') no-repeat center center; background-size:100%;}
+.nav__list {position:relative; width:1123px; max-width:100%; height:100%; margin:0 auto;}
+.nav__list > ul {position:absolute; top:0; bottom:0; left:0; margin:auto 0; height:20px;}
+.nav__list > ul li {float:left; padding-left:5.2vw;}
+.nav__list > ul > li:nth-child(1) {padding-left:0;}
+.nav__list > ul > li > a {display:inline-block; font:700 19px 'NanumSquare',sans-serif;}
+.menu-button {position:absolute; top:0; bottom:0; right:0; width:20px; height:18px; margin:auto 0;}
+.menu-button button {position:relative; z-index:1002; display:block; width:100%; height:100%; background:none; border:none; cursor:pointer; transition:all 0.4s;}
+.menu-button button > span {position:absolute; top:0; left:0; width:20px; height:2px; background:#333; transition:all 0.4s;}
+.menu-button button > span:nth-child(2) {top:8px;}
+.menu-button button > span:last-child {top:auto; bottom:0;}
+.sub-menu {position:fixed; z-index:1001; right:-100%; top:0; width:calc(20% + 100px); min-width:400px; height:100%; background:#f2f5f4; transition:all 0.5s ease-out;}
+.sub-menu__content {position:absolute; top:50%; right:0; left:0; margin:auto; transform:translateY(-50%); width:300px; height:auto;}
+.sub-menu__list li a {display:inline-block; font-size:70px; line-height:1.2; color:#999; transition:color 0.4s;}
+.sub-menu__list li a:hover {color:#333;}
+.sub-menu__list li.active a {color:#333; cursor:default;}
+.info-wrap {position:relative; margin-top:10vh;}
+.info-wrap dl dt {font:700 25px 'NanumSquare',sans-serif;}
+.info-wrap dl dd {font:400 22px 'NanumSquare',sans-serif; padding-top:15px;}
+.info-wrap dl dd > span {position:relative; margin-left:30px;}
+.info-wrap dl dd > span:before {content:''; position:absolute; top:50%; left:-17px; transform:translateY(-50%); width:4px; height:4px; background:#555; border-radius:100%;}
+.dim {position:fixed; z-index:1000; top:-70px; width:100%; height:calc(100% + 70px); background:rgba(0,0,0,0.5);}
+
+@media screen and (max-width:1601px){
+  .nav__list {width:65%;}
+  .menu-button {right:-20%;}
+}
+
+@media screen and (max-width:530px){
+  header nav {position:relative; width:100%; height:100%; margin:0 auto;}
+  header nav .logo {position:absolute; top:0; right:0; left:0; bottom:0; margin:auto; width:100px; height:19px;}
+  header nav .logo a {background:url('../images/logo-land.png') no-repeat center center; background-size:100% 100%;}
+  .nav__list {width:100%;}
+  .nav__list > ul {display:none;}
+  .menu-button {right:25px;}
+  .sub-menu {min-width:100%;}
+  .sub-menu__content {width:88%; text-align:center;}
+}
+
+
+
+/* ************************************************************************
+* [footer]
+************************************************************************ */
+footer {overflow:hidden;}
+.footer-top {width:100%; background:#eef0f1; padding:70px 0; box-sizing:border-box; transition-duration:0.5s; transition-property:background-color;}
+.footer-top__content {width:1173px; max-width:100%; height:100%; margin:0 auto; padding:0 25px; box-sizing:border-box;}
+.footer-top__content span {display:block; font:400 20px 'NanumSquare',sans-serif; line-height:1.5;}
+.footer-top__content .f-tit {font:700 28px 'NanumSquare',sans-serif; line-height:1;}
+.footer-top__content .f-tit .red-tit {font-style:normal; color:#f00;}
+.footer-bottom {width:100%; height:252px; background:#444; transition-duration:0.5s; transition-property:background-color;}
+.footer-bottom__content {width:1173px; max-width:100%; height:100%; margin:0 auto; padding:0 25px; box-sizing:border-box;}
+.footer-bottom__nav {padding-top:44px; box-sizing:border-box;}
+.footer-bottom__nav ul {float:left; width:450px; margin:0 auto;}
+.footer-bottom__nav ul li {float:left; padding-left:85px;}
+.footer-bottom__nav ul li:first-child {padding-left:0;}
+.footer-bottom__nav ul li a {color:#fff; font:400 19px 'NanumSquare',sans-serif;}
+.footer-bottom__nav--logo {display:inline-block; position:relative; top:-5px; width:35px; height:30px; background:url('../images/fnavLogo.png') no-repeat center center; background-size:cover;}
+.footer-bottom__copy-right {float:right;}
+.footer-bottom__copy-right {color:#fff; font-size:17px;}
+.f-last {padding-top:60px; line-height:30px;}
+.f-last p {text-align:center; color:#fff; font-size:17.5px;}
+
+@media screen and (max-width:1160px){
+  .footer-top__content {text-align:center; padding-bottom:45px;}
+  .footer-top__content span {display:inline; line-height:35px;}
+  .footer-top__content .f-tit {display:block; padding-bottom:35px;}
+  .footer-bottom__content {text-align:center;}  
+  .footer-bottom__nav ul {float:none;}
+  .footer-bottom__copy-right {padding-top:30px; float:none;}
+  .f-last {padding-top:40px;}
+}
+
+@media screen and (max-width:650px) {
+  .footer-top__content .f-tit {display:block; padding-bottom:25px; line-height:1.5;}
+}
+
+@media screen and (max-width:530px) {
+  .footer-top__content span {line-height:30px; font-size:18px;}
+  .footer-top__content .f-tit {display:block; padding-bottom:35px;}
+  .footer-bottom__content {text-align:center;}
+  .footer-bottom__nav ul {width:320px;}
+  .footer-bottom__nav ul li {padding-left:10%;}
+  .f-last p {font-size:17px;}
+}
+
+
+
+/* ************************************************************************
+* 로드, 스크롤시 서서히 나타남
+************************************************************************ */
+.appear {transform:translateY(50px); opacity:0; transition:transform 0.7s ease-in-out, opacity 0.7s ease-in-out;}
+.view .appear{transform:translateY(0);opacity:1; transition:transform 0.7s ease-in-out, opacity 0.7s ease-in-out;}
+.view .appear1{transition-delay:.0s}
+.view .appear2{transition-delay:.1s}
+.view .appear3{transition-delay:.2s}
+.view .appear4{transition-delay:.3s}
+.view .appear5{transition-delay:.4s}
+.view .appear6{transition-delay:.5s}
+.view2 {transform:translateY(90px); opacity:0; transition:transform 1s /* cubic-bezier(.26,1.35,.53,1.42) */ ease, opacity 0.7s ease;}
+.view3 {opacity:0; transition:opacity 1s;}
+.viewed {transform:translateY(0); opacity:1;}
+
+
+
+/* ************************************************************************
+* [theme-color-btn]
+************************************************************************ */
+body.light .theme-color-btn {display:inline-block; position:fixed; z-index:51; bottom:30px; right:78px; padding:12px 20px; background:#fff; border-radius:60px; border:none; box-shadow:5px 8px 10px rgba(0,0,0,0.04); cursor:pointer; transition-duration:0.4s; transition-property:right, background-color;}
+body.light .theme-color-btn__icon {float:left; display:block; margin-top:2px; width:15px; height:16px; background:url('../images/dark-moon.png') no-repeat center center; background-size:100%;}
+body.light .theme-color-btn__text {float:left; display:block; padding-left:10px; line-height:50px; font:400 13.3px 'Arial',sans-serif; color:#333;}
+body.light .theme-color-btn:hover {background:#24272b;}
+body.light .theme-color-btn:hover .theme-color-btn__icon {background:url('../images/light-moon.png') no-repeat center center; background-size:100%;}
+body.light .theme-color-btn:hover .theme-color-btn__text {color:#fff;}
+body.dark .theme-color-btn {display:inline-block; position:fixed; z-index:51; bottom:30px; right:78px; padding:12px 20px; background:#333; border-radius:60px; border:none; box-shadow:5px 8px 10px rgba(0,0,0,0.04); cursor:pointer; transition-duration:0.4s; transition-property:right, background-color;}
+body.dark .theme-color-btn__icon {float:left; display:block; width:15px; height:16px; background:url('../images/dark-sun.png') no-repeat center center; background-size:100%;}
+body.dark .theme-color-btn__text {float:left; display:block; padding-left:10px; line-height:50px; font:400 13.3px 'Arial',sans-serif; color:#cecece;}
+body.dark .theme-color-btn:hover {background:#54575d;}
+body.dark .theme-color-btn:hover .theme-color-btn__icon {background:url('../images/light-sun.png') no-repeat center center; background-size:100%;}
+body.dark .theme-color-btn:hover .theme-color-btn__text {color:#fff;}
+
+@media screen and (max-width:550px){
+  .theme-color-btn {width:45px; height:45px; border-radius:100% !important; padding:0 !important; opacity:0.75;}
+  .theme-color-btn__icon {float:none; width:22px !important; height:23px !important; margin-top:0 !important; margin-left:12px;}
+  .theme-color-btn__text {display:none !important;}
+}
+
+body.light .scroll-top-btn {display:inline-block; position:fixed; z-index:51; bottom:30px; right:20px; width:44px; height:44px; background:#fff; border-radius:100%; border:none; box-shadow:5px 8px 10px rgba(0,0,0,0.04); cursor:pointer; transition:background-color 0.4s;}
+body.light .scroll-top-btn__icon {display:inline-block; width:30px; height:39px; background:url('../images/scroll-top-btn-light.png') no-repeat center 14px; background-size:50%; transition:background-image 0.3s;}
+body.light .scroll-top-btn:hover {background:#00d24f;}
+body.light .scroll-top-btn:hover .scroll-top-btn__icon {background:url('../images/scroll-top-btn-dark2.png') no-repeat center 14px; background-size:50%;}
+body.dark .scroll-top-btn {display:inline-block; position:fixed; z-index:51; bottom:30px; right:20px; width:44px; height:44px; background:#333; border-radius:100%; border:none; box-shadow:5px 8px 10px rgba(0,0,0,0.04); cursor:pointer; transition:background-color 0.4s;}
+body.dark .scroll-top-btn__icon {display:inline-block; width:30px; height:39px; background:url('../images/scroll-top-btn-dark.png') no-repeat center 14px; background-size:50%; transition:background-image 0.3s;}
+body.dark .scroll-top-btn:hover {background:#54575d;}
+body.dark .scroll-top-btn:hover .scroll-top-btn__icon {background:url('../images/scroll-top-btn-dark2.png') no-repeat center 14px; background-size:50%;}
+
+
+
+/* ************************************************************************
+* [dark-mode]
+************************************************************************ */
+body.dark {background:#24272b; color:#b8c6d8;}
+body.dark a {color:#b8c6d8;}
+body.dark header {background:#24272b; border-bottom: 0.5px solid #333;}
+body.dark header nav .logo a {background:url('../images/logo-dark.png') no-repeat center center; background-size:100%;}
+
+@media screen and (max-width:530px){
+  body.dark header nav .logo a {background:url('../images/logo-land-dark.png') no-repeat center center; background-size:100% 100%;}
+}
+
+body.dark .menu-button button > span {background:#b8c6d8;}
+body.dark .sub-menu {background:#1f1f1f;}
+body.dark .sub-menu__list li a {color:#667181;}
+body.dark .sub-menu__list li a:hover {color:#b8c6d8;}
+body.dark .sub-menu__list li.active a {color:#b8c6d8;}
+body.dark .info-wrap dl dd > span:before {background:#b8c6d8;}
+body.dark .footer-top {background:#1f1f1f;}
+body.dark .footer-top__content .f-tit .red-tit {color:#3db434;}
+body.dark .footer-bottom {background:#1f1f1f;}
+body.dark .footer-bottom__nav ul li a {color:#b8c6d8;}
+body.dark .footer-bottom__nav--logo {background:url('../images/fnavLogo-dark.png') no-repeat center center; background-size:cover;}
+body.dark .footer-bottom__copy-right {color:#b8c6d8;}
+body.dark .f-last p {color:#b8c6d8;}
+
+
+
+@-webkit-keyframes timer{0%{width:0}100%{width:100%}}
+@-moz-keyframes timer{0%{width:0}100%{width:100%}}
+@-o-keyframes timer{0%{width:0}100%{width:100%}}
+@keyframes timer{0%{width:0}100%{width:100%}}
+
