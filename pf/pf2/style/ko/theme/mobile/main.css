@@ -1,0 +1,76 @@
+﻿@media screen and (max-width:720px) {
+	.topInfo .inner {padding:0 12px;}
+	.topInfo .infoList > ul {padding:9px 0 0}
+	.topInfo .infoList > ul > li {padding:2px 0 2px 0px;}
+	#divSearch .searchTabMenu {width:142px;padding:9px 0;}
+	#divSearch .searchTabMenu li {width:68px;}
+	#divSearch .searchTabMenu li:before {right:2px;top:15px;}
+	#divSearch .searchTabMenu li a {width:68px;font-size:14px;text-align:left;padding:0px;line-height:43px;letter-spacing:-0.5px;}
+	#divSearch .searchTabMenu li.extra {padding-left:0;padding-right:0;}
+	#divSearch .searchTabMenu li.extra a {width:68px;padding:0 0 0 0px;line-height:70px;}
+	#divSearch .searchTabMenu li.on a {font-size:14px;z-index:10;margin:-2px 0 0 -5px;width:74px;padding:0 0 0px 5px;height:49px;line-height:48px;font-weight:500;}
+	#divSearch .searchTabMenu li.on a:after {font-size:6px;margin:-4px 0 0 5px;}
+	#divSearch .searchTabMenu li.extra:nth-child(1).on a {width:81px;height:82px;padding:0 0 0 8px;line-height:82px;margin:-11px 0 0 -1px;}
+	#divSearch .searchTabMenu li.extra:nth-child(2).on a {width:81px;height:82px;padding:0 0 0 8px;line-height:82px;margin:-6px 0 0 -1px;}
+	#divSearch .tabContentGroup {margin-left:157px;}
+	#divSearch .searchArea form .searchBox {padding-right:52px;}
+	#divSearch .searchArea form .searchBox .searchInput {padding-left:10px;}
+	#divSearch .searchArea form .searchBox input.searchBtn {right:0;}
+	#divSearch .searchArea form .search_item li {font-size:14px;padding-top:1px;}
+	#divSearch .searchArea form .search_item li:before {padding-top:0;}
+	.quickMenu .slide > ul  {width:300%;}
+	.quickMenu .slide > ul > li {left:left;width:33.33%;text-align:center;padding:0 24px;}
+	.notice > div {height:1416px;}
+	.notice .dbInfo {position:relative;z-index:10;float:none;top:460px;width:100%;height:493px;padding:0 20px;} 
+	.notice .noticeInfo {position:absolute;float:none;top:0;width:100%;height:460px;margin-left:0;padding:0 14px;}
+	.notice .noticeInfo .head a {margin-right:8px;}
+	.notice .noticeInfo > div {max-width:none;padding:0 10px;}
+	.notice .scheduleInfo {position:absolute;float:none;top:954px;width:100%;height:493px;}
+	.notice .scheduleInfo > div {max-width:none;padding:0;}
+	.notice .scheduleInfo .area_T {width:100%;padding:0 20px;margin-top:0px;}
+	.notice .scheduleInfo .area_B {width:100%;padding:0 20px;margin-top:12px;}
+	.notice .dbInfo .contents {width:auto;height:calc(100% - 160px);overflow:hidden;}
+	.notice .dbInfo .contents .area_L {float:none;width:100%;}
+	.notice .dbInfo .contents .area_L .list_group {float:left;width:50%;}
+	.notice .dbInfo .contents .area_L .list_group li {width:100%;}
+	.notice .dbInfo .contents .area_R {float:none;clear:both;width:100%;margin-left:0;}
+	.notice .dbInfo .contents .area_R .list_group {padding-top:8px;}
+	.notice .dbInfo .contents .area_R .list_group li {width:50%;}
+	.notice .dbInfo.more {width:100%;height:760px;}
+	.notice .dbInfo.more .contents {height:calc(100% - 120px);}
+	.book {float:none;width:100%;}
+	.book > div {max-width:none;margin-right:0;padding:0 24px;}
+	.book .book_tab .more {right:24px;}
+	.magazine {float:none;width:100%;padding:0 24px;}
+	.magazine > div  {height:356px;padding:54px 48px;margin-top:24px;}
+}
+
+@media screen and (max-width:520px) {
+	#divHeader .inner {padding:0 10px;}
+	#divHeader #wholeMenu .menuWrap .inner .topArea  .head .m_head {padding:21px 12px;}
+	#divHeader #wholeMenu .menuWrap .inner .topArea  .head .close_btn {right:12px;}
+	#divHeader #wholeMenu .menuWrap {width:100%;right:-100%;}
+	#divHeader #wholeMenu .menuWrap .inner > ul > li > a {width:100%;padding-left:58px;}
+	#divHeader #wholeMenu .menuWrap .inner > ul > li:nth-child(1) > a {background-position:20px 16px !important;}
+	#divHeader #wholeMenu .menuWrap .inner > ul > li:nth-child(2) > a {background-position:17px 19px !important;}
+	#divHeader #wholeMenu .menuWrap .inner > ul > li:nth-child(3) > a {background-position:18px 21px !important;}
+	#divHeader #wholeMenu .menuWrap .inner > ul > li:nth-child(4) > a {background-position:16px 16px !important;}
+	#divHeader #wholeMenu .menuWrap .inner > ul > li:nth-child(5) > a {background-position:18px 15px !important;}
+	#divHeader #wholeMenu .menuWrap .inner > ul > li > ul {margin-left:100%;width:calc(100% - 164px);padding:0 10px 0 15px;}
+	#divHeader #wholeMenu .menuWrap .inner > ul.on > li > a {width:164px;}
+	#divHeader #wholeMenu .menuWrap .inner > ul.on > li > ul {margin-left:164px;}
+	
+	#divSearch > div {padding:0 10px;}
+	.quickMenu .inner {padding:0 4px;}
+	.quickMenu .group li {transform:scale(0.9);}
+	.quickMenu .prev_btn {left:10px;}
+	.quickMenu .next_btn {right:10px;}
+	.content3 .inner {padding:0 10px;}
+	.content4 > div {padding:0 10px;}
+	
+	#divFooter > div {padding:36px 10px 36px;}
+	#divFooter .footer_left {float:none;width:118px;height:82px;margin:6px auto;}
+	#divFooter .footer_right {width:100%;margin-left:0;line-height:1.5;padding:0 24px;}
+	#divFooter .privacy {height:48px;margin-top:28px;}
+	#divFooter .copyright {line-height:1.2;}
+}

@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swa&subset=korean');
+
+/* reset css */
+* {margin:0; padding:0; /*-webkit-transition:all 0.5s; -moz-transition:all 0.5s; -o-transition:all 0.5s; transition:all 0.5s;*/}
+html {color:#333;}
+body {font:400 4.7vw 'Noto Sans KR',sans-serif; letter-spacing:-0.06em;}
+ul {list-style:none;}
+a {text-decoration:none; color:#333;}
+
+.hidden {text-indent:-99999px;}
+.blind {overflow:hidden;position:absolute;top:0;left:0;width:1px;height:1px;font-size:1px;line-height:100vw;white-space:nowrap}
+.fl {float:left;} .fr {float:right;} .cb:after {content:""; display:block; clear:both;}
+.fNotoSansT {font:100 4.7vw 'Noto Sans KR',sans-serif; line-height:1;} .fNotoSansL {font:300 4.7vw 'Noto Sans KR',sans-serif; line-height:1;} .fNotoSansR {font:400 4.7vw 'Noto Sans KR',sans-serif; line-height:1;} .fNotoSansM {font:500 4.7vw 'Noto Sans KR',sans-serif; line-height:1;} .fNotoSansB {font:700 4.7vw 'Noto Sans KR',sans-serif; line-height:1;} .fNotoSansEB {font:900 4.7vw 'Noto Sans KR',sans-serif; line-height:1;}
+.scene {position:relative;}	.abs {position:absolute;}
