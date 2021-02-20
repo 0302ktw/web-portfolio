@@ -218,7 +218,7 @@
 .mbti-content__detail--L {float:left; width:51%;}
 .mbti-content__detail--L figure {position:relative; top:-100px; left:-135px; width:772px; height:718px; overflow:hidden;}
 .mbti-content__video--light {position:absolute; top:20px; outline:none; border:none;}
-.mbti-content__video--dark {position:absolute; top:20px; outline:none; border:none;}
+.mbti-content__video--dark {position:absolute; top:20px; outline:none; border:none; display:none;}
 .mbti-content__detail--R {float:right; width:38%;}
 .mbti-content__detail--R h2 span {font:800 40px 'NanumSquare',sans-serif; line-height:55px;}
 .mbti-content__detail--R h2 > span:nth-child(1) {display:inline-block;}
