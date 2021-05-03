@@ -173,7 +173,7 @@ function linkTime(element) {
 * pf9 모바일 사이즈 새창
 ************************************************************************ */
 function windowopenPopup(){
-   window.open('./pf/pf9/index.html', 'window팝업', 'width=450, height=800, top=100, left=500, menubar=no, status=no, toolbar=no');
+   window.open('https://0302ktw.github.io/pf9/index.html', 'window팝업', 'width=450, height=800, top=100, left=500, menubar=no, status=no, toolbar=no');
 }
 
 
